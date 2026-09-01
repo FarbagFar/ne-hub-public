@@ -151,9 +151,23 @@ html, body, [class*="css"] {{ font-family: Inter, ui-sans-serif, system-ui, -app
 [data-baseweb="tab-list"] {{ gap:.2rem; }}
 [data-baseweb="tab"] {{ border-radius:999px; padding:.35rem .75rem; }}
 @media(max-width:760px) {{
- .ne-hero {{ padding:1.6rem 1.35rem; min-height:200px; }} .ne-title {{ font-size:2.05rem; }}
- .block-container {{ padding-left:.8rem; padding-right:.8rem; }}
+ .ne-hero {{ padding:1.35rem 1rem; min-height:0; border-radius:20px; }} .ne-title {{ font-size:1.8rem; line-height:1.08; }}
+ .ne-sub {{ font-size:.92rem; }} .ne-badges {{ gap:.3rem; }} .ne-badge {{ font-size:.68rem; padding:.22rem .45rem; }}
+ .block-container {{ padding-left:.65rem; padding-right:.65rem; padding-top:.55rem; }}
+ [data-testid="stMetric"] {{ padding:.72rem .75rem; border-radius:14px; }}
+ [data-testid="stMetricValue"] {{ font-size:1.28rem; }}
+ .ne-section h2 {{ font-size:1.3rem; }}
+ [data-baseweb="tab-list"] {{ overflow-x:auto; flex-wrap:nowrap; }}
+ [data-baseweb="tab"] {{ white-space:nowrap; }}
 }}
+.ne-today {{ border:1px solid var(--ne-line); border-radius:22px; padding:1rem 1.1rem; background:linear-gradient(180deg,#fff,#fbfcfd); margin:.65rem 0 1.05rem; }}
+.ne-today-title {{ display:flex; align-items:center; justify-content:space-between; gap:.6rem; flex-wrap:wrap; margin-bottom:.6rem; }}
+.ne-today-title h3 {{ margin:0; color:var(--ne-blue); font-size:1.15rem; }}
+.ne-fresh.good {{ background:#ECFDF3; border-color:#ABEFC6; color:#067647; }}
+.ne-fresh.warn {{ background:#FFFAEB; border-color:#FEDF89; color:#B54708; }}
+.ne-quick {{ border:1px solid var(--ne-line); border-radius:16px; padding:.8rem .85rem; background:#fff; min-height:110px; }}
+.ne-quick b {{ color:var(--ne-blue); }}
+.ne-quick p {{ margin:.25rem 0 0; color:var(--ne-muted); font-size:.83rem; line-height:1.35; }}
 </style>
 """,
     unsafe_allow_html=True,
@@ -215,9 +229,9 @@ def hero():
         """
 <div class="ne-hero">
   <div class="ne-kicker">NE HUB · INFORMATIONS PUBLIQUES · DONNÉES SOURCÉES</div>
-  <div class="ne-title">Comprendre, trouver, observer. Dans une seule interface.</div>
-  <div class="ne-sub">Programme, réponses officielles, rendez-vous, relais locaux et observatoire de visibilité publique. NE Hub relie les sources du mouvement aux données ouvertes sans profiler les utilisateurs.</div>
-  <div class="ne-badges"><span class="ne-badge">📍 Territoires</span><span class="ne-badge">💬 Ask NE</span><span class="ne-badge">📊 Observatoire</span><span class="ne-badge">🔎 Recherche globale</span><span class="ne-badge">🧭 Données publiques</span></div>
+  <div class="ne-title">Comprendre les propositions. Voir les données. Mesurer les ordres de grandeur.</div>
+  <div class="ne-sub">Programme, simulateur d’impact, observatoire de visibilité publique, agenda et relais locaux réunis dans une interface simple. Les calculs affichent leurs hypothèses et leurs sources.</div>
+  <div class="ne-badges"><span class="ne-badge">⚡ 30 secondes</span><span class="ne-badge">🧮 Simulateur</span><span class="ne-badge">📊 Observatoire</span><span class="ne-badge">🔎 Recherche globale</span><span class="ne-badge">📍 Territoires</span></div>
 </div>
 """,
         unsafe_allow_html=True,
@@ -235,9 +249,20 @@ def render_sidebar(meta: dict, public_data: dict):
     nav_items = ["🏠 Accueil", "📊 Observatoire", "🧮 Simulateur d’impact", "🤖 Ask Data", "🔎 Explorer", "🧭 Mon département", "🗓️ Agenda", "💬 Ask NE", "🧰 Ressources"]
     if not public_mode():
         nav_items.append("⚙️ Administration")
+    requested_page = str(st.query_params.get("page", "") or "").lower()
+    page_map = {
+        "simulateur": "🧮 Simulateur d’impact", "simulator": "🧮 Simulateur d’impact", "impact": "🧮 Simulateur d’impact",
+        "observatoire": "📊 Observatoire", "observer": "📊 Observatoire",
+        "explorer": "🔎 Explorer", "recherche": "🔎 Explorer",
+        "departement": "🧭 Mon département", "territoire": "🧭 Mon département",
+        "agenda": "🗓️ Agenda", "askne": "💬 Ask NE", "askdata": "🤖 Ask Data",
+    }
+    requested_nav = page_map.get(requested_page)
+    default_index = nav_items.index(requested_nav) if requested_nav in nav_items else 0
     nav = st.radio(
         "Navigation",
         nav_items,
+        index=default_index,
         label_visibility="collapsed",
     )
     if public_mode():
@@ -309,6 +334,58 @@ def render_search_results(results: dict):
                         st.markdown(f"[Lire l'article]({item['URL']})")
 
 
+def _freshness_info(path: Path, label: str) -> tuple[str, str]:
+    if not path.exists():
+        return f"{label} : indisponible", "warn"
+    dt = datetime.fromtimestamp(path.stat().st_mtime)
+    age_h = max(0.0, (datetime.now() - dt).total_seconds() / 3600.0)
+    state = "good" if age_h <= 36 else "warn"
+    return f"{label} : {dt.strftime('%d/%m %H:%M')}", state
+
+
+def render_freshness_strip(meta: dict, public_data: dict):
+    items = []
+    social_label, social_state = _freshness_info(SOCIAL_XLSX, "Réseaux")
+    press_label, press_state = _freshness_info(PRESS_XLSX, "Presse")
+    items.append((social_label, social_state))
+    items.append((press_label, press_state))
+    site = meta.get("last_sync") or "non synchronisé"
+    pub = public_data.get("last_sync") or "non synchronisé"
+    items.append((f"Site officiel : {site}", "good" if meta.get("last_sync") else "warn"))
+    items.append((f"Données ouvertes : {pub}", "good" if public_data.get("last_sync") else "warn"))
+    html_items = "".join(f'<span class="ne-fresh {state}">{text}</span>' for text, state in items)
+    st.markdown(html_items, unsafe_allow_html=True)
+
+
+def render_today_30_seconds():
+    focus = "David Lisnard" if (not social_df.empty and "David Lisnard" in set(social_df["Personne"])) else (social_df["Personne"].iloc[0] if not social_df.empty else None)
+    future = sorted([e for e in events if (parse_date(e.get("date")) or date.min) >= date.today()], key=lambda x: parse_date(x.get("date")) or date.max)
+    news = public_data.get("official_news", []) or []
+    trend7 = None
+    press7n = None
+    if focus:
+        _, trend7 = change_for_person(social_df, focus, "Total", 7)
+        p7 = press_counts_from_articles(press_articles_df, 7)
+        row = p7[p7["Personne"] == focus] if not p7.empty else pd.DataFrame()
+        press7n = int(row.iloc[0]["Articles 7j"]) if not row.empty else 0
+    st.markdown('<div class="ne-today"><div class="ne-today-title"><h3>⚡ Aujourd’hui en 30 secondes</h3><span class="ne-source">Les signaux essentiels, sans interprétation électorale.</span></div>', unsafe_allow_html=True)
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Tendance réseaux · 7 j", fmt_pct(trend7) if trend7 is not None else "—")
+    c2.metric("Articles détectés · 7 j", press7n if press7n is not None else "—")
+    if news:
+        c3.markdown(f"**Dernière publication**  \n{news[0].get('title','Actualité')[:85]}")
+        if news[0].get("url"):
+            c3.markdown(f"[Lire la source]({news[0]['url']})")
+    else:
+        c3.markdown("**Dernière publication**  \n—")
+    if future:
+        c4.markdown(f"**Prochain rendez-vous**  \n{future[0].get('title','Événement')[:75]}")
+        c4.caption(f"{future[0].get('date_label') or future[0].get('date','')} · {future[0].get('location','')}")
+    else:
+        c4.markdown("**Prochain rendez-vous**  \n—")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+
 # -----------------------------------------------------------------------------
 # Chargement des données
 # -----------------------------------------------------------------------------
@@ -325,71 +402,63 @@ with st.sidebar:
 
 if nav == "🏠 Accueil":
     hero()
+    render_freshness_strip(meta, public_data)
+    render_today_30_seconds()
+
     mv = movement_stats(public_data)
     future_events = [e for e in events if (parse_date(e.get("date")) or date.min) >= date.today()]
+    section("Vue d’ensemble", "Les repères utiles", "Quelques chiffres de contexte avant d’explorer le programme et les données.")
     cols = st.columns(4)
     cols[0].metric("Adhérents", fmt_int(mv.get("members")) if mv else "—")
     cols[1].metric("Élus recensés", fmt_int(mv.get("elected")) if mv else "—")
     cols[2].metric("Rendez-vous à venir", len(future_events))
     cols[3].metric("Publications officielles", fmt_int(mv.get("official_publications")) if mv else "—")
     if mv:
-        as_of = mv.get("as_of_label") or "date de référence non disponible"
+        as_of = mv.get("as_of_label") or "date non disponible"
         source_url = mv.get("source_url") or "https://www.unenouvelleenergie.fr/questions/combien-d-adherents-compte-nouvelle-energie/"
-        st.caption(f"Chiffres du mouvement au {as_of} · [source officielle Nouvelle Énergie]({source_url}).")
-        if mv.get("quality_warning"):
-            st.warning("Un chiffre aberrant avait été détecté dans les données synchronisées ; NE Hub l’a neutralisé et utilise la dernière valeur officielle vérifiée.")
+        st.caption(f"Chiffres du mouvement au {as_of} · [source officielle]({source_url}).")
 
-    section("Accès direct", "Tout retrouver en quelques secondes", "Une seule recherche dans le programme, l'agenda, les relais, les actualités officielles et le radar presse.")
-    st.markdown('<div class="ne-search-box">', unsafe_allow_html=True)
-    q = st.text_input("Recherche globale", key="home_global_query", placeholder="Ex. retraites, Tours, sécurité, David Lisnard, Haute-Garonne…", label_visibility="collapsed")
-    st.markdown('</div>', unsafe_allow_html=True)
+    section("Recherche", "Trouver une information en une seule requête", "Programme, questions officielles, actualités, agenda, relais et presse détectée.")
+    q = st.text_input("Recherche globale", key="home_global_query", placeholder="Ex. retraites, nucléaire, dette, Tours, David Lisnard…", label_visibility="collapsed")
     if q:
         st.session_state["global_query"] = q
         render_search_results(universal_search(q, docs, events, relays, press_articles_df, public_data, 6))
 
-    left, right = st.columns([1.2, 1])
+    section("Accès rapide", "Aller directement à l’essentiel", "Des parcours courts pour ne pas avoir à connaître la structure du site.")
+    qcols = st.columns(4)
+    qcols[0].markdown('<a href="?page=simulateur" target="_self" style="text-decoration:none"><div class="ne-quick"><b>🧮 Simulateur d’impact →</b><p>Voir l’effet mécanique des mesures chiffrées sur déficit, prélèvements et niveau de vie.</p></div></a>', unsafe_allow_html=True)
+    qcols[1].markdown('<a href="?page=observatoire" target="_self" style="text-decoration:none"><div class="ne-quick"><b>📊 Observatoire →</b><p>Réseaux, presse et attention web, avec fraîcheur et qualité des données.</p></div></a>', unsafe_allow_html=True)
+    qcols[2].markdown('<a href="?page=explorer" target="_self" style="text-decoration:none"><div class="ne-quick"><b>🔎 Explorer →</b><p>Rechercher dans toutes les sources officielles et les données indexées.</p></div></a>', unsafe_allow_html=True)
+    qcols[3].markdown('<a href="?page=departement" target="_self" style="text-decoration:none"><div class="ne-quick"><b>📍 Mon département →</b><p>Relais local, contexte territorial et rendez-vous autour d’une commune.</p></div></a>', unsafe_allow_html=True)
+
+    left, right = st.columns([1.15, 1])
     with left:
-        section("À la une", "Dernières publications officielles", "Actualités synchronisées depuis le site Nouvelle Énergie.")
+        section("À la une", "Dernières publications officielles", "Synchronisées depuis le site Nouvelle Énergie.")
         news = public_data.get("official_news", []) or []
         if news:
             for item in news[:4]:
-                with st.container(border=True):
-                    st.markdown(f"**{item.get('title','Actualité')}**")
-                    st.caption(item.get("date", ""))
+                st.markdown(f"**{item.get('title','Actualité')}**")
+                st.caption(item.get("date", ""))
+                if item.get("url"):
                     st.markdown(f"[Lire sur le site officiel]({item.get('url')})")
+                st.divider()
         else:
-            st.info("Lancez une synchronisation publique pour charger les dernières actualités.")
+            st.info("Aucune actualité officielle synchronisée.")
     with right:
         section("Agenda", "Prochains rendez-vous", "Les prochains événements détectés sur l'agenda officiel.")
         for e in sorted(future_events, key=lambda x: parse_date(x.get("date")) or date.max)[:4]:
-            with st.container(border=True):
-                st.markdown(f"**{e.get('title','Événement')}**")
-                st.caption(f"{e.get('date_label') or e.get('date','')} · {e.get('location','')}")
-                if e.get("url"):
-                    st.markdown(f"[Voir le rendez-vous]({e['url']})")
-
-    section("Observatoire", "Un regard factuel sur la visibilité publique", "Réseaux sociaux, articles détectés et attention Wikipédia. Ces indicateurs décrivent l'exposition publique, pas des intentions de vote.")
-    if not social_df.empty:
-        focus = "David Lisnard" if "David Lisnard" in set(social_df["Personne"]) else social_df["Personne"].iloc[0]
-        cur = person_current_row(social_df, focus)
-        g1, p1 = change_for_person(social_df, focus, "Total", 1)
-        press7 = press_counts_from_articles(press_articles_df, 7)
-        p7row = press7[press7["Personne"] == focus] if not press7.empty else pd.DataFrame()
-        wiki30 = wiki_sum(public_data, focus, 30)
-        c1, c2, c3, c4 = st.columns(4)
-        c1.metric(f"{focus} · abonnements*", fmt_int(cur.get("Total") if cur is not None else None), delta=fmt_int(g1) if g1 is not None else None)
-        c2.metric("Variation 24 h", fmt_pct(p1) if p1 is not None else "—")
-        c3.metric("Articles détectés · 7 j", int(p7row.iloc[0]["Articles 7j"]) if not p7row.empty else 0)
-        c4.metric("Vues Wikipédia · 30 j", fmt_int(wiki30))
-        st.caption("* Somme des compteurs des plateformes disponibles, pas un nombre de personnes uniques.")
-    else:
-        st.info("Le classeur de suivi réseaux n'est pas encore disponible.")
+            st.markdown(f"**{e.get('title','Événement')}**")
+            st.caption(f"{e.get('date_label') or e.get('date','')} · {e.get('location','')}")
+            if e.get("url"):
+                st.markdown(f"[Voir le rendez-vous]({e['url']})")
+            st.divider()
 
 # -----------------------------------------------------------------------------
 # OBSERVATOIRE
 # -----------------------------------------------------------------------------
 elif nav == "📊 Observatoire":
     section("Observatoire", "Visibilité publique comparée", "Trois signaux complémentaires : réseaux sociaux, presse détectée et attention Wikipédia. Aucun de ces indicateurs ne mesure une intention de vote.")
+    render_freshness_strip(meta, public_data)
     if tracker_errors:
         for err in tracker_errors:
             st.warning(err)
@@ -620,7 +689,8 @@ elif nav == "🤖 Ask Data":
 # EXPLORER
 # -----------------------------------------------------------------------------
 elif nav == "🔎 Explorer":
-    section("Explorer", "Recherche universelle", "Programme, FAQ, actualités officielles, agenda, relais et articles presse dans une seule recherche.")
+    section("Explorer", "Recherche universelle", "Une requête, puis filtrez par type de source. Les résultats officiels restent séparés de la presse détectée.")
+    render_freshness_strip(meta, public_data)
     if "explore_input" not in st.session_state:
         st.session_state["explore_input"] = ""
     themes = ["Éducation", "Sécurité", "Santé", "Agriculture", "Immigration", "Retraites", "Fiscalité", "Dette", "Décentralisation", "Énergie"]
@@ -628,21 +698,31 @@ elif nav == "🔎 Explorer":
     for i, th in enumerate(themes):
         if cols[i % 5].button(th, use_container_width=True, key=f"theme_{i}"):
             st.session_state["explore_input"] = th
+            st.rerun()
     q = st.text_input("Recherche", placeholder="Ex. capitalisation, nucléaire, Tours, Haute-Garonne, David Lisnard…", key="explore_input")
+    category_labels = ["Toutes", "Programme & questions", "Actualités officielles", "Agenda", "Relais", "Presse"]
+    selected_cat = st.segmented_control("Type de source", category_labels, default="Toutes", key="explore_category") if hasattr(st, "segmented_control") else st.radio("Type de source", category_labels, horizontal=True, key="explore_category")
     if q:
         st.session_state["global_query"] = q
-        render_search_results(universal_search(q, docs, events, relays, press_articles_df, public_data, 10))
+        results = universal_search(q, docs, events, relays, press_articles_df, public_data, 12)
+        if selected_cat != "Toutes":
+            results = {k: (v if k == selected_cat else []) for k, v in results.items()}
+        counts = " · ".join(f"{k}: {len(v)}" for k, v in results.items() if v)
+        if counts:
+            st.caption(counts)
+        render_search_results(results)
     else:
-        st.markdown("#### Explorer le programme")
+        st.markdown("#### Suggestions")
+        st.caption("Choisissez un thème ci-dessus ou saisissez quelques mots. La recherche accepte les titres, thèmes, lieux, personnes et médias.")
         kinds = sorted(set(d.get("kind", "autre") for d in docs))
         selected = st.multiselect("Types de contenus officiels", kinds, default=[k for k in kinds if k in ("programme", "question", "faq", "vision")])
         filtered = [d for d in docs if not selected or d.get("kind") in selected]
-        for d in filtered[:18]:
-            with st.container(border=True):
-                st.markdown(f"**{d.get('title','Source')}**")
-                st.caption(" · ".join(d.get("tags", [])[:4]) or d.get("kind", ""))
-                st.write(snippet(d.get("text", ""), d.get("title", ""), 340))
-                st.markdown(f"[Lire la source officielle]({d.get('url')})")
+        for d in filtered[:12]:
+            st.markdown(f"**{d.get('title','Source')}**")
+            st.caption(" · ".join(d.get("tags", [])[:4]) or d.get("kind", ""))
+            st.write(snippet(d.get("text", ""), d.get("title", ""), 260))
+            st.markdown(f"[Lire la source officielle]({d.get('url')})")
+            st.divider()
 
 # -----------------------------------------------------------------------------
 # MON DEPARTEMENT

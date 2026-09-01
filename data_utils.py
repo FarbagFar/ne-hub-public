@@ -525,35 +525,68 @@ def snippet(text: str, query: str, max_chars: int = 520) -> str:
 
 
 def universal_search(query: str, docs: list[dict], events: list[dict], relays: list[dict], press_articles: pd.DataFrame, public_data: dict, limit: int = 8):
-    nq = norm(query)
-    qtokens = tokens(query)[:3]
-    result = {"Programme & questions": [], "Actualités officielles": [], "Agenda": [], "Relais": [], "Presse": []}
+    """Recherche multi-source avec score simple et transparent.
 
-    def matches(hay: str) -> bool:
-        return bool(nq) and (all(t in hay for t in qtokens) if qtokens else nq in hay)
+    Les pages officielles utilisent ``search_docs``. Pour les autres sources, le
+    score privilégie une expression exacte puis les mots du titre, avant le
+    reste du texte. Cela évite l'ancien filtre trop strict qui exigeait tous
+    les termes dans chaque résultat.
+    """
+    nq = norm(query)
+    qtokens = tokens(query)
+    result = {"Programme & questions": [], "Actualités officielles": [], "Agenda": [], "Relais": [], "Presse": []}
+    if not nq:
+        return result
+
+    def score(title: str, body: str = "") -> float:
+        nt, nb = norm(title), norm(body)
+        full = f"{nt} {nb}"
+        sc = 0.0
+        if nq in nt:
+            sc += 10.0
+        elif nq in full:
+            sc += 6.0
+        for tok in qtokens:
+            if tok in nt:
+                sc += 3.0
+            elif tok in nb:
+                sc += 1.0
+        return sc
 
     result["Programme & questions"] = search_docs(query, docs, limit)
-    for n in (public_data.get("official_news") or []):
-        if matches(norm(" ".join(str(n.get(k, "")) for k in ("title", "excerpt", "category")))):
-            result["Actualités officielles"].append(n)
-    for e in events:
-        if matches(norm(" ".join(str(e.get(k, "")) for k in ("title", "location", "description", "address")))):
-            result["Agenda"].append(e)
-    for r in relays:
-        if matches(norm(" ".join(str(r.get(k, "")) for k in ("department_code", "department_name", "name", "email")))):
-            result["Relais"].append(r)
-    if not press_articles.empty:
-        date_col = "DatePublication" if "DatePublication" in press_articles.columns else None
-        iterator = press_articles.sort_values(date_col, ascending=False, na_position="last").iterrows() if date_col else press_articles.iterrows()
-        for _, r in iterator:
-            if matches(norm(" ".join(str(r.get(k, "")) for k in ("Personne", "Media", "Titre")))):
-                result["Presse"].append(r.to_dict())
-                if len(result["Presse"]) >= limit:
-                    break
-    for k in result:
-        result[k] = result[k][:limit]
-    return result
 
+    scored = []
+    for n in (public_data.get("official_news") or []):
+        sc = score(n.get("title", ""), " ".join(str(n.get(k, "")) for k in ("excerpt", "category")))
+        if sc > 0:
+            scored.append((sc, str(n.get("date", "")), n))
+    result["Actualités officielles"] = [x[2] for x in sorted(scored, key=lambda z: (z[0], z[1]), reverse=True)[:limit]]
+
+    scored = []
+    for e in events:
+        sc = score(e.get("title", ""), " ".join(str(e.get(k, "")) for k in ("location", "description", "address")))
+        if sc > 0:
+            scored.append((sc, str(e.get("date", "")), e))
+    result["Agenda"] = [x[2] for x in sorted(scored, key=lambda z: (z[0], z[1]), reverse=True)[:limit]]
+
+    scored = []
+    for r in relays:
+        title = f"{r.get('department_name','')} {r.get('name','')}"
+        sc = score(title, f"{r.get('department_code','')} {r.get('email','')}")
+        if sc > 0:
+            scored.append((sc, r))
+    result["Relais"] = [x[1] for x in sorted(scored, key=lambda z: z[0], reverse=True)[:limit]]
+
+    scored = []
+    if not press_articles.empty:
+        for _, r in press_articles.iterrows():
+            sc = score(str(r.get("Titre", "")), f"{r.get('Personne','')} {r.get('Media','')}")
+            if sc > 0:
+                date_val = r.get("DatePublication")
+                date_key = str(date_val) if date_val is not None else ""
+                scored.append((sc, date_key, r.to_dict()))
+    result["Presse"] = [x[2] for x in sorted(scored, key=lambda z: (z[0], z[1]), reverse=True)[:limit]]
+    return result
 
 def geocode(q: str):
     if not q:

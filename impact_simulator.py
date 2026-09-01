@@ -147,6 +147,8 @@ def _inject_css():
 .impact-explain{border-left:3px solid #D0D5DD;padding:8px 12px;margin:.5rem 0 .8rem;color:#475467;font-size:.86rem;line-height:1.48}.impact-explain.good{border-left-color:#16855B}.impact-explain.bad{border-left-color:#B42318}
 .impact-formula{text-align:center;font-size:.78rem;color:#475467;margin-top:8px;font-weight:700}.impact-equation{display:flex;align-items:stretch;justify-content:center;gap:6px;flex-wrap:wrap}.impact-eq-box{min-width:130px;border-radius:10px;padding:9px 10px;background:#F2F4F7;text-align:center}.impact-eq-box.good{background:#EAF7F1;color:#116A49}.impact-eq-box.bad{background:#FDECEC;color:#B42318}.impact-eq-box .amt{font-size:1rem;font-weight:850}.impact-eq-box .lbl{font-size:.67rem;margin-top:2px}.impact-op{align-self:center;color:#98A2B3;font-weight:850;font-size:1.05rem}
 @media(max-width:800px){.impact-ba{grid-template-columns:1fr}.impact-kpi-row{grid-template-columns:repeat(2,minmax(0,1fr))}.impact-flow-v54{grid-template-columns:1fr}.impact-flow-box{display:grid;grid-template-columns:60px 1fr 1fr;align-items:center;text-align:left;gap:5px}}
+.impact-compare{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:.4rem 0 .7rem}.impact-compare-card{border:1px solid #E3E8EF;border-radius:14px;padding:11px 12px;background:#fff}.impact-compare-card.selected{border-color:#16855B;background:#F8FCFA}.impact-compare-card .t{font-size:.74rem;color:#667085}.impact-compare-card .n{font-size:1.25rem;font-weight:850;color:#032F67;margin:3px 0}.impact-compare-card .s{font-size:.72rem;color:#667085}.impact-why{border:1px solid #E3E8EF;border-radius:12px;padding:9px 11px;background:#FBFCFD;font-size:.8rem;color:#475467}.impact-share{border:1px dashed #AAB8C8;border-radius:12px;padding:9px 11px;background:#FBFCFD;font-size:.8rem}.impact-share a{font-weight:800;color:#032F67;text-decoration:none}
+@media(max-width:650px){.impact-compare{grid-template-columns:1fr}.impact-card .v{font-size:1.1rem}.impact-section-title{margin-top:.7rem}}
 
 </style>
         """,
@@ -563,16 +565,60 @@ def _render_budget_waterfall(scenario: dict):
     st.caption("Lecture : les économies réduisent le déficit ; les baisses de prélèvements réduisent les recettes et l'augmentent mécaniquement. Aucun effet macroéconomique indirect n'est ajouté.")
 
 
+def _render_scenario_comparison(baseline: dict, phase: str, selected_pct: float):
+    values = []
+    for label, pct in [("Programme · 100 %", 100.0), (f"Votre test · {selected_pct:.0f} %", float(selected_pct)), ("Stress-test · 75 %", 75.0)]:
+        sc = compute_program_scenario(baseline, phase, True, True, True, realization_pct=pct)
+        values.append((label, pct, sc))
+    cards = []
+    for label, pct, sc in values:
+        state = " selected" if abs(pct-selected_pct) < 1e-9 else ""
+        delta = sc["deficit_after"] - sc["deficit_before"]
+        direction = f"↓ {fmt_bn(abs(delta))}" if delta < 0 else (f"↑ {fmt_bn(abs(delta))}" if delta > 0 else "inchangé")
+        cards.append(f'<div class="impact-compare-card{state}"><div class="t">{html.escape(label)}</div><div class="n">{fmt_bn(sc["deficit_after"])}</div><div class="s">Déficit · {html.escape(direction)} · économies {fmt_bn(sc["spending_savings"])}</div></div>')
+    st.markdown('<div class="impact-section-title">Comparer les scénarios</div><div class="impact-compare">'+''.join(cards)+'</div>', unsafe_allow_html=True)
+    df = pd.DataFrame([{
+        "Scénario": label,
+        "Économies réalisées (Md€)": sc["spending_savings"],
+        "Déficit (Md€)": sc["deficit_after"],
+        "Déficit / PIB (%)": sc["deficit_pct_after"],
+        "Couverture des baisses de prélèvements (%)": sc["funding_coverage_pct"],
+    } for label, _, sc in values])
+    fig = px.bar(df, x="Scénario", y="Déficit (Md€)", text_auto=".1f", title="Déficit selon le niveau de réalisation des économies")
+    fig.update_layout(height=285, margin=dict(l=5,r=5,t=42,b=5), paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", showlegend=False)
+    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+
+
+def _render_why_this_number(scenario: dict):
+    with st.expander("❓ Pourquoi ce chiffre ?", expanded=False):
+        st.markdown(
+            f'<div class="impact-why"><b>Déficit simulé = déficit initial − économies réalisées + baisses de recettes.</b><br><br>'
+            f'{fmt_bn(scenario["deficit_before"])} − {fmt_bn(scenario["spending_savings"])} + {fmt_bn(scenario["worker_relief"])} + {fmt_bn(scenario["production_relief"])} = <b>{fmt_bn(scenario["deficit_after"])}</b>.<br><br>'
+            f'Le chiffre est un calcul mécanique à PIB constant. Aucun effet de croissance, d’inflation, d’emploi ou de comportement n’est ajouté.</div>',
+            unsafe_allow_html=True,
+        )
+
+
+def _render_share_link(phase: str, realization_pct: float, scenario_mode: str, use_spending: bool, use_workers: bool, use_production: bool):
+    mode = "programme" if scenario_mode == "Programme publié" else "personnalise"
+    year = _phase_number(phase)
+    href = (f'?page=simulateur&year={year}&realisation={int(round(realization_pct))}&mode={mode}'
+            f'&spend={1 if use_spending else 0}&workers={1 if use_workers else 0}&prod={1 if use_production else 0}')
+    st.markdown(f'<div class="impact-share">🔗 <a href="{href}" target="_self">Lien partageable vers ce scénario</a><br><span style="color:#667085">Le lien mémorise l’année, le taux de réalisation, le mode et les leviers activés.</span></div>', unsafe_allow_html=True)
+
+
 def _render_france(baseline: dict, measures: list[dict], phase: str):
     # Deux lectures : le scénario publié est verrouillé pour éviter les combinaisons incohérentes,
     # le mode personnalisé sert à comprendre la mécanique budgétaire.
+    requested_mode = str(st.query_params.get("mode", "programme") or "programme").lower()
+    default_mode = "Personnaliser" if requested_mode.startswith("person") else "Programme publié"
     if hasattr(st, "segmented_control"):
         scenario_mode = st.segmented_control(
             "Scénario",
             ["Programme publié", "Personnaliser"],
-            default="Programme publié",
+            default=default_mode,
             key="impact_scenario_mode",
-        ) or "Programme publié"
+        ) or default_mode
     else:
         scenario_mode = st.radio(
             "Scénario",
@@ -587,16 +633,24 @@ def _render_france(baseline: dict, measures: list[dict], phase: str):
         st.caption("Scénario de référence 60 % / 20 % / 20 %. Le curseur ci-dessous sert uniquement à tester ce qui se passe si une partie des économies annoncées n'est pas effectivement réalisée.")
     else:
         st.caption("Mode pédagogique libre : activez ou désactivez les trois leviers. Ce mode ne représente plus nécessairement le programme publié.")
+        def _qp_bool(name: str, default: bool = True) -> bool:
+            raw = str(st.query_params.get(name, "1" if default else "0") or "").lower()
+            return raw not in {"0", "false", "non", "no", "off"}
         c1, c2, c3 = st.columns(3)
-        use_spending = c1.toggle("Économies de dépenses", value=True, key=f"impact_spend_{phase}")
-        use_workers = c2.toggle("Baisse prélèvements actifs", value=True, key=f"impact_workers_{phase}")
-        use_production = c3.toggle("Baisse impôts production", value=True, key=f"impact_prod_{phase}")
+        use_spending = c1.toggle("Économies de dépenses", value=_qp_bool("spend", True), key=f"impact_spend_{phase}")
+        use_workers = c2.toggle("Baisse prélèvements actifs", value=_qp_bool("workers", True), key=f"impact_workers_{phase}")
+        use_production = c3.toggle("Baisse impôts production", value=_qp_bool("prod", True), key=f"impact_prod_{phase}")
 
+    try:
+        requested_realization = int(float(st.query_params.get("realisation", 100) or 100))
+    except Exception:
+        requested_realization = 100
+    requested_realization = max(50, min(100, int(round(requested_realization / 5.0) * 5)))
     realization_pct = st.slider(
         "Part des économies effectivement réalisées",
         min_value=50,
         max_value=100,
-        value=100,
+        value=requested_realization,
         step=5,
         key=f"impact_realization_{phase}_{scenario_mode}",
         help="Stress-test : le curseur réduit uniquement les économies réalisées. Les baisses de prélèvements restent au niveau prévu à l'horizon choisi afin de rendre visible un éventuel manque de financement.",
@@ -633,10 +687,13 @@ def _render_france(baseline: dict, measures: list[dict], phase: str):
 
     _render_before_after(baseline, scenario)
     _render_compact_kpis(scenario)
+    _render_why_this_number(scenario)
     st.caption("* Calcul mécanique à PIB constant. Le vert signifie uniquement que l’indicateur affiché évolue dans le sens indiqué ; aucun effet de croissance, d’emploi ou de comportement n’est ajouté.")
 
     _render_allocation_flow(scenario, program_mode and realization_pct == 100)
     _render_budget_waterfall(scenario)
+    if program_mode:
+        _render_scenario_comparison(baseline, phase, realization_pct)
     _render_progress_to_targets(baseline, scenario)
 
     improvement=float(scenario["deficit_improvement"])
@@ -676,6 +733,7 @@ def _render_france(baseline: dict, measures: list[dict], phase: str):
         mime="application/json",
         key=f"impact_export_{phase}_{realization_pct}",
     )
+    _render_share_link(phase, realization_pct, scenario_mode, use_spending, use_workers, use_production)
 
     if _phase_is_estimated(phase):
         st.warning(f"{phase} : {scenario['target_savings']:.0f} Md€ est une interpolation linéaire entre 80 Md€ en Année 1 et 200 Md€ en Année 5. Ce montant intermédiaire n'est pas présenté comme un chiffrage officiel.")
@@ -864,6 +922,22 @@ def _render_you(phase: str):
         },
     )
 
+    with st.expander("❓ Pourquoi ce chiffre pour mon ménage ?", expanded=False):
+        parts = []
+        for label, r in [("Vous", person), ("Conjoint", partner)]:
+            if not r:
+                continue
+            detail = []
+            if r["salary_gain"]:
+                detail.append(f"{fmt_eur(r['salary_gain'], signed=True)} cotisations / travail")
+            if r["teacher_gain"]:
+                detail.append(f"{fmt_eur(r['teacher_gain'], signed=True)} revalorisation enseignant")
+            if r["retirement_gain"]:
+                detail.append(f"{fmt_eur(r['retirement_gain'], signed=True)} retraite")
+            parts.append(f"**{label}** : " + (" + ".join(detail) if detail else "aucun effet monétaire direct modélisé"))
+        st.markdown("  \n".join(parts))
+        st.caption(f"Total ménage : {fmt_eur(summary['gain_monthly'], signed=True)}/mois, soit {fmt_eur(summary['gain_annual'], signed=True)}/an. Niveau de vie : {fmt_pct(summary['living_delta_pct'], signed=True) if summary['living_delta_pct'] is not None else '—'}.")
+
     if status1 in ("Salarié", "Enseignant") or (partner and partner["status"] in ("Salarié", "Enseignant")):
         gain_per_worker = 400.0 * _phase_ratio(phase)
         if _phase_is_estimated(phase):
@@ -988,11 +1062,17 @@ def render_impact_simulator():
 
     top1, top2, top3 = st.columns([1.15, 2.1, 1.05])
     with top1:
+        try:
+            requested_year = int(float(st.query_params.get("year", 5) or 5))
+        except Exception:
+            requested_year = 5
+        requested_year = max(1, min(5, requested_year))
+        requested_phase = f"Année {requested_year}"
         if hasattr(st, "segmented_control"):
             phase = st.segmented_control(
                 "Horizon",
                 options=PHASE_LABELS,
-                default="Année 5",
+                default=requested_phase,
                 key="impact_phase",
             )
             if phase is None:
@@ -1001,7 +1081,7 @@ def render_impact_simulator():
             phase = st.radio(
                 "Horizon",
                 PHASE_LABELS,
-                index=4,
+                index=requested_year-1,
                 horizontal=True,
                 key="impact_phase",
             )
@@ -1015,8 +1095,14 @@ def render_impact_simulator():
 
     shown_measures = [m for m in measures if (not only_quantified or _quantified_measure(m))]
     stats = _measure_summary(measures)
+    try:
+        catalog_updated = pd.Timestamp(MEASURES_PATH.stat().st_mtime, unit="s").strftime("%d/%m/%Y")
+    except Exception:
+        catalog_updated = "—"
     st.markdown(
-        f'<div class="impact-source-row"><span class="impact-source-pill">{stats["total"]} mesures / objectifs suivis</span>'
+        f'<div class="impact-source-row"><span class="impact-source-pill">Base France : {html.escape(str(baseline.get("as_of", "2025")))}</span>'
+        f'<span class="impact-source-pill">Catalogue : {catalog_updated}</span>'
+        f'<span class="impact-source-pill">{stats["total"]} mesures / objectifs suivis</span>'
         f'<span class="impact-source-pill">{stats["quantified"]} avec repère chiffré</span>'
         f'<span class="impact-source-pill">{stats["modeled"]} à effet direct modélisé</span></div>',
         unsafe_allow_html=True,
