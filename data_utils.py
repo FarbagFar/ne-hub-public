@@ -794,10 +794,12 @@ def movement_stats(public_data: dict) -> dict:
         elected = None
 
     # Filet de sécurité fondé sur la dernière valeur officielle vérifiée au 31/08/2026.
-    if members is None or not (1000 <= members <= 2_000_000):
+    # Une valeur antérieure inférieure à 30 100 (ex. 27 600) est considérée comme obsolète.
+    # Une future valeur supérieure à 30 100 reste conservée automatiquement.
+    if members is None or members < 30100 or members > 2_000_000:
         raw["members"] = 30100
-        raw.setdefault("as_of_label", "31 août 2026")
-        raw["quality_warning"] = "Valeur adhérents aberrante neutralisée"
+        raw["as_of_label"] = "31 août 2026"
+        raw["quality_warning"] = "Valeur adhérents antérieure à la dernière donnée officielle vérifiée neutralisée"
     if elected is None or not (1 <= elected <= 600_000):
         raw["elected"] = 1800
         raw.setdefault("as_of_label", "31 août 2026")
