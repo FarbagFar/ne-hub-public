@@ -63,7 +63,7 @@ EVENTS_FILE = DATA / "events.json"
 RELAYS_FILE = DATA / "relays.json"
 META_FILE = DATA / "meta.json"
 
-NETWORKS = ("Instagram", "X", "Facebook", "LinkedIn")
+NETWORKS = ("Instagram", "X", "Facebook", "LinkedIn", "TikTok")
 
 
 def tracker_diagnostics() -> dict:
@@ -260,13 +260,26 @@ def coverage_changed(social: pd.DataFrame, person: str, days: int = 7) -> bool:
 def change_for_person(social: pd.DataFrame, person: str, column: str = "Total", days: int = 7):
     cur = person_current_row(social, person)
     base = person_baseline_row(social, person, days)
-    if cur is None or base is None or column not in cur.index:
+    if cur is None or base is None:
         return None, None
-    a, b = cur.get(column), base.get(column)
-    if pd.isna(a) or pd.isna(b):
-        return None, None
-    if column == "Total" and network_coverage(cur) != network_coverage(base):
-        return None, None
+    if column == "Total":
+        # Comparaison à périmètre constant : seules les plateformes disponibles
+        # aux deux dates sont additionnées. L'ajout de TikTok ne fabrique donc
+        # jamais une fausse hausse du total.
+        common = [n for n in NETWORKS
+                  if n in cur.index and n in base.index
+                  and not pd.isna(cur.get(n)) and not pd.isna(base.get(n))]
+        if not common:
+            return None, None
+        a = sum(float(cur.get(n)) for n in common)
+        b = sum(float(base.get(n)) for n in common)
+    else:
+        if column not in cur.index or column not in base.index:
+            return None, None
+        a, b = cur.get(column), base.get(column)
+        if pd.isna(a) or pd.isna(b):
+            return None, None
+        a, b = float(a), float(b)
     gain = float(a) - float(b)
     pct = gain / float(b) * 100 if float(b) else None
     return gain, pct
@@ -281,7 +294,8 @@ def social_ranking(social: pd.DataFrame, column: str = "Total", days: int = 7) -
         if cur is None or column not in cur.index or pd.isna(cur.get(column)):
             continue
         gain, pct = change_for_person(social, person, column, days)
-        quality = "Périmètre changé" if column == "Total" and coverage_changed(social, person, days) else "OK"
+        quality = ("Périmètre constant (réseaux communs)"
+                   if column == "Total" and coverage_changed(social, person, days) else "OK")
         rows.append({"Personne": person, "Actuel": cur.get(column), "Gain": gain, "Croissance %": pct, "Qualité": quality})
     out = pd.DataFrame(rows)
     if not out.empty:
@@ -290,17 +304,40 @@ def social_ranking(social: pd.DataFrame, column: str = "Total", days: int = 7) -
 
 
 def social_base100(social: pd.DataFrame, column: str = "Total") -> pd.DataFrame:
-    if social.empty or column not in social.columns:
+    if social.empty:
         return pd.DataFrame()
     parts = []
-    for person, g in social[["Date", "Personne", column]].dropna().groupby("Personne"):
-        g = g.sort_values("Date").copy()
-        g = g[g[column] > 0]
-        if g.empty:
-            continue
-        base = float(g.iloc[0][column])
-        g["Indice"] = g[column].astype(float) / base * 100
-        parts.append(g[["Date", "Personne", "Indice"]])
+    if column != "Total":
+        if column not in social.columns:
+            return pd.DataFrame()
+        for person, g in social[["Date", "Personne", column]].dropna().groupby("Personne"):
+            g = g.sort_values("Date").copy()
+            g = g[g[column] > 0]
+            if g.empty:
+                continue
+            base = float(g.iloc[0][column])
+            g["Indice"] = g[column].astype(float) / base * 100
+            parts.append(g[["Date", "Personne", "Indice"]])
+    else:
+        cols = ["Date", "Personne", *[n for n in NETWORKS if n in social.columns]]
+        for person, g in social[cols].dropna(subset=["Date", "Personne"]).groupby("Personne"):
+            g = g.sort_values("Date").copy()
+            if g.empty:
+                continue
+            first, last = g.iloc[0], g.iloc[-1]
+            common = [n for n in NETWORKS if n in g.columns
+                      and not pd.isna(first.get(n)) and not pd.isna(last.get(n))]
+            if not common:
+                continue
+            vals = g[common].apply(pd.to_numeric, errors="coerce")
+            comparable = vals.sum(axis=1, min_count=len(common))
+            valid = comparable.dropna()
+            if valid.empty or float(valid.iloc[0]) <= 0:
+                continue
+            base = float(valid.iloc[0])
+            tmp = g[["Date", "Personne"]].copy()
+            tmp["Indice"] = comparable / base * 100
+            parts.append(tmp.dropna(subset=["Indice"]))
     if not parts:
         return pd.DataFrame()
     return pd.concat(parts, ignore_index=True)
@@ -402,7 +439,7 @@ def detect_people(question: str, names: list[str]) -> list[str]:
 
 def detect_network(question: str) -> str:
     nq = f" {norm(question)} "
-    for key, val in (("instagram", "Instagram"), ("linkedin", "LinkedIn"), ("facebook", "Facebook"), ("twitter", "X"), (" x ", "X")):
+    for key, val in (("instagram", "Instagram"), ("linkedin", "LinkedIn"), ("facebook", "Facebook"), ("tiktok", "TikTok"), ("tik tok", "TikTok"), ("twitter", "X"), (" x ", "X")):
         if key in nq:
             return val
     return "Total"
