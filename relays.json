@@ -1,0 +1,2382 @@
+[
+  {
+    "department_code": "01",
+    "department_name": "Ain",
+    "name": "Clotilde Fournier",
+    "email": "ain@unenouvelleenergie.fr",
+    "emails": [
+      "ain@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Travailleuse indépendante",
+    "mandate": "Vice-présidente du Conseil départemental",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Clotilde-fournier.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "01",
+    "department_name": "Ain",
+    "name": "Justine Roche",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Fonctionnaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": null,
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "01",
+    "department_name": "Ain",
+    "name": "Vincent Scattolin",
+    "email": "ain@unenouvelleenergie.fr",
+    "emails": [
+      "ain@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": null,
+    "mandate": "Maire de Divonne-les-Bains",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Vincent%2520Scattolin.png",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "02",
+    "department_name": "Aisne",
+    "name": "Valentin Pégart",
+    "email": "aisne@unenouvelleenergie.fr",
+    "emails": [
+      "aisne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Élève à l'Institut régional d'administration de Lille",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Valentin%2520Pegart.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "03",
+    "department_name": "Allier",
+    "name": "Alexandra Bardet",
+    "email": "allier@unenouvelleenergie.fr",
+    "emails": [
+      "allier@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Dirigeante d'association",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Alexandra%2520Bardet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "03",
+    "department_name": "Allier",
+    "name": "Jérémy Thomas",
+    "email": "allier@unenouvelleenergie.fr",
+    "emails": [
+      "allier@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Conseiller bancaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Jeremy%2520Thomas.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "04",
+    "department_name": "Alpes de Haute Provence",
+    "name": "Antoine Gehant",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Conseiller bancaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/app/uploads/2026/07/Gehant.jpeg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "04",
+    "department_name": "Alpes de Haute Provence",
+    "name": "James Laurillou",
+    "email": "alpesdehauteprovence@unenouvelleenergie.fr",
+    "emails": [
+      "alpesdehauteprovence@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Gérant d'un laboratoire de prothèses dentaires",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/James%2520Laurillou.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "06",
+    "department_name": "Alpes Maritimes",
+    "name": "Maëlwenn Chaperon",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Energies",
+    "profession": "Conseillère technique pour élus",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Chaperon.jpeg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "06",
+    "department_name": "Alpes Maritimes",
+    "name": "Théo Navarro",
+    "email": "alpesmaritimes@unenouvelleenergie.fr",
+    "emails": [
+      "alpesmaritimes@unenouvelleenergie.fr"
+    ],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Étudiant en Terminale, Bac STAV (sciences et technologies de l'agronomie et du vivant)",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Theo-Navarro-1.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "06",
+    "department_name": "Alpes Maritimes",
+    "name": "Yves Paoli",
+    "email": "alpesmaritimes@unenouvelleenergie.fr",
+    "emails": [
+      "alpesmaritimes@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Retraité",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Yves%2520Paoli.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "07",
+    "department_name": "Ardèche",
+    "name": "Thierry Froment",
+    "email": "ardeche@unenouvelleenergie.fr",
+    "emails": [
+      "ardeche@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Fonctionnaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Thierry%2520Froment.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "07",
+    "department_name": "Ardèche",
+    "name": "Thomas Sarzier",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Étudiant en droit",
+    "mandate": "Maire Adjoint à Vion",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp%20Image%202026-08-31%20at%2011.49.41.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "08",
+    "department_name": "Ardennes",
+    "name": "Patrick Fostier",
+    "email": "ardennes@unenouvelleenergie.fr",
+    "emails": [
+      "ardennes@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'entreprise dans l'immobilier",
+    "mandate": "Conseiller municipal de Charleville-Mézières",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Patrick%2520Fostier.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "10",
+    "department_name": "Aube",
+    "name": "Thomas Danrée",
+    "email": "aube@unenouvelleenergie.fr",
+    "emails": [
+      "aube@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Ingénieur agricole",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Thomas%2520Danree.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "12",
+    "department_name": "Aveyron",
+    "name": "Bruno Astoul",
+    "email": "aveyron@unenouvelleenergie.fr",
+    "emails": [
+      "aveyron@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Agent de promotion à l'Agence Départementale de l'Attractivité et du Tourisme de l'Aveyron",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Bruno%2520Astoul.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "13",
+    "department_name": "Bouches du Rhône",
+    "name": "Serena Zouaghi",
+    "email": "bouchesdurhone@unenouvelleenergie.fr",
+    "emails": [
+      "bouchesdurhone@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'entreprise",
+    "mandate": "Conseillère des 6e et 8e arrondissements de Marseille",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Serena%2520Zouaghi.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "14",
+    "department_name": "Calvados",
+    "name": "Ludwig Willaume",
+    "email": "calvados@unenouvelleenergie.fr",
+    "emails": [
+      "calvados@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Conseiller en épargne salariale",
+    "mandate": "Adjoint au maire de Caen, Vice-président du Conseil départemental du Calvados",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Ludwig%2520Willaume.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "14",
+    "department_name": "Calvados",
+    "name": "Paul Secondi",
+    "email": "calvados@unenouvelleenergie.fr",
+    "emails": [
+      "calvados@unenouvelleenergie.fr"
+    ],
+    "role": "Relais Jeunes Énergies",
+    "profession": "étudiant en droit",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Secondi.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "17",
+    "department_name": "Charente Maritime",
+    "name": "Olivier Bardin",
+    "email": "charentemaritime@unenouvelleenergie.fr",
+    "emails": [
+      "charentemaritime@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Cadre supérieur",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Olivier%2520Bardin.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "18",
+    "department_name": "Cher",
+    "name": "Eric Lecland",
+    "email": "cher@unenouvelleenergie.fr",
+    "emails": [
+      "cher@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Retraité",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Eric%2520Lecland.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "19",
+    "department_name": "Corrèze",
+    "name": "Daniel Fischer",
+    "email": "correze@unenouvelleenergie.fr",
+    "emails": [
+      "correze@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Chef d’entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/app/uploads/2026/07/Daniel-Fischer.jpeg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "19",
+    "department_name": "Corrèze",
+    "name": "Robert Dif",
+    "email": "correze@unenouvelleenergie.fr",
+    "emails": [
+      "correze@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "kinésithérapeute en retraite",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/app/uploads/2026/07/Robert-Dif.jpeg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "21",
+    "department_name": "Cote d Or",
+    "name": "Céline Piron",
+    "email": "cotedor@unenouvelleenergie.fr",
+    "emails": [
+      "cotedor@unenouvelleenergie.fr"
+    ],
+    "role": null,
+    "profession": "Chef de projets Sécurité et RSE",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/C%C3%A9line%20Piron-6.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "21",
+    "department_name": "Cote d Or",
+    "name": "Valérie Grandet",
+    "email": "cotedor@unenouvelleenergie.fr",
+    "emails": [
+      "cotedor@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d’entreprise",
+    "mandate": "Conseillère municipale de Longvic",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Valerie%2520Grandet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "22",
+    "department_name": "Côtes d'Armor",
+    "name": "Patrick Rivard",
+    "email": "cotedarmor@unenouvelleenergie.fr",
+    "emails": [
+      "cotedarmor@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Patrick%2520Rivard-rotated.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "24",
+    "department_name": "Dordogne",
+    "name": "François Rigaud",
+    "email": "dordogne@unenouvelleenergie.fr",
+    "emails": [
+      "dordogne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Francois%2520Rigaud.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "25",
+    "department_name": "Doubs",
+    "name": "Sébastien Populaire",
+    "email": "doubs@unenouvelleenergie.fr",
+    "emails": [
+      "doubs@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Ingénieur",
+    "mandate": "Maire de Touillon-et-Loutelet",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Sebastien%2520Populaire.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "26",
+    "department_name": "Drôme",
+    "name": "Jérémy Labaume",
+    "email": "drome@unenouvelleenergie.fr",
+    "emails": [
+      "drome@unenouvelleenergie.fr"
+    ],
+    "role": null,
+    "profession": "Entrepreneur",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Photo%20Je%CC%81re%CC%81my%20Labaume.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "26",
+    "department_name": "Drôme",
+    "name": "Sébastien Cheynel",
+    "email": "drome@unenouvelleenergie.fr",
+    "emails": [
+      "drome@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Caviste",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Cheynel.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "27",
+    "department_name": "Eure",
+    "name": "Arthur Bénard",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Chirurgien-dentiste",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp%20Image%202026-08-20%20at%2011.38.03.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "27",
+    "department_name": "Eure",
+    "name": "Sylvain Bonenfant",
+    "email": "eure@unenouvelleenergie.fr",
+    "emails": [
+      "eure@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Ex Directeur de la sécurité du Département de la Seine-Maritime",
+    "mandate": "Maire de Caumont, Président de la Communauté de communes Roumois Seine, Conseiller départemental de l’Eure",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Sylvain%2520Bonenfant.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "28",
+    "department_name": "Eure et Loir",
+    "name": "Eric Madelon",
+    "email": "eureetloir@unenouvelleenergie.fr",
+    "emails": [
+      "eureetloir@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Attaché parlementaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/app/uploads/2026/07/Eric-Madelon.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "28",
+    "department_name": "Eure et Loir",
+    "name": "Olivier Loiseau",
+    "email": "eureetloir@unenouvelleenergie.fr",
+    "emails": [
+      "eureetloir@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Olivier%20Loiseau.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "29",
+    "department_name": "Finistère",
+    "name": "Yves-Marie Le Gall",
+    "email": "finistere@unenouvelleenergie.fr",
+    "emails": [
+      "finistere@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Directeur Supply Chain",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/app/uploads/2026/07/IMG_5546.jpeg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "2A",
+    "department_name": "Corse du Sud",
+    "name": "Pierre Alessandrini",
+    "email": "corse@unenouvelleenergie.fr",
+    "emails": [
+      "corse@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Collaborateur parlementaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Pierre%2520Alessandrini.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "2B",
+    "department_name": "Haute-Corse",
+    "name": "Pierre Alessandrini",
+    "email": "corse@unenouvelleenergie.fr",
+    "emails": [
+      "corse@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Collaborateur parlementaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Pierre%2520Alessandrini.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "30",
+    "department_name": "Gard",
+    "name": "Florent Grau",
+    "email": "gard@unenouvelleenergie.fr",
+    "emails": [
+      "gard@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Directeur de cabinet de la maire de Villeneuve-lez-Avignon",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Florent%2520Grau.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "30",
+    "department_name": "Gard",
+    "name": "Guillaume Rosenberg",
+    "email": "gard@unenouvelleenergie.fr",
+    "emails": [
+      "gard@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Directeur d’exploitation dans le transport de voyageurs",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Guillaume%2520Rosenberg.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "31",
+    "department_name": "Haute Garonne",
+    "name": "Dominique Mazel Sonnet",
+    "email": "hautegaronne@unenouvelleenergie.fr",
+    "emails": [
+      "hautegaronne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Auto entrepreneur événementiel",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Dominique%2520Mazel%2520Sonnet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "31",
+    "department_name": "Haute Garonne",
+    "name": "Ylverick Poulet",
+    "email": "hautegaronne@unenouvelleenergie.fr",
+    "emails": [
+      "hautegaronne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Chargé de Marketing Digital en alternance",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Ylverick%2520Poulet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "32",
+    "department_name": "Gers",
+    "name": "Bruno Touyarou",
+    "email": "gers@unenouvelleenergie.fr",
+    "emails": [
+      "gers@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Collaborateur d'élus au Conseil départemental",
+    "mandate": "Adjoint au maire d'Eauze",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Bruno%2520Touyarou.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "32",
+    "department_name": "Gers",
+    "name": "Michel Gabas",
+    "email": "gers@unenouvelleenergie.fr",
+    "emails": [
+      "gers@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Pharmacien",
+    "mandate": "Maire d'Eauze, Conseiller départemental du Gers",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Michel%2520Gabas.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "33",
+    "department_name": "Gironde",
+    "name": "Alexandre Fournier",
+    "email": "gironde@unenouvelleenergie.fr",
+    "emails": [
+      "gironde@unenouvelleenergie.fr"
+    ],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Etudiant",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Alexandre-Fournier.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "33",
+    "department_name": "Gironde",
+    "name": "Denis Pernin",
+    "email": "gironde@unenouvelleenergie.fr",
+    "emails": [
+      "gironde@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Consultant, formateur d'élus",
+    "mandate": "Conseiller municipal de Podensac",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Denis%2520Pernin.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "33",
+    "department_name": "Gironde",
+    "name": "Laurent Toussaint",
+    "email": "gironde@unenouvelleenergie.fr",
+    "emails": [
+      "gironde@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Entrepreneur",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Laurent%2520Toussaint.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "33",
+    "department_name": "Gironde",
+    "name": "Virginie Calvet",
+    "email": "gironde@unenouvelleenergie.fr",
+    "emails": [
+      "gironde@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef de publicité",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Virginie%2520Calvet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "34",
+    "department_name": "Hérault",
+    "name": "Philippe Demolin",
+    "email": "herault@unenouvelleenergie.fr",
+    "emails": [
+      "herault@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Fonctionnaire de police",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Demolin.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "34",
+    "department_name": "Hérault",
+    "name": "Pierre Bastide d'Izard",
+    "email": "herault@unenouvelleenergie.fr",
+    "emails": [
+      "herault@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/bastide.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "35",
+    "department_name": "Ille et Vilaine",
+    "name": "Victor Roulet",
+    "email": "illeetvilaine@unenouvelleenergie.fr",
+    "emails": [
+      "illeetvilaine@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Cadre",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Victor%2520Roulet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "37",
+    "department_name": "Indre et Loire",
+    "name": "Aymeric Jaillais",
+    "email": "indreetloire@unenouvelleenergie.fr",
+    "emails": [
+      "indreetloire@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Collaborateur parlementaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Aymeric%2520Jaillais.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "37",
+    "department_name": "Indre et Loire",
+    "name": "Elsa Hendrick",
+    "email": "indreetloire@unenouvelleenergie.fr",
+    "emails": [
+      "indreetloire@unenouvelleenergie.fr"
+    ],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Coiffeuse",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Elsa%2520Hendrick.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "37",
+    "department_name": "Indre et Loire",
+    "name": "Thomas Hernault",
+    "email": "indreetloire@unenouvelleenergie.fr",
+    "emails": [
+      "indreetloire@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Consultant",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Thomas%2520Hernault.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "38",
+    "department_name": "Isère",
+    "name": "Fabien Durand",
+    "email": "isere@unenouvelleenergie.fr",
+    "emails": [
+      "isere@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Directeur de projets à Gares & Connexions",
+    "mandate": "Maire de Saint-Savin",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Fabien%2520Durand.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "38",
+    "department_name": "Isère",
+    "name": "Stan Pavis",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Entrepreneur",
+    "mandate": "Conseiller municipal - Le Pont-de-Beauvoisin",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp%20Image%202026-08-23%20at%2014.29.05.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "39",
+    "department_name": "Jura",
+    "name": "Sophie Olbinski",
+    "email": "jura@unenouvelleenergie.fr",
+    "emails": [
+      "jura@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Conseillère en assurance",
+    "mandate": "Conseillère municipale de Lons-le-Saunier",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Sophie%2520Olbinski.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "40",
+    "department_name": "Landes",
+    "name": "Hicham Lamsika",
+    "email": "landes@unenouvelleenergie.fr",
+    "emails": [
+      "landes@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Fonctionnaire",
+    "mandate": "Conseiller municipal de Mont-de-Marsan",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Hicham%2520Lamsika.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "41",
+    "department_name": "Loir et Cher",
+    "name": "Aurélien Bertrand",
+    "email": "loiretcher@unenouvelleenergie.fr",
+    "emails": [
+      "loiretcher@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Avocat",
+    "mandate": "Maire de Pruniers-en-Sologne",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Aurelien%2520Bertrand.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "41",
+    "department_name": "Loir et Cher",
+    "name": "Gaël Hérault",
+    "email": "loiretcher@unenouvelleenergie.fr",
+    "emails": [
+      "loiretcher@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Responsable Hébergement à l'ADA Blois Basket",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/gael-herault.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "42",
+    "department_name": "Loire",
+    "name": "Romain Duinat",
+    "email": null,
+    "emails": [],
+    "role": "Relais départemental",
+    "profession": "Leader qualité opérationnel chez Keurig Dr Pepper.",
+    "mandate": "Adjoint au maire de Saint-Marcellin-en-Forez",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Duinat.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "44",
+    "department_name": "Loire Atlantique",
+    "name": "Ivann Hadjres",
+    "email": "loireatlantique@unenouvelleenergie.fr",
+    "emails": [
+      "loireatlantique@unenouvelleenergie.fr"
+    ],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Etudiant en communication",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Ivann%2520Hadjres.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "44",
+    "department_name": "Loire Atlantique",
+    "name": "Rodolphe Amailland",
+    "email": "loireatlantique@unenouvelleenergie.fr",
+    "emails": [
+      "loireatlantique@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Commercial",
+    "mandate": "Maire de Vertou, Conseiller départemental de Loire-Atlantique",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Rodolphe%2520Amailland.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "45",
+    "department_name": "Loiret",
+    "name": "Maxence Eymoz",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Apprenti boulanger et sapeur-pompier",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Maxence-Eymoz.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "45",
+    "department_name": "Loiret",
+    "name": "Thierry Mezaize",
+    "email": "loiret@unenouvelleenergie.fr",
+    "emails": [
+      "loiret@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Retraité militaire, officier de réserve opérationnelle",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Thierry%2520Mezaize.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "46",
+    "department_name": "Lot",
+    "name": "Clément Couffignal",
+    "email": "lot@unenouvelleenergie.fr",
+    "emails": [
+      "lot@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Conseil en assurance",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Clement%2520Couffignal.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "47",
+    "department_name": "Lot et Garonne",
+    "name": "Philippe Maurin",
+    "email": "lotetgaronne@unenouvelleenergie.fr",
+    "emails": [
+      "lotetgaronne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Cadre territorial",
+    "mandate": "vice-président de l’agglomération d’Agen",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Philippe%2520Maurin.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "48",
+    "department_name": "Lozère",
+    "name": "Laurent Pignol",
+    "email": "lozere@unenouvelleenergie.fr",
+    "emails": [
+      "lozere@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Gérant d’un organisme de formation dans le tourisme rural",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Laurent-Pignol-1.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "49",
+    "department_name": "Maine et Loire",
+    "name": "Christophe Graux",
+    "email": "maineetloire@unenouvelleenergie.fr",
+    "emails": [
+      "maineetloire@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Directeur de développement",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Graux.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "49",
+    "department_name": "Maine et Loire",
+    "name": "Pascaline Hurel",
+    "email": "maineetloire@unenouvelleenergie.fr",
+    "emails": [
+      "maineetloire@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Ex éducatrice spécialisée, auto entrepreneuse",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Hurel.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "50",
+    "department_name": "Manche",
+    "name": "Charly Varin",
+    "email": "manche@unenouvelleenergie.fr",
+    "emails": [
+      "manche@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chargé de mission",
+    "mandate": "Maire de Percy-en-Normandie, Conseiller départemental",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Charly%2520Varin.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "50",
+    "department_name": "Manche",
+    "name": "Daniel Coulomb",
+    "email": "manche@unenouvelleenergie.fr",
+    "emails": [
+      "manche@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Retraité directeur d'exploitation hôtelière",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Daniel-Coulomb.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "50",
+    "department_name": "Manche",
+    "name": "Mélodie Peschet,",
+    "email": "manche@unenouvelleenergie.fr",
+    "emails": [
+      "manche@unenouvelleenergie.fr"
+    ],
+    "role": "Relais Jeunes Énergies",
+    "profession": "étudiante en licence d’administration publique",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp-Image-2026-06-05-at-19.56.34.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "51",
+    "department_name": "Marne",
+    "name": "Romain Bonhomme",
+    "email": "marne@unenouvelleenergie.fr",
+    "emails": [
+      "marne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Géomètre-topographe, haut-fonctionnaire",
+    "mandate": "Maire de Beine-Nauroy",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Romain%2520Bonhomme.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "51",
+    "department_name": "Marne",
+    "name": "Thomas Gibelin",
+    "email": "marne@unenouvelleenergie.fr",
+    "emails": [
+      "marne@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Viticulteur",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Thomas%2520Gibelin.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "52",
+    "department_name": "Haute Marne",
+    "name": "Eric Bonnemains",
+    "email": "hautemarne@unenouvelleenergie.fr",
+    "emails": [
+      "hautemarne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Responsable système d’information",
+    "mandate": "Maire de Villiers-en-Lieu",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Eric%2520Bonnemains.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "53",
+    "department_name": "Mayenne",
+    "name": "Nathalie Rousseau",
+    "email": "mayenne@unenouvelleenergie.fr",
+    "emails": [
+      "mayenne@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Encadrante technique / Adjointe au maire d'Evron",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Nathalie%2520Rousseau.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "53",
+    "department_name": "Mayenne",
+    "name": "Pascal Huon",
+    "email": "mayenne@unenouvelleenergie.fr",
+    "emails": [
+      "mayenne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Délégué relations Institutionnelles et inclusion au sein de Actual group",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Pascal%2520Huon-scaled.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "54",
+    "department_name": "Meurthe et Moselle",
+    "name": "Prisca Millet",
+    "email": "meurtheetmoselle@unenouvelleenergie.fr",
+    "emails": [
+      "meurtheetmoselle@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Professeur de lettres modernes en Collège/Lycée et assistante de gestion d’une TPE familiale",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Prisca%2520Millet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "55",
+    "department_name": "Meuse",
+    "name": "Maxance Bernard",
+    "email": "meuse@unenouvelleenergie.fr",
+    "emails": [
+      "meuse@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Collaborateur parlementaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Maxance%2520Bernard.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "57",
+    "department_name": "Moselle",
+    "name": "Jacqueline Schneider",
+    "email": "moselle@unenouvelleenergie.fr",
+    "emails": [
+      "moselle@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Cadre bancaire",
+    "mandate": "Adjointe au maire de Metz",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Jacqueline%2520Schneider.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "59",
+    "department_name": "Nord",
+    "name": "Christophe Deparis",
+    "email": "nord@unenouvelleenergie.fr",
+    "emails": [
+      "nord@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d’entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Christophe-Deparis.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "60",
+    "department_name": "Oise",
+    "name": "Ludovic Castanié",
+    "email": "oise@unenouvelleenergie.fr",
+    "emails": [
+      "oise@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Responsable d'agence immobilière",
+    "mandate": "Conseiller municipal de Beauvais",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Ludovic%2520Castanie.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "61",
+    "department_name": "Orne",
+    "name": "Sophie Douvry",
+    "email": "orne@unenouvelleenergie.fr",
+    "emails": [
+      "orne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Courtier en crédit",
+    "mandate": "Conseillère municipale d'Alençon, Vice-présidente du Conseil départemental de l'Orne",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Sophie%2520Douvry.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "62",
+    "department_name": "Pas de Calais",
+    "name": "Marie-Céline Vinay",
+    "email": "pasdecalais@unenouvelleenergie.fr",
+    "emails": [
+      "pasdecalais@unenouvelleenergie.fr"
+    ],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Auto-entrepreneuse",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Marie-Celine%2520Vinay.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "62",
+    "department_name": "Pas de Calais",
+    "name": "Marie-Pierre Petit",
+    "email": "pasdecalais@unenouvelleenergie.fr",
+    "emails": [
+      "pasdecalais@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Professeur retraitée",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Marie-Pierre%2520Petit.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "63",
+    "department_name": "Puy de Dôme",
+    "name": "Laurent Salles",
+    "email": "puydedome@unenouvelleenergie.fr",
+    "emails": [
+      "puydedome@unenouvelleenergie.fr"
+    ],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Diplômé notaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Laurent%2520Salles.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "63",
+    "department_name": "Puy de Dôme",
+    "name": "Philippe Bonnefont",
+    "email": "puydedome@unenouvelleenergie.fr",
+    "emails": [
+      "puydedome@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Retraité",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Philippe%2520Bonnefont.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "64",
+    "department_name": "Pyrénées Atlantiques",
+    "name": "Emmanuel Pène",
+    "email": "pyreneesatlantiques@unenouvelleenergie.fr",
+    "emails": [
+      "pyreneesatlantiques@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Entrepreneur dans le numérique",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/pene.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "64",
+    "department_name": "Pyrénées Atlantiques",
+    "name": "Marie Bouyrelou",
+    "email": "pyreneesatlantiques@unenouvelleenergie.fr",
+    "emails": [
+      "pyreneesatlantiques@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Entrepreneuse",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Marie%2520Bouyrelou.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "67",
+    "department_name": "Bas Rhin",
+    "name": "Murielle Fabre",
+    "email": "basrhin@unenouvelleenergie.fr",
+    "emails": [
+      "basrhin@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Ex Directrice de collectivité",
+    "mandate": "Maire de Lampertheim",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Murielle%2520Fabre.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "68",
+    "department_name": "Haut Rhin",
+    "name": "Blanche Striebig",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Étudiante en commerce",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Blanche%2520Striebig.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "68",
+    "department_name": "Haut Rhin",
+    "name": "Guillaume Sevin",
+    "email": "hautrhin@unenouvelleenergie.fr",
+    "emails": [
+      "hautrhin@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Entrepreneur",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Guillaume%2520Sevin.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "68",
+    "department_name": "Haut Rhin",
+    "name": "Olivier Karch",
+    "email": "hautrhin@unenouvelleenergie.fr",
+    "emails": [
+      "hautrhin@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Olivier%2520Karch.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "69",
+    "department_name": "Rhône",
+    "name": "Béatrice de Montille",
+    "email": "rhone@unenouvelleenergie.fr",
+    "emails": [
+      "rhone@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Entrepreneuse - Fondatrice de Merci Maman (création de bijoux personnalisés)",
+    "mandate": "Conseillère municipale de Lyon",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Beatrice%2520de%2520Montille-scaled.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "69",
+    "department_name": "Rhône",
+    "name": "Serge Bérard",
+    "email": "rhone@unenouvelleenergie.fr",
+    "emails": [
+      "rhone@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Retraité",
+    "mandate": "Maire de Brignais",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Serge%2520Berard.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "69",
+    "department_name": "Rhône",
+    "name": "Youssef Chabane",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Étudiant",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/app/uploads/2026/07/Chabane.jpeg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "71",
+    "department_name": "Saône et Loire",
+    "name": "Mario Barravecchia",
+    "email": "saoneetloire@unenouvelleenergie.fr",
+    "emails": [
+      "saoneetloire@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Entrepreneur et artiste",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/mario.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "72",
+    "department_name": "Sarthe",
+    "name": "Antoine d'Amécourt",
+    "email": "sarthe@unenouvelleenergie.fr",
+    "emails": [
+      "sarthe@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Agriculteur",
+    "mandate": "Maire d'Avoise et Conseiller régional",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Antoine%2520Damecourt.png",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "73",
+    "department_name": "Savoie",
+    "name": "Stéphane Troussard",
+    "email": "savoie@unenouvelleenergie.fr",
+    "emails": [
+      "savoie@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'Entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Stephane%2520Troussard.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "74",
+    "department_name": "Haute Savoie",
+    "name": "Cédric Borel",
+    "email": "hautesavoie@unenouvelleenergie.fr",
+    "emails": [
+      "hautesavoie@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Consultant marketing client",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Cedric%2520Borel.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "74",
+    "department_name": "Haute Savoie",
+    "name": "Lucas Londiche",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Étudiant en droit",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Lucas%2520Londiche.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "74",
+    "department_name": "Haute Savoie",
+    "name": "Ryad Sidi Moussa",
+    "email": "hautesavoie@unenouvelleenergie.fr",
+    "emails": [
+      "hautesavoie@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Directeur en collectivité",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Ryad%2520Sidi%2520Moussa.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "75",
+    "department_name": "Paris",
+    "name": "Alexis Reichert",
+    "email": "paris@unenouvelleenergie.fr",
+    "emails": [
+      "paris@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Cadre dans l'industrie agroalimentaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Alexis%20Reichert.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "75",
+    "department_name": "Paris",
+    "name": "Alix Darcet",
+    "email": "paris@unenouvelleenergie.fr",
+    "emails": [
+      "paris@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Collaboratrice d'élu",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Alix%20Darcet-scaled.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "75",
+    "department_name": "Paris",
+    "name": "Niels Holm",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Consultant en Influence & Relations Institutionnelles",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Niels.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "76",
+    "department_name": "Seine Maritime",
+    "name": "Jacques Forestier",
+    "email": "seinemaritime@unenouvelleenergie.fr",
+    "emails": [
+      "seinemaritime@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Avocat",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Jacques%2520Forestier.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "77",
+    "department_name": "Seine et Marne",
+    "name": "Raphaël Labreuil",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Secrétaire général de la majorité départementale de Seine et Marne",
+    "mandate": "Conseiller municipal de Chelles",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Raphael%2520Labreuil.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "77",
+    "department_name": "Seine et Marne",
+    "name": "Thibault Fline",
+    "email": "seineetmarne@unenouvelleenergie.fr",
+    "emails": [
+      "seineetmarne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Collaborateur parlementaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Thibaut%2520Fline.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "78",
+    "department_name": "Yvelines",
+    "name": "Damien Giard",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Etudiant et auto-entrepreneur",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Damien%2520Giard.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "78",
+    "department_name": "Yvelines",
+    "name": "Thomas Courtois",
+    "email": "yvelines@unenouvelleenergie.fr",
+    "emails": [
+      "yvelines@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Thomas%2520Courtois.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "79",
+    "department_name": "Deux Sèvres",
+    "name": "Anick Favreau",
+    "email": "deuxsevres@unenouvelleenergie.fr",
+    "emails": [
+      "deuxsevres@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Anick%2520Favreau.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "80",
+    "department_name": "Somme",
+    "name": "Jérôme Caillerez",
+    "email": "somme@unenouvelleenergie.fr",
+    "emails": [
+      "somme@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Agriculteur",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Jerome%2520Caillerez.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "81",
+    "department_name": "Tarn",
+    "name": "Jean François Millet",
+    "email": "tarn@unenouvelleenergie.fr",
+    "emails": [
+      "tarn@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Jean-Francois%2520Millet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "81",
+    "department_name": "Tarn",
+    "name": "Raphael Merancienne",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Entrepreneur",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Raphael%2520Merancienne.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "82",
+    "department_name": "Tarn et Garonne",
+    "name": "Pascal Ellul",
+    "email": "tarnetgaronne@unenouvelleenergie.fr",
+    "emails": [
+      "tarnetgaronne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Collaborateur parlementaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Pascal%2520Ellul.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "82",
+    "department_name": "Tarn et Garonne",
+    "name": "Victor Rebière",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Etudiant en droit",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Victor%2520Ribiere.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "83",
+    "department_name": "Var",
+    "name": "Arnaud Georges",
+    "email": "var@unenouvelleenergie.fr",
+    "emails": [
+      "var@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Cadre supérieur de santé",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Arnaud%2520Georges.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "83",
+    "department_name": "Var",
+    "name": "Maxime Zbinden",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Etudiant en politiques publiques",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Maxime%2520Zbinden.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "84",
+    "department_name": "Vaucluse",
+    "name": "Dominique Brogi",
+    "email": "vaucluse@unenouvelleenergie.fr",
+    "emails": [
+      "vaucluse@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Dominique%2520Brogi.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "84",
+    "department_name": "Vaucluse",
+    "name": "Marie Dangibeaud",
+    "email": "vaucluse@unenouvelleenergie.fr",
+    "emails": [
+      "vaucluse@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Avocat",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Marie%2520Dangibeaud.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "84",
+    "department_name": "Vaucluse",
+    "name": "Théo Abdallah",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Master 1 Géologie de l’exploration",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Theo-Abdallah-1.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "88",
+    "department_name": "Vosges",
+    "name": "Florian Charlier",
+    "email": "vosges@unenouvelleenergie.fr",
+    "emails": [
+      "vosges@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Professeur de mathématiques",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Florian%2520Charlier.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "89",
+    "department_name": "Yonne",
+    "name": "Nathan Deveau-Minois",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Etudiant en droit",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Nathan%2520Deveau-Minois.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "89",
+    "department_name": "Yonne",
+    "name": "Philippe Grodet",
+    "email": "yonne@unenouvelleenergie.fr",
+    "emails": [
+      "yonne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Alternant aux Finances Publiques",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Philippe%2520Grodet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "91",
+    "department_name": "Essonne",
+    "name": "Benjamin Thomasset",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Étudiant en droit",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Benjamin%2520Thomasset.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "91",
+    "department_name": "Essonne",
+    "name": "Karina Studer",
+    "email": "essonne@unenouvelleenergie.fr",
+    "emails": [
+      "essonne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chargée de mission politique de la ville et Habitat au département de l'Essonne",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Karina%2520Studer.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "91",
+    "department_name": "Essonne",
+    "name": "Pierre Mayeur",
+    "email": "essonne@unenouvelleenergie.fr",
+    "emails": [
+      "essonne@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Consultant",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Pierre%2520Mayeur.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "92",
+    "department_name": "Hauts de Seine",
+    "name": "Benjamin Landais",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Restaurateur",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Benjamin_Landais.webp",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "92",
+    "department_name": "Hauts de Seine",
+    "name": "Charles Hubert Rebout",
+    "email": "hautsdeseine@unenouvelleenergie.fr",
+    "emails": [
+      "hautsdeseine@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chef de projet",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Charles-Hubert-Rebout.webp",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "92",
+    "department_name": "Hauts de Seine",
+    "name": "Marie Vouillon",
+    "email": null,
+    "emails": [],
+    "role": "relais_jeunes_bis",
+    "profession": "Étudiante notariale",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Marie_Vouillon.webp",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "93",
+    "department_name": "Seine Saint Denis",
+    "name": "Donni Miloti",
+    "email": "seinesaintdenis@unenouvelleenergie.fr",
+    "emails": [
+      "seinesaintdenis@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Responsable des systèmes d'Information",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": null,
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "93",
+    "department_name": "Seine Saint Denis",
+    "name": "Patrick Angrevier",
+    "email": "seinesaintdenis@unenouvelleenergie.fr",
+    "emails": [
+      "seinesaintdenis@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Banquier spécialisé dans le financement de l’économie sociale et institutionnelle",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": null,
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "94",
+    "department_name": "Val de Marne",
+    "name": "Antonin Carcel",
+    "email": null,
+    "emails": [],
+    "role": "relais_jeunes_bis",
+    "profession": "Juriste financier",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": null,
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "94",
+    "department_name": "Val de Marne",
+    "name": "Déborah Münzer",
+    "email": "valdemarne@unenouvelleenergie.fr",
+    "emails": [
+      "valdemarne@unenouvelleenergie.fr"
+    ],
+    "role": "Co-relais départemental",
+    "profession": "Cadre",
+    "mandate": "Adjointe au maire de Nogent-sur-Marne - Vice-présidente du département du Val-de-Marne",
+    "scope": "departement",
+    "portrait_url": null,
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "94",
+    "department_name": "Val de Marne",
+    "name": "Erwan Comte",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Lead Data Governance & Data Management",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": null,
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "94",
+    "department_name": "Val de Marne",
+    "name": "Jérôme Pozuelos",
+    "email": "valdemarne@unenouvelleenergie.fr",
+    "emails": [
+      "valdemarne@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Cadre de la fonction publique",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": null,
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "95",
+    "department_name": "Val d'Oise",
+    "name": "Grégoire Faudais",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Conseiller bancaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Faudais.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "95",
+    "department_name": "Val d'Oise",
+    "name": "Philippe Rouleau",
+    "email": "valdoise@unenouvelleenergie.fr",
+    "emails": [
+      "valdoise@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Maire d’Herblay-sur-Seine",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Rouleau.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Allemagne",
+    "name": "François DELAIGUE",
+    "email": "allemagne.nouvelleenergie@gmail.com",
+    "emails": [
+      "allemagne.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Conseiller financier et patrimonial",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Fran%25C3%25A7ois%2520Delaigue.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Andorre",
+    "name": "Arnaud LEJEUNE",
+    "email": "andorre.nouvelleenergie@gmail.com",
+    "emails": [
+      "andorre.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Psychologue",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Arnaud%2520Lejeune.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Australie",
+    "name": "Pierre Bussy",
+    "email": "australie.nouvelleenergie@proton.me",
+    "emails": [
+      "australie.nouvelleenergie@proton.me"
+    ],
+    "role": "Relais international",
+    "profession": "Entrepreneur",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Pierre-Headshots-Print-5.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Autriche",
+    "name": "Mathieu Cattenoz",
+    "email": "autriche.nouvelleenergie@gmail.com",
+    "emails": [
+      "autriche.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Ingénieur aérospatial",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Mathieu_Cattenoz.webp",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Belgique",
+    "name": "Sylvie MICOLET",
+    "email": "belgique.nouvelleenergie@gmail.com",
+    "emails": [
+      "belgique.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Indépendante",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Sylvie%2520Micolet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Brésil",
+    "name": "Mathieu LE ROUX",
+    "email": "bresil.nouvelleenergie@gmail.com",
+    "emails": [
+      "bresil.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Chef d’entreprise de Technologie",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Mathieu%2520LE%2520ROUX.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Canada / États-Unis",
+    "name": "Axelle GAULT",
+    "email": "canada.nouvelleenergie@gmail.com",
+    "emails": [
+      "canada.nouvelleenergie@gmail.com",
+      "usa.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Expert immobilier UHNWI / élue consulaire basée en Floride",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Axelle%2520Gault.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Canada / États-Unis",
+    "name": "David ESKENAZI",
+    "email": "canada.nouvelleenergie@gmail.com",
+    "emails": [
+      "canada.nouvelleenergie@gmail.com",
+      "usa.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Cadre financier basé dans l’État de New York",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/David%2520Eskenazi.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Espagne",
+    "name": "François-Marie CHARMET",
+    "email": "espagne.nouvelleenergie@gmail.com",
+    "emails": [
+      "espagne.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Entrepreneur",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Francois-Marie%2520Charmet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Hong Kong",
+    "name": "Loup Thomazo",
+    "email": "nouvelleenergie.hk@gmail.com",
+    "emails": [
+      "nouvelleenergie.hk@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Entrepreneur",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/loup.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Ile Maurice",
+    "name": "Charles DE LOPPINOT",
+    "email": "ilemaurice.nouvelleenergie@gmail.com",
+    "emails": [
+      "ilemaurice.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Directeur du Développement chez Memorist Heritage (Océan Indien), Directeur des ventes (International) / élu consulaire",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Charles%2520de%2520Loppinot.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Israël",
+    "name": "Boris JANICEK",
+    "email": "israel.nouvelleenergie@gmail.com",
+    "emails": [
+      "israel.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Chef d’entreprise et Enseignant",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Boris%2520Janicek.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Liban",
+    "name": "Damien KASPER",
+    "email": "liban.nouvelleenergie@gmail.com",
+    "emails": [
+      "liban.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Cadre administratif d’un établissement scolaire",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Damien_Kasper.webp",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Luxembourg",
+    "name": "Guy BRANDENBOURGER",
+    "email": "luxembourg.nouvelleenergie@gmail.com",
+    "emails": [
+      "luxembourg.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Managing Partner Health à Gesonheet Luxembourg",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Guy%2520Brandenbourger.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Moyen Orient",
+    "name": "Pierre DUMOND",
+    "email": "me.nouvelleenergie@gmail.com",
+    "emails": [
+      "me.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Conseiller du commerce extérieur de la France",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Pierre%2520Dumond.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Moyen Orient",
+    "name": "Raphaele FRANCOIS-PONCET",
+    "email": "me.nouvelleenergie@gmail.com",
+    "emails": [
+      "me.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Avocate / Présidente de l'association Women On Board (WOB)",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": null,
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Nouvelle-Zélande",
+    "name": "Yann Teboul",
+    "email": "nz.nouvelleenergie@gmail.com",
+    "emails": [
+      "nz.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "entrepreneur et President de la French Tech",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Yann-Teboul.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Royaume-Uni",
+    "name": "Aurélie Knecht",
+    "email": "uk.nouvelleenergie@gmail.com",
+    "emails": [
+      "uk.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Responsable Marketing Europe dans la tech",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/aurelie.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Royaume-Uni",
+    "name": "Hadrien Monville",
+    "email": "uk.nouvelleenergie@gmail.com",
+    "emails": [
+      "uk.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Cadre financier",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/hadrien.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Russie",
+    "name": "Franck FERRARI",
+    "email": null,
+    "emails": [],
+    "role": "Relais international",
+    "profession": "Directeur d'école / élu consulaire",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Franck%2520Ferrari.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Singapour",
+    "name": "Laurence HURET",
+    "email": "singapour.nouvelleenergie@gmail.com",
+    "emails": [
+      "singapour.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Ancienne Conseillère des Français de l’étranger en Asie",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/laurence-huret-1.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Singapour",
+    "name": "Éric BARBIER",
+    "email": "singapour.nouvelleenergie@gmail.com",
+    "emails": [
+      "singapour.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Chef d’entreprise / Président de la French Tech",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Eric%2520Barbier.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Suisse",
+    "name": "Aurelien PEILLON",
+    "email": "suisse.nouvelleenergie@gmail.com",
+    "emails": [
+      "suisse.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Cadre dans le secteur bancaire",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Aurelien%2520Peillon.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": null,
+    "department_name": "Suisse",
+    "name": "Etienne Arnoux",
+    "email": "suisse.nouvelleenergie@gmail.com",
+    "emails": [
+      "suisse.nouvelleenergie@gmail.com"
+    ],
+    "role": "Relais international",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "international",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Etienne-Arnoux-1.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  }
+]
