@@ -231,6 +231,12 @@ def person_current_row(social: pd.DataFrame, person: str):
 
 
 def person_baseline_row(social: pd.DataFrame, person: str, days: int | None = None):
+    """Retourne un relevé de référence réellement comparable à la période demandée.
+
+    Pour 24 h, un trou de collecte de 48 h ne doit jamais être présenté comme une
+    variation "24 h". Pour les périodes plus longues, on accepte une petite tolérance
+    autour de la cible afin de rester robuste aux horaires de collecte.
+    """
     if social.empty:
         return None
     g = social[social["Personne"] == person].dropna(subset=["Date"]).sort_values("Date")
@@ -238,9 +244,21 @@ def person_baseline_row(social: pd.DataFrame, person: str, days: int | None = No
         return None
     if days is None:
         return g.iloc[0]
-    target = g.iloc[-1]["Date"] - pd.Timedelta(days=days)
-    before = g[g["Date"] <= target]
-    return None if before.empty else before.iloc[-1]
+    cur_date = g.iloc[-1]["Date"]
+    prev = g[g["Date"] < cur_date].copy()
+    if prev.empty:
+        return None
+    prev["_elapsed_days"] = (cur_date - prev["Date"]).dt.total_seconds() / 86400.0
+    # Tolérance stricte en 24 h : entre 18 h et 36 h. Au-delà, on affiche —.
+    if days == 1:
+        valid = prev[(prev["_elapsed_days"] >= 0.75) & (prev["_elapsed_days"] <= 1.50)]
+    else:
+        tol = max(1.0, days * 0.20)
+        valid = prev[(prev["_elapsed_days"] >= days - tol) & (prev["_elapsed_days"] <= days + tol)]
+    if valid.empty:
+        return None
+    idx = (valid["_elapsed_days"] - float(days)).abs().idxmin()
+    return g.loc[idx]
 
 
 def network_coverage(row) -> set[str]:
@@ -303,7 +321,14 @@ def social_ranking(social: pd.DataFrame, column: str = "Total", days: int = 7) -
     return out
 
 
-def social_base100(social: pd.DataFrame, column: str = "Total") -> pd.DataFrame:
+def social_base1000(social: pd.DataFrame, column: str = "Total") -> pd.DataFrame:
+    """Indice chaîné base 1000 avec périmètre constant pour le Total.
+
+    Base 1000 rend les petites variations plus lisibles numériquement (0,06 % =
+    0,6 point d'indice). Pour le Total, chaque transition n'utilise que les réseaux
+    présents aux deux dates, ce qui neutralise l'ajout de TikTok ou la disparition
+    temporaire d'une plateforme.
+    """
     if social.empty:
         return pd.DataFrame()
     parts = []
@@ -312,36 +337,48 @@ def social_base100(social: pd.DataFrame, column: str = "Total") -> pd.DataFrame:
             return pd.DataFrame()
         for person, g in social[["Date", "Personne", column]].dropna().groupby("Personne"):
             g = g.sort_values("Date").copy()
+            g[column] = pd.to_numeric(g[column], errors="coerce")
             g = g[g[column] > 0]
             if g.empty:
                 continue
             base = float(g.iloc[0][column])
-            g["Indice"] = g[column].astype(float) / base * 100
-            parts.append(g[["Date", "Personne", "Indice"]])
+            g["Indice"] = g[column].astype(float) / base * 1000.0
+            g["Variation %"] = (g["Indice"] / 1000.0 - 1.0) * 100.0
+            parts.append(g[["Date", "Personne", "Indice", "Variation %"]])
     else:
         cols = ["Date", "Personne", *[n for n in NETWORKS if n in social.columns]]
         for person, g in social[cols].dropna(subset=["Date", "Personne"]).groupby("Personne"):
             g = g.sort_values("Date").copy()
             if g.empty:
                 continue
-            first, last = g.iloc[0], g.iloc[-1]
-            common = [n for n in NETWORKS if n in g.columns
-                      and not pd.isna(first.get(n)) and not pd.isna(last.get(n))]
-            if not common:
-                continue
-            vals = g[common].apply(pd.to_numeric, errors="coerce")
-            comparable = vals.sum(axis=1, min_count=len(common))
-            valid = comparable.dropna()
-            if valid.empty or float(valid.iloc[0]) <= 0:
-                continue
-            base = float(valid.iloc[0])
-            tmp = g[["Date", "Personne"]].copy()
-            tmp["Indice"] = comparable / base * 100
-            parts.append(tmp.dropna(subset=["Indice"]))
+            idx_value = 1000.0
+            rows = [{"Date": g.iloc[0]["Date"], "Personne": person, "Indice": idx_value, "Variation %": 0.0}]
+            prev = g.iloc[0]
+            for i in range(1, len(g)):
+                cur = g.iloc[i]
+                common = [n for n in NETWORKS if n in g.columns
+                          and not pd.isna(prev.get(n)) and not pd.isna(cur.get(n))]
+                if not common:
+                    prev = cur
+                    continue
+                a = sum(float(cur.get(n)) for n in common)
+                b = sum(float(prev.get(n)) for n in common)
+                if b <= 0:
+                    prev = cur
+                    continue
+                idx_value *= a / b
+                rows.append({"Date": cur["Date"], "Personne": person, "Indice": idx_value,
+                             "Variation %": (idx_value / 1000.0 - 1.0) * 100.0})
+                prev = cur
+            parts.append(pd.DataFrame(rows))
     if not parts:
         return pd.DataFrame()
     return pd.concat(parts, ignore_index=True)
 
+
+def social_base100(social: pd.DataFrame, column: str = "Total") -> pd.DataFrame:
+    """Compatibilité ancienne API : renvoie désormais l'indice base 1000."""
+    return social_base1000(social, column)
 
 def current_social_table(social: pd.DataFrame) -> pd.DataFrame:
     rows = []

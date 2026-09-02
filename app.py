@@ -48,7 +48,7 @@ from data_utils import (
     quality_table,
     search_docs,
     snippet,
-    social_base100,
+    social_base1000,
     social_current_date,
     social_ranking,
     social_history_days,
@@ -491,7 +491,7 @@ elif nav == "📊 Observatoire":
             c3.metric("Presse · 7 j", int(pr.iloc[0]["Articles 7j"]) if not pr.empty else 0)
             c4.metric("Wikipédia · 30 j", fmt_int(wiki30))
             if coverage_changed(social_df, focus, 7):
-                st.markdown('<div class="ne-alert">Le périmètre de plateformes disponibles a changé : la variation du total n’est volontairement pas classée sur cette période.</div>', unsafe_allow_html=True)
+                st.markdown('<div class="ne-alert">Le périmètre de plateformes disponibles a changé : la variation du Total est calculée uniquement sur les réseaux présents aux deux dates (périmètre constant).</div>', unsafe_allow_html=True)
             st.caption("* Somme des compteurs disponibles par plateforme, sans déduplication des personnes.")
 
             l, r = st.columns(2)
@@ -524,18 +524,44 @@ elif nav == "📊 Observatoire":
             topn = c3.slider("Nombre de profils", min_prof, max(min_prof, min(10, nprof)), min(max(min_prof, 8), max(min_prof, min(10, nprof))))
             rank = social_ranking(social_df, network, period).head(topn)
             if not rank.empty:
+                # Graphe de variation : bien plus lisible que les seuls petits pourcentages.
+                numeric_rank = rank.dropna(subset=["Croissance %"]).copy()
+                if not numeric_rank.empty:
+                    numeric_rank = numeric_rank.sort_values("Croissance %", ascending=True)
+                    colors = ["#D92D20" if float(v) < 0 else "#17803D" for v in numeric_rank["Croissance %"]]
+                    fig_var = go.Figure(go.Bar(
+                        x=numeric_rank["Croissance %"], y=numeric_rank["Personne"],
+                        orientation="h", marker_color=colors,
+                        text=[f"{float(v):+.3f} %" for v in numeric_rank["Croissance %"]],
+                        textposition="outside"
+                    ))
+                    fig_var.add_vline(x=0, line_color="#98A2B3", line_width=1)
+                    fig_var.update_layout(title=f"Variation {network} · {'24 h' if period == 1 else str(period) + ' jours'}", xaxis_title="Variation (%)", yaxis_title=None)
+                    compact_plot(fig_var, min(460, 250 + 34 * len(numeric_rank)))
                 disp = rank.copy()
                 disp["Actuel"] = disp["Actuel"].map(fmt_int)
                 disp["Gain"] = disp["Gain"].map(fmt_int)
                 disp["Croissance %"] = disp["Croissance %"].map(fmt_pct)
                 st.dataframe(disp, use_container_width=True, hide_index=True)
-            base = social_base100(social_df, network)
+            base = social_base1000(social_df, network)
             if not base.empty and base["Date"].nunique() >= 2:
-                fig = px.line(base, x="Date", y="Indice", color="Personne", markers=True, title=f"Évolution {network} — base 100 au premier relevé")
-                fig.add_hline(y=100, line_dash="dot", line_color="#9CA3AF")
-                compact_plot(fig, 420)
+                # Base 1000 + axe volontairement zoomé : rend les faibles écarts lisibles
+                # sans modifier leur valeur économique. 0,06 % = 0,6 point d'indice.
+                fig = px.line(
+                    base, x="Date", y="Indice", color="Personne", markers=True,
+                    hover_data={"Variation %": ":+.3f"},
+                    title=f"Évolution {network} — indice base 1000 (échelle zoomée)"
+                )
+                fig.add_hline(y=1000, line_dash="dot", line_color="#9CA3AF")
+                ymin = float(base["Indice"].min())
+                ymax = float(base["Indice"].max())
+                spread = max(ymax - ymin, 0.8)
+                pad = max(0.35, spread * 0.16)
+                fig.update_yaxes(range=[ymin - pad, ymax + pad], title="Indice base 1000")
+                compact_plot(fig, 440)
+                st.caption("Échelle zoomée : la base 1000 ne change pas les pourcentages ; elle rend seulement les petits écarts plus lisibles. Pour le Total, l'indice est chaîné à périmètre constant afin que l'ajout d'un réseau (ex. TikTok) ne crée pas une fausse hausse.")
             else:
-                st.info("Il faut au moins deux relevés pour afficher une courbe de tendance.")
+                st.info("Il faut au moins deux relevés comparables pour afficher une courbe de tendance.")
 
             st.markdown("#### Derniers compteurs")
             curtab = current_social_table(social_df)
@@ -641,12 +667,12 @@ elif nav == "📊 Observatoire":
                         cols[idx % 4].link_button(key.capitalize(), url, use_container_width=True)
 
     with tabs[5]:
-        st.markdown('<div class="ne-callout">NE Hub préfère afficher “—” plutôt qu’un chiffre trompeur. Les variations du total sont neutralisées si le nombre de plateformes disponibles change entre deux relevés.</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ne-callout">NE Hub préfère afficher “—” plutôt qu’un chiffre trompeur. Les variations du Total sont calculées à périmètre constant si une plateforme apparaît ou disparaît entre deux relevés.</div>', unsafe_allow_html=True)
         qt = quality_table(social_df, press_topics_df)
         if not qt.empty:
             st.dataframe(qt, use_container_width=True, hide_index=True)
         st.markdown("#### Règles de lecture")
-        st.markdown("- **Total réseaux** : somme des compteurs disponibles, jamais un nombre de personnes uniques.\n- **Périmètre changé** : une plateforme vient d’apparaître/disparaître ; la variation du total est neutralisée.\n- **Presse** : volume détecté par le radar, susceptible de faux positifs ou d’articles hors-sujet.\n- **Wikipédia** : consultations d’une page, pas opinion favorable/défavorable.\n- **Valeurs arrondies** : conservées comme telles si la plateforme ne fournit pas plus de précision.")
+        st.markdown("- **Total réseaux** : somme des compteurs disponibles, jamais un nombre de personnes uniques.\n- **Périmètre changé** : une plateforme vient d’apparaître/disparaître ; la variation du Total utilise seulement les plateformes communes aux deux dates.\n- **Presse** : volume détecté par le radar, susceptible de faux positifs ou d’articles hors-sujet.\n- **Wikipédia** : consultations d’une page, pas opinion favorable/défavorable.\n- **Valeurs arrondies** : conservées comme telles si la plateforme ne fournit pas plus de précision.")
 
 
 # -----------------------------------------------------------------------------
