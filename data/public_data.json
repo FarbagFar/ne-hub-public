@@ -1,5 +1,5 @@
 {
-  "last_sync": "02/09/2026 11:46",
+  "last_sync": "03/09/2026 10:36",
   "movement": {
     "members": 27600,
     "elected": 1800,
@@ -7,7 +7,7 @@
     "as_of_label": "31 août 2026",
     "source_url": "https://www.unenouvelleenergie.fr/questions/combien-d-adherents-compte-nouvelle-energie/",
     "publications_source_url": "https://www.unenouvelleenergie.fr/actualites/",
-    "source_checked_at": "02/09/2026 11:46"
+    "source_checked_at": "03/09/2026 10:36"
   },
   "official_news": [
     {
@@ -100,10 +100,6 @@
     },
     "series": {
       "David Lisnard": [
-        {
-          "date": "2026-06-04",
-          "views": 986
-        },
         {
           "date": "2026-06-05",
           "views": 923
@@ -459,13 +455,13 @@
         {
           "date": "2026-09-01",
           "views": 6372
+        },
+        {
+          "date": "2026-09-02",
+          "views": 7999
         }
       ],
       "Bruno Retailleau": [
-        {
-          "date": "2026-06-04",
-          "views": 1526
-        },
         {
           "date": "2026-06-05",
           "views": 1508
@@ -821,13 +817,13 @@
         {
           "date": "2026-09-01",
           "views": 2369
+        },
+        {
+          "date": "2026-09-02",
+          "views": 1907
         }
       ],
       "Édouard Philippe": [
-        {
-          "date": "2026-06-04",
-          "views": 1766
-        },
         {
           "date": "2026-06-05",
           "views": 1487
@@ -1183,13 +1179,13 @@
         {
           "date": "2026-09-01",
           "views": 3650
+        },
+        {
+          "date": "2026-09-02",
+          "views": 2815
         }
       ],
       "Gabriel Attal": [
-        {
-          "date": "2026-06-04",
-          "views": 3463
-        },
         {
           "date": "2026-06-05",
           "views": 2937
@@ -1545,13 +1541,13 @@
         {
           "date": "2026-09-01",
           "views": 8637
+        },
+        {
+          "date": "2026-09-02",
+          "views": 4278
         }
       ],
       "Xavier Bertrand": [
-        {
-          "date": "2026-06-04",
-          "views": 271
-        },
         {
           "date": "2026-06-05",
           "views": 290
@@ -1907,13 +1903,13 @@
         {
           "date": "2026-09-01",
           "views": 834
+        },
+        {
+          "date": "2026-09-02",
+          "views": 651
         }
       ],
       "Marine Le Pen": [
-        {
-          "date": "2026-06-04",
-          "views": 1320
-        },
         {
           "date": "2026-06-05",
           "views": 963
@@ -2269,13 +2265,13 @@
         {
           "date": "2026-09-01",
           "views": 2209
+        },
+        {
+          "date": "2026-09-02",
+          "views": 1938
         }
       ],
       "Jordan Bardella": [
-        {
-          "date": "2026-06-04",
-          "views": 3933
-        },
         {
           "date": "2026-06-05",
           "views": 4308
@@ -2631,13 +2627,13 @@
         {
           "date": "2026-09-01",
           "views": 2388
+        },
+        {
+          "date": "2026-09-02",
+          "views": 2179
         }
       ],
       "Jean-Luc Mélenchon": [
-        {
-          "date": "2026-06-04",
-          "views": 3751
-        },
         {
           "date": "2026-06-05",
           "views": 3460
@@ -2993,6 +2989,10 @@
         {
           "date": "2026-09-01",
           "views": 3932
+        },
+        {
+          "date": "2026-09-02",
+          "views": 3869
         }
       ],
       "Raphaël Glucksmann": [
@@ -3358,6 +3358,6 @@
         }
       ]
     },
-    "as_of": "2026-09-01"
+    "as_of": "2026-09-02"
   }
 }

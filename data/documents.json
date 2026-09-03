@@ -357,10 +357,9 @@
     "kind": "question",
     "tags": [
       "fiscalité",
-      "impôts",
-      "dette"
+      "impôts"
     ],
-    "text": "Pouvoir d’achat et fiscalité : les positions de David Lisnard\nSalaires, cotisations, impôts : les questions sur le pouvoir d’achat et la fiscalité, et les réponses de David Lisnard, chiffrées et sourcées à chaque fois.\nLes questions, une par une\nComment David Lisnard veut-il augmenter les salaires sans augmenter le coût du travail ?\nDavid Lisnard veut-il baisser les impôts ?\nQue propose David Lisnard pour le pouvoir d’achat ?\nQuel candidat veut améliorer le pouvoir d’achat ?\nQuel candidat veut baisser les impôts ?\nLes dernières actualités sur ce thème\nBudget : la jeunesse sacrifiée\n—\n29 janvier 2026\nBudget 2026 : la cohérence impose la censure\n—\n22 janvier 2026\nCannes, la preuve qu’une gestion publique efficace est possible\n—\n29 décembre 2025\nImpôts en baisse, dette en recul, une gestion publique devenue un modèle\n—\n23 décembre 2025\nPour approfondir :\nle programme sur ce sujet\n."
+    "text": "Pouvoir d’achat et fiscalité : les positions de David Lisnard\nSalaires, cotisations, impôts : les questions sur le pouvoir d’achat et la fiscalité, et les réponses de David Lisnard, chiffrées et sourcées à chaque fois.\nLes premières questions de ce thème arrivent.\nPour approfondir :\nle programme sur ce sujet\n."
   },
   {
     "id": "d349dd00a873",
@@ -990,7 +989,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-308@unenouvelleenergie.fr\r\nDTSTAMP:20260902T094622Z\r\nDTSTART:20260904T170000Z\r\nDTEND:20260904T190000Z\r\nSUMMARY:La rentrée de Nouvelle Energie Val d'Oise\r\nDESCRIPTION:Philippe Rouleau\\, relais Nouvelle Energie Val d'Oise et maire d'Herblay-sur-Seine\\, Stéphanie Von Euw\\, maire de Pontoise et porte-voix de Nouvelle Energie\\, et Grégoire Faudais\\, relais Jeunes Energies\\, vous accueillent pour une réunion publique de rentrée à Herblay-sur-Seine.\r\nLOCATION:Herblay-sur-Seine\\, Val d'Oise\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-308@unenouvelleenergie.fr\r\nDTSTAMP:20260903T083649Z\r\nDTSTART:20260904T170000Z\r\nDTEND:20260904T190000Z\r\nSUMMARY:La rentrée de Nouvelle Energie Val d'Oise\r\nDESCRIPTION:Philippe Rouleau\\, relais Nouvelle Energie Val d'Oise et maire d'Herblay-sur-Seine\\, Stéphanie Von Euw\\, maire de Pontoise et porte-voix de Nouvelle Energie\\, et Grégoire Faudais\\, relais Jeunes Energies\\, vous accueillent pour une réunion publique de rentrée à Herblay-sur-Seine.\r\nLOCATION:Herblay-sur-Seine\\, Val d'Oise\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "da8a38ee7d37",
@@ -1000,7 +999,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-100@unenouvelleenergie.fr\r\nDTSTAMP:20260902T094622Z\r\nDTSTART:20260905T090000Z\r\nDTEND:20260905T110000Z\r\nSUMMARY:Itinérances Garonnaises\r\nDESCRIPTION:Domy Mazel-Sonnet\\, Relais Nouvelle Énergie de Haute-Garonne\\, et Ylverick Poulet\\, Relais Jeunes Énergies de Haute-Garonne\\, vous invitent aux Itinérances Garonnaises. Samedi 5 septembre 2026 à 11h Mairie – 1 Place de l’Unité\\, Saint-André (31420) Infos et contact : haute-garonne@unenouvelleenergie.fr\r\nLOCATION:Saint-André\\, Saint-André\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-100@unenouvelleenergie.fr\r\nDTSTAMP:20260903T083649Z\r\nDTSTART:20260905T090000Z\r\nDTEND:20260905T110000Z\r\nSUMMARY:Itinérances Garonnaises\r\nDESCRIPTION:Domy Mazel-Sonnet\\, Relais Nouvelle Énergie de Haute-Garonne\\, et Ylverick Poulet\\, Relais Jeunes Énergies de Haute-Garonne\\, vous invitent aux Itinérances Garonnaises. Samedi 5 septembre 2026 à 11h Mairie – 1 Place de l’Unité\\, Saint-André (31420) Infos et contact : haute-garonne@unenouvelleenergie.fr\r\nLOCATION:Saint-André\\, Saint-André\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "88a1f13dbcb3",
@@ -1010,7 +1009,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-94@unenouvelleenergie.fr\r\nDTSTAMP:20260902T094622Z\r\nDTSTART:20260910T170000Z\r\nDTEND:20260910T190000Z\r\nSUMMARY:Itinérance Ligérienne : Tours\r\nDESCRIPTION:Aymeric Jaillais et Thomas Hernault\\, co-relais Nouvelle Énergie d’Indre-et-Loire\\, organisent une série de rencontres pour les adhérents du parti et sympathisants de David Lisnard à travers le département. Jeudi 10 septembre\\, 19h\\, à Tours Tours-sur-Loire\\, 111 rue des Tanneurs\\, 37000 Tours Infos et contact : indreetloire\r\nLOCATION:Tours\\, Indre-et-Loire\\, Tours\\, Indre-et-Loire\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-94@unenouvelleenergie.fr\r\nDTSTAMP:20260903T083649Z\r\nDTSTART:20260910T170000Z\r\nDTEND:20260910T190000Z\r\nSUMMARY:Itinérance Ligérienne : Tours\r\nDESCRIPTION:Aymeric Jaillais et Thomas Hernault\\, co-relais Nouvelle Énergie d’Indre-et-Loire\\, organisent une série de rencontres pour les adhérents du parti et sympathisants de David Lisnard à travers le département. Jeudi 10 septembre\\, 19h\\, à Tours Tours-sur-Loire\\, 111 rue des Tanneurs\\, 37000 Tours Infos et contact : indreetloire\r\nLOCATION:Tours\\, Indre-et-Loire\\, Tours\\, Indre-et-Loire\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "40f058ea6bb4",
@@ -1020,7 +1019,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-313@unenouvelleenergie.fr\r\nDTSTAMP:20260902T094622Z\r\nDTSTART:20260910T170000Z\r\nDTEND:20260910T190000Z\r\nSUMMARY:Rentrée politique NE Côte d'Or\r\nDESCRIPTION:Céline Piron et Valérie Grandet\\, co-relais Nouvelle Energie de Côte d'Or\\, vous donnent rendez-vous pour une réunion de rentrée de l'équipe dans le département. \r\nLOCATION:Daix\\, Côte d'Or\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-313@unenouvelleenergie.fr\r\nDTSTAMP:20260903T083649Z\r\nDTSTART:20260910T170000Z\r\nDTEND:20260910T190000Z\r\nSUMMARY:Rentrée politique NE Côte d'Or\r\nDESCRIPTION:Céline Piron et Valérie Grandet\\, co-relais Nouvelle Energie de Côte d'Or\\, vous donnent rendez-vous pour une réunion de rentrée de l'équipe dans le département. \r\nLOCATION:Daix\\, Côte d'Or\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "559bae6b35be",
@@ -1043,7 +1042,7 @@
       "énergie",
       "Europe"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-312@unenouvelleenergie.fr\r\nDTSTAMP:20260902T094622Z\r\nDTSTART:20260916T163000Z\r\nDTEND:20260916T183000Z\r\nSUMMARY:Pourquoi l’Europe perd la course à l’innovation — et comment inverser la tendance\r\nDESCRIPTION:L'équipe Nouvelle Energie New York vous donne rendez-vous avec Olivier Coste\\, entrepreneur et ancien dirigeant dans le secteur de la tech.\r\nLOCATION:New-York\\, Etats-Unis\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-312@unenouvelleenergie.fr\r\nDTSTAMP:20260903T083650Z\r\nDTSTART:20260916T163000Z\r\nDTEND:20260916T183000Z\r\nSUMMARY:Pourquoi l’Europe perd la course à l’innovation — et comment inverser la tendance\r\nDESCRIPTION:L'équipe Nouvelle Energie New York vous donne rendez-vous avec Olivier Coste\\, entrepreneur et ancien dirigeant dans le secteur de la tech.\r\nLOCATION:New-York\\, Etats-Unis\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "b5b9931182a0",
@@ -1061,7 +1060,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-309@unenouvelleenergie.fr\r\nDTSTAMP:20260902T094622Z\r\nDTSTART:20260916T170000Z\r\nDTEND:20260916T190000Z\r\nSUMMARY:Conférence sur le libéralisme avec Jean-Philippe Delsol\r\nDESCRIPTION:Jean-Philippe Delsol\\, avocat et essayiste\\, animera une conférence sur le libéralisme à l'invitation de Youssef Chabane\\, relais Jeunes Energies du Rhône.\r\nLOCATION:Lyon\\, Rhône\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-309@unenouvelleenergie.fr\r\nDTSTAMP:20260903T083650Z\r\nDTSTART:20260916T170000Z\r\nDTEND:20260916T190000Z\r\nSUMMARY:Conférence sur le libéralisme avec Jean-Philippe Delsol\r\nDESCRIPTION:Jean-Philippe Delsol\\, avocat et essayiste\\, animera une conférence sur le libéralisme à l'invitation de Youssef Chabane\\, relais Jeunes Energies du Rhône.\r\nLOCATION:Lyon\\, Rhône\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "b38d1c72e681",
@@ -1079,7 +1078,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-310@unenouvelleenergie.fr\r\nDTSTAMP:20260902T094622Z\r\nDTSTART:20260917T173000Z\r\nDTEND:20260917T193000Z\r\nSUMMARY:Conférence sur le narcotrafic\r\nDESCRIPTION:Etienne Blanc\\, sénateur NE du Rhône\\, porte-voix de David Lisnard et rapporteur du texte de loi sur le narcotrafic\\, animera une conférence sur le sujet à l'invitation de Domy Mazel-Sonnet\\, relais Nouvelle Energie Haute-Garonne. \r\nLOCATION:Balma\\, Haute-Garonne\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-310@unenouvelleenergie.fr\r\nDTSTAMP:20260903T083650Z\r\nDTSTART:20260917T173000Z\r\nDTEND:20260917T193000Z\r\nSUMMARY:Conférence sur le narcotrafic\r\nDESCRIPTION:Etienne Blanc\\, sénateur NE du Rhône\\, porte-voix de David Lisnard et rapporteur du texte de loi sur le narcotrafic\\, animera une conférence sur le sujet à l'invitation de Domy Mazel-Sonnet\\, relais Nouvelle Energie Haute-Garonne. \r\nLOCATION:Balma\\, Haute-Garonne\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "d25167ecedbf",
@@ -1097,7 +1096,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-307@unenouvelleenergie.fr\r\nDTSTAMP:20260902T094622Z\r\nDTSTART:20260919T153000Z\r\nDTEND:20260919T173000Z\r\nSUMMARY:Rentrée politique NE Aube\r\nDESCRIPTION:Thomas Danrée\\, relais Nouvelle Energie Aube\\, vous convie à la rentrée politique du parti dans le département\\, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\r\nLOCATION:Troyes\\, Aube\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-307@unenouvelleenergie.fr\r\nDTSTAMP:20260903T083650Z\r\nDTSTART:20260919T153000Z\r\nDTEND:20260919T173000Z\r\nSUMMARY:Rentrée politique NE Aube\r\nDESCRIPTION:Thomas Danrée\\, relais Nouvelle Energie Aube\\, vous convie à la rentrée politique du parti dans le département\\, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\r\nLOCATION:Troyes\\, Aube\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "0c52e317b2bc",
@@ -1115,6 +1114,6 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-305@unenouvelleenergie.fr\r\nDTSTAMP:20260902T094622Z\r\nDTSTART:20260920T100000Z\r\nDTEND:20260920T120000Z\r\nSUMMARY:Rentrée politique NE Manche\r\nDESCRIPTION:Daniel Coulomb\\, relais Nouvelle Energie Manche\\, organise un pique-nique convivial pour la rentrée politique du parti dans le département. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir. \r\nLOCATION:Gouville-sur-Mer\\, Manche\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-305@unenouvelleenergie.fr\r\nDTSTAMP:20260903T083650Z\r\nDTSTART:20260920T100000Z\r\nDTEND:20260920T120000Z\r\nSUMMARY:Rentrée politique NE Manche\r\nDESCRIPTION:Daniel Coulomb\\, relais Nouvelle Energie Manche\\, organise un pique-nique convivial pour la rentrée politique du parti dans le département. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir. \r\nLOCATION:Gouville-sur-Mer\\, Manche\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   }
 ]

@@ -65,7 +65,7 @@ from data_utils import (
 # -----------------------------------------------------------------------------
 
 st.set_page_config(
-    page_title="NE Hub — Nouvelle Énergie",
+    page_title="NouvelleEnergieAgora — Nouvelle Énergie",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -230,8 +230,8 @@ def hero():
 <div class="ne-hero">
   <div class="ne-kicker">NE HUB · INFORMATIONS PUBLIQUES · DONNÉES SOURCÉES</div>
   <div class="ne-title">Comprendre les propositions. Voir les données. Mesurer les ordres de grandeur.</div>
-  <div class="ne-sub">Programme, simulateur d’impact, observatoire de visibilité publique, agenda et relais locaux réunis dans une interface simple. Les calculs affichent leurs hypothèses et leurs sources.</div>
-  <div class="ne-badges"><span class="ne-badge">⚡ 30 secondes</span><span class="ne-badge">🧮 Simulateur</span><span class="ne-badge">📊 Observatoire</span><span class="ne-badge">🔎 Recherche globale</span><span class="ne-badge">📍 Territoires</span></div>
+  <div class="ne-sub">L’essentiel de Nouvelle Énergie dans une interface plus simple : dynamique publique, impact des mesures, réponses sourcées et rendez-vous près de chez vous.</div>
+  <div class="ne-badges"><span class="ne-badge">⚡ 30 secondes</span><span class="ne-badge">📊 Observatoire</span><span class="ne-badge">🧮 Simulateur</span><span class="ne-badge">💬 Ask</span><span class="ne-badge">📍 Agenda & proximité</span></div>
 </div>
 """,
         unsafe_allow_html=True,
@@ -244,18 +244,19 @@ def render_sidebar(meta: dict, public_data: dict):
         st.image(str(logo), width=155)
     else:
         st.markdown('<div class="ne-brand-label">NOUVELLE<br>ÉNERGIE<small>POUR LA FRANCE</small></div>', unsafe_allow_html=True)
-    st.caption("NE Hub · portail documentaire et observatoire")
+    st.caption("NouvelleEnergieAgora · portail documentaire et observatoire")
     st.divider()
-    nav_items = ["🏠 Accueil", "📊 Observatoire", "🧮 Simulateur d’impact", "🤖 Ask Data", "🔎 Explorer", "🧭 Mon département", "🗓️ Agenda", "💬 Ask NE", "🧰 Ressources"]
+    nav_items = ["🏠 Accueil", "📊 Observatoire", "🧮 Simulateur d’impact", "💬 Ask", "📍 Agenda & proximité"]
     if not public_mode():
         nav_items.append("⚙️ Administration")
     requested_page = str(st.query_params.get("page", "") or "").lower()
     page_map = {
         "simulateur": "🧮 Simulateur d’impact", "simulator": "🧮 Simulateur d’impact", "impact": "🧮 Simulateur d’impact",
         "observatoire": "📊 Observatoire", "observer": "📊 Observatoire",
-        "explorer": "🔎 Explorer", "recherche": "🔎 Explorer",
-        "departement": "🧭 Mon département", "territoire": "🧭 Mon département",
-        "agenda": "🗓️ Agenda", "askne": "💬 Ask NE", "askdata": "🤖 Ask Data",
+        "explorer": "💬 Ask", "recherche": "💬 Ask",
+        "departement": "📍 Agenda & proximité", "territoire": "📍 Agenda & proximité",
+        "agenda": "📍 Agenda & proximité", "proximite": "📍 Agenda & proximité",
+        "ask": "💬 Ask", "askne": "💬 Ask", "askdata": "💬 Ask",
     }
     requested_nav = page_map.get(requested_page)
     default_index = nav_items.index(requested_nav) if requested_nav in nav_items else 0
@@ -295,7 +296,7 @@ def compact_plot(fig, height=380):
     )
     fig.update_xaxes(gridcolor="#EFF1F5", linecolor="#E5E7EB")
     fig.update_yaxes(gridcolor="#EFF1F5", linecolor="#E5E7EB")
-    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+    st.plotly_chart(fig, width="stretch", config={"displayModeBar": False})
 
 
 def render_search_results(results: dict):
@@ -418,40 +419,14 @@ if nav == "🏠 Accueil":
         source_url = mv.get("source_url") or "https://www.unenouvelleenergie.fr/questions/combien-d-adherents-compte-nouvelle-energie/"
         st.caption(f"Chiffres du mouvement au {as_of} · [source officielle]({source_url}).")
 
-    section("Recherche", "Trouver une information en une seule requête", "Programme, questions officielles, actualités, agenda, relais et presse détectée.")
-    q = st.text_input("Recherche globale", key="home_global_query", placeholder="Ex. retraites, nucléaire, dette, Tours, David Lisnard…", label_visibility="collapsed")
-    if q:
-        st.session_state["global_query"] = q
-        render_search_results(universal_search(q, docs, events, relays, press_articles_df, public_data, 6))
+    st.info("🧪 Version bêta : l’historique des abonnements est encore court. Les courbes deviennent plus pertinentes à mesure que les relevés quotidiens s’accumulent.")
 
-    section("Accès rapide", "Aller directement à l’essentiel", "Des parcours courts pour ne pas avoir à connaître la structure du site.")
+    section("Accès rapide", "Que voulez-vous faire ?", "Quatre portes d’entrée, le reste reste volontairement discret pendant la bêta.")
     qcols = st.columns(4)
-    qcols[0].markdown('<a href="?page=simulateur" target="_self" style="text-decoration:none"><div class="ne-quick"><b>🧮 Simulateur d’impact →</b><p>Voir l’effet mécanique des mesures chiffrées sur déficit, prélèvements et niveau de vie.</p></div></a>', unsafe_allow_html=True)
-    qcols[1].markdown('<a href="?page=observatoire" target="_self" style="text-decoration:none"><div class="ne-quick"><b>📊 Observatoire →</b><p>Réseaux, presse et attention web, avec fraîcheur et qualité des données.</p></div></a>', unsafe_allow_html=True)
-    qcols[2].markdown('<a href="?page=explorer" target="_self" style="text-decoration:none"><div class="ne-quick"><b>🔎 Explorer →</b><p>Rechercher dans toutes les sources officielles et les données indexées.</p></div></a>', unsafe_allow_html=True)
-    qcols[3].markdown('<a href="?page=departement" target="_self" style="text-decoration:none"><div class="ne-quick"><b>📍 Mon département →</b><p>Relais local, contexte territorial et rendez-vous autour d’une commune.</p></div></a>', unsafe_allow_html=True)
-
-    left, right = st.columns([1.15, 1])
-    with left:
-        section("À la une", "Dernières publications officielles", "Synchronisées depuis le site Nouvelle Énergie.")
-        news = public_data.get("official_news", []) or []
-        if news:
-            for item in news[:4]:
-                st.markdown(f"**{item.get('title','Actualité')}**")
-                st.caption(item.get("date", ""))
-                if item.get("url"):
-                    st.markdown(f"[Lire sur le site officiel]({item.get('url')})")
-                st.divider()
-        else:
-            st.info("Aucune actualité officielle synchronisée.")
-    with right:
-        section("Agenda", "Prochains rendez-vous", "Les prochains événements détectés sur l'agenda officiel.")
-        for e in sorted(future_events, key=lambda x: parse_date(x.get("date")) or date.max)[:4]:
-            st.markdown(f"**{e.get('title','Événement')}**")
-            st.caption(f"{e.get('date_label') or e.get('date','')} · {e.get('location','')}")
-            if e.get("url"):
-                st.markdown(f"[Voir le rendez-vous]({e['url']})")
-            st.divider()
+    qcols[0].markdown('<a href="?page=observatoire" target="_self" style="text-decoration:none"><div class="ne-quick"><b>📊 Voir la dynamique →</b><p>Réseaux, presse et attention web.</p></div></a>', unsafe_allow_html=True)
+    qcols[1].markdown('<a href="?page=simulateur" target="_self" style="text-decoration:none"><div class="ne-quick"><b>🧮 Tester les mesures →</b><p>Comprendre les ordres de grandeur sur la France et votre foyer.</p></div></a>', unsafe_allow_html=True)
+    qcols[2].markdown('<a href="?page=ask" target="_self" style="text-decoration:none"><div class="ne-quick"><b>💬 Poser une question →</b><p>Programme officiel ou données de l’observatoire au même endroit.</p></div></a>', unsafe_allow_html=True)
+    qcols[3].markdown('<a href="?page=agenda" target="_self" style="text-decoration:none"><div class="ne-quick"><b>📍 Agenda & proximité →</b><p>Voir les rendez-vous puis ce qui se passe près de chez vous.</p></div></a>', unsafe_allow_html=True)
 
 # -----------------------------------------------------------------------------
 # OBSERVATOIRE
@@ -542,7 +517,7 @@ elif nav == "📊 Observatoire":
                 disp["Actuel"] = disp["Actuel"].map(fmt_int)
                 disp["Gain"] = disp["Gain"].map(fmt_int)
                 disp["Croissance %"] = disp["Croissance %"].map(fmt_pct)
-                st.dataframe(disp, use_container_width=True, hide_index=True)
+                st.dataframe(disp, width="stretch", hide_index=True)
             base = social_base1000(social_df, network)
             if not base.empty and base["Date"].nunique() >= 2:
                 # Base 1000 + axe volontairement zoomé : rend les faibles écarts lisibles
@@ -569,7 +544,7 @@ elif nav == "📊 Observatoire":
                 show = curtab.copy()
                 for col in [*NETWORKS, "Total"]:
                     show[col] = show[col].map(fmt_int)
-                st.dataframe(show, use_container_width=True, hide_index=True)
+                st.dataframe(show, width="stretch", hide_index=True)
 
     with tabs[2]:
         language = st.selectbox("Langue", ["Toutes", "Français"], index=0)
@@ -592,7 +567,7 @@ elif nav == "📊 Observatoire":
             st.caption("Aucune synthèse de sujets disponible.")
         else:
             cols = [c for c in ["Personne", "Rang", "Sujet", "NombreArticles", "Resume"] if c in topics.columns]
-            st.dataframe(topics[cols], use_container_width=True, hide_index=True)
+            st.dataframe(topics[cols], width="stretch", hide_index=True)
 
     with tabs[3]:
         st.markdown('<div class="ne-callout">Les vues Wikipédia donnent un signal indépendant d’intérêt informationnel. Elles ne disent ni pourquoi la page a été consultée, ni ce que pense le lecteur.</div>', unsafe_allow_html=True)
@@ -664,13 +639,13 @@ elif nav == "📊 Observatoire":
                 cols = st.columns(4)
                 for idx, (key, url) in enumerate(links.items()):
                     if url:
-                        cols[idx % 4].link_button(key.capitalize(), url, use_container_width=True)
+                        cols[idx % 4].link_button(key.capitalize(), url, width="stretch")
 
     with tabs[5]:
-        st.markdown('<div class="ne-callout">NE Hub préfère afficher “—” plutôt qu’un chiffre trompeur. Les variations du Total sont calculées à périmètre constant si une plateforme apparaît ou disparaît entre deux relevés.</div>', unsafe_allow_html=True)
+        st.markdown('<div class="ne-callout">NouvelleEnergieAgora préfère afficher “—” plutôt qu’un chiffre trompeur. Les variations du Total sont calculées à périmètre constant si une plateforme apparaît ou disparaît entre deux relevés.</div>', unsafe_allow_html=True)
         qt = quality_table(social_df, press_topics_df)
         if not qt.empty:
-            st.dataframe(qt, use_container_width=True, hide_index=True)
+            st.dataframe(qt, width="stretch", hide_index=True)
         st.markdown("#### Règles de lecture")
         st.markdown("- **Total réseaux** : somme des compteurs disponibles, jamais un nombre de personnes uniques.\n- **Périmètre changé** : une plateforme vient d’apparaître/disparaître ; la variation du Total utilise seulement les plateformes communes aux deux dates.\n- **Presse** : volume détecté par le radar, susceptible de faux positifs ou d’articles hors-sujet.\n- **Wikipédia** : consultations d’une page, pas opinion favorable/défavorable.\n- **Valeurs arrondies** : conservées comme telles si la plateforme ne fournit pas plus de précision.")
 
@@ -684,32 +659,71 @@ elif nav == "🧮 Simulateur d’impact":
 # -----------------------------------------------------------------------------
 # ASK DATA
 # -----------------------------------------------------------------------------
-elif nav == "🤖 Ask Data":
-    section("Ask Data", "Interroger l'observatoire en langage naturel", "Le moteur répond à partir des données collectées : réseaux, presse, Wikipédia et chiffres officiels du mouvement.")
-    examples = [
-        "Compare David Lisnard et Édouard Philippe sur 24 h",
-        "Qui progresse le plus sur Instagram ?",
-        "Qui a le plus de vues Wikipédia sur 30 jours ?",
-        "Combien d'articles ont été détectés pour Marine Le Pen sur 7 jours ?",
-        "Combien d'adhérents compte Nouvelle Énergie ?",
-    ]
-    if "ask_data_input" not in st.session_state:
-        st.session_state["ask_data_input"] = ""
-    cols = st.columns(3)
-    for i, ex in enumerate(examples):
-        if cols[i % 3].button(ex, key=f"ex_{i}", use_container_width=True):
-            st.session_state["ask_data_input"] = ex
-    q = st.text_input("Question", key="ask_data_input", placeholder="Posez une question sur les données…")
-    if q:
-        ans = deterministic_ask_data(q, social_df, press_articles_df, tracked_candidates, public_data)
-        if ans is None:
-            ans = ask_data_with_claude(q, social_df, press_articles_df, public_data)
-        if ans:
-            st.markdown("### Réponse")
-            st.markdown(ans)
-        else:
-            st.info("Je n'ai pas assez d'éléments structurés pour répondre automatiquement à cette question. Essayez de préciser une personne, un réseau et une période.")
-        st.caption("Ask Data décrit des données publiques. Il ne produit ni intention de vote, ni causalité politique.")
+elif nav == "💬 Ask":
+    section("Ask", "Une question, deux types de sources", "Choisissez simplement si votre question porte sur le programme de Nouvelle Énergie ou sur les données de l’observatoire.")
+    ask_tabs = st.tabs(["⚡ Programme & Nouvelle Énergie", "📊 Données & observatoire"])
+
+    with ask_tabs[0]:
+        st.caption("Réponses construites à partir des pages officielles indexées, avec liens vers les sources.")
+        examples_ne = [
+            "Que propose Nouvelle Énergie sur les retraites ?",
+            "Quelle est la position sur la dette ?",
+            "Que propose le programme pour l'école ?",
+            "Quelle vision de la décentralisation ?",
+        ]
+        if "ask_ne_input" not in st.session_state:
+            st.session_state["ask_ne_input"] = ""
+        cols = st.columns(4)
+        for i, ex in enumerate(examples_ne):
+            if cols[i].button(ex, key=f"askne_merged_{i}", width="stretch"):
+                st.session_state["ask_ne_input"] = ex
+        q_ne = st.text_input("Votre question sur Nouvelle Énergie", key="ask_ne_input", placeholder="Ex. Que propose le programme sur les retraites ?")
+        if q_ne:
+            res = search_docs(q_ne, docs, 7)
+            if not res:
+                st.warning("Aucune source officielle suffisamment proche n'a été trouvée.")
+            else:
+                ans = answer_with_claude(q_ne, res)
+                if ans:
+                    st.markdown("### Réponse sourcée")
+                    st.write(ans)
+                else:
+                    st.markdown("### Passages officiels les plus pertinents")
+                    for i, d in enumerate(res[:5], 1):
+                        with st.container(border=True):
+                            st.markdown(f"**[{i}] {d.get('title','Source')}**")
+                            st.write(snippet(d.get("text", ""), q_ne, 520))
+                            st.markdown(f"[Lire la source]({d.get('url')})")
+                with st.expander("Voir les sources", expanded=False):
+                    for i, d in enumerate(res[:6], 1):
+                        st.markdown(f"{i}. [{d.get('title','Source')}]({d.get('url')})")
+            if not claude_available():
+                st.caption("Mode recherche/extraits actif : aucune synthèse IA locale n’est nécessaire pour consulter les sources.")
+
+    with ask_tabs[1]:
+        st.caption("Réseaux, presse, Wikipédia et chiffres publics synchronisés. Ces indicateurs ne mesurent pas une intention de vote.")
+        examples_data = [
+            "Compare David Lisnard et Édouard Philippe sur 7 jours",
+            "Qui progresse le plus sur Instagram ?",
+            "Combien d'articles ont été détectés pour David Lisnard sur 7 jours ?",
+            "Combien d'adhérents compte Nouvelle Énergie ?",
+        ]
+        if "ask_data_input" not in st.session_state:
+            st.session_state["ask_data_input"] = ""
+        cols = st.columns(4)
+        for i, ex in enumerate(examples_data):
+            if cols[i].button(ex, key=f"askdata_merged_{i}", width="stretch"):
+                st.session_state["ask_data_input"] = ex
+        q_data = st.text_input("Votre question sur les données", key="ask_data_input", placeholder="Ex. Quelle est la tendance réseaux de David Lisnard sur 7 jours ?")
+        if q_data:
+            ans = deterministic_ask_data(q_data, social_df, press_articles_df, tracked_candidates, public_data)
+            if ans is None:
+                ans = ask_data_with_claude(q_data, social_df, press_articles_df, public_data)
+            if ans:
+                st.markdown("### Réponse")
+                st.markdown(ans)
+            else:
+                st.info("Je n'ai pas assez d'éléments structurés pour répondre automatiquement. Précisez si possible une personne, un réseau et une période.")
 
 # -----------------------------------------------------------------------------
 # EXPLORER
@@ -722,7 +736,7 @@ elif nav == "🔎 Explorer":
     themes = ["Éducation", "Sécurité", "Santé", "Agriculture", "Immigration", "Retraites", "Fiscalité", "Dette", "Décentralisation", "Énergie"]
     cols = st.columns(5)
     for i, th in enumerate(themes):
-        if cols[i % 5].button(th, use_container_width=True, key=f"theme_{i}"):
+        if cols[i % 5].button(th, width="stretch", key=f"theme_{i}"):
             st.session_state["explore_input"] = th
             st.rerun()
     q = st.text_input("Recherche", placeholder="Ex. capitalisation, nucléaire, Tours, Haute-Garonne, David Lisnard…", key="explore_input")
@@ -753,14 +767,53 @@ elif nav == "🔎 Explorer":
 # -----------------------------------------------------------------------------
 # MON DEPARTEMENT
 # -----------------------------------------------------------------------------
-elif nav == "🧭 Mon département":
-    section("Territoires", "Mon département", "Une fiche locale : commune, contexte public, relais Nouvelle Énergie et rendez-vous à proximité.")
-    place = st.text_input("Ville ou code postal", placeholder="Ex. 78000 Versailles")
-    radius = st.slider("Rayon pour les événements", 10, 250, 60, 10, format="%d km")
+elif nav == "📍 Agenda & proximité":
+    section("Agenda & proximité", "Les prochains rendez-vous", "Commencez par l’agenda. Si vous le souhaitez, indiquez ensuite une ville, un code postal ou un département pour voir les rendez-vous et relais autour de vous.")
+
+    future_rows = []
+    for e in events:
+        x = dict(e)
+        x["_date"] = parse_date(e.get("date"))
+        if x["_date"] is not None and x["_date"] >= date.today():
+            future_rows.append(x)
+    df_agenda = pd.DataFrame(future_rows)
+
+    agenda_filter = st.text_input("Filtrer l’agenda", placeholder="Ville, département ou mot-clé", key="agenda_merged_filter")
+    if not df_agenda.empty:
+        if agenda_filter:
+            n = norm(agenda_filter)
+            df_agenda = df_agenda[df_agenda.apply(lambda r: n in norm(f"{r.get('title','')} {r.get('location','')} {r.get('description','')}"), axis=1)]
+        df_agenda = df_agenda.sort_values("_date", na_position="last")
+        for _, e in df_agenda.head(6).iterrows():
+            with st.container(border=True):
+                a, b = st.columns([5, 1])
+                a.markdown(f"**{e.get('title','Événement')}**")
+                a.caption(f"{e.get('date_label') or e.get('date','')} · {e.get('location','')}")
+                if e.get("description"):
+                    a.write(str(e.get("description"))[:260])
+                link = e.get("registration_url") or e.get("url")
+                if link:
+                    b.link_button("Détails", link, width="stretch")
+        if len(df_agenda) > 6:
+            with st.expander(f"Voir les {len(df_agenda)-6} autres rendez-vous", expanded=False):
+                for _, e in df_agenda.iloc[6:].iterrows():
+                    st.markdown(f"**{e.get('title','Événement')}** — {e.get('date_label') or e.get('date','')} · {e.get('location','')}")
+                    link = e.get("registration_url") or e.get("url")
+                    if link:
+                        st.markdown(f"[Voir le rendez-vous]({link})")
+    else:
+        st.info("Aucun rendez-vous à venir n’est actuellement indexé.")
+
+    st.divider()
+    st.markdown("### 📍 Et près de chez moi ?")
+    st.caption("Cette étape est facultative. La localisation saisie n’est pas enregistrée par NouvelleEnergieAgora.")
+    p1, p2 = st.columns([2, 1])
+    place = p1.text_input("Ville, code postal ou département", placeholder="Ex. Versailles, 78000 ou Yvelines", key="nearby_place")
+    radius = p2.select_slider("Rayon", options=[20, 40, 60, 100, 150, 250], value=60, format_func=lambda x: f"{x} km", key="nearby_radius")
     if place:
         loc = geocode(place)
         if not loc:
-            st.warning("Localisation non trouvée.")
+            st.warning("Localisation non trouvée. Essayez une ville ou un code postal.")
         else:
             ctx = territory_context(place, loc)
             dep_code, dep_name = location_department(loc, relays)
@@ -768,12 +821,11 @@ elif nav == "🧭 Mon département":
                 dep_code = ctx.get("department_code")
             if ctx.get("department_name"):
                 dep_name = ctx.get("department_name")
-            st.markdown(f"### {ctx.get('commune') or loc.get('city') or loc.get('label')}")
+
             c1, c2, c3 = st.columns(3)
-            c1.metric("Population communale", fmt_int(ctx.get("population")))
+            c1.metric("Commune", ctx.get("commune") or loc.get("city") or loc.get("label") or "—")
             c2.metric("Département", f"{dep_name or '—'} ({dep_code or '—'})")
-            c3.metric("Région", ctx.get("region_name") or "—")
-            st.caption("Contexte administratif : API Découpage administratif de l'État. La localisation saisie n'est pas enregistrée par NE Hub.")
+            c3.metric("Population", fmt_int(ctx.get("population")))
 
             nearby = []
             for e in events:
@@ -789,9 +841,9 @@ elif nav == "🧭 Mon département":
                     nearby.append(item)
             nearby.sort(key=lambda x: (x["distance_km"], x.get("date", "")))
 
-            l, r = st.columns([1, 1.1])
+            l, r = st.columns([1, 1.25])
             with l:
-                st.markdown("#### Votre relais")
+                st.markdown("#### Relais du département")
                 matches = [x for x in relays if str(x.get("department_code", "")) == str(dep_code) or (dep_code == "20" and str(x.get("department_code", "")).startswith("2"))]
                 if matches:
                     for relay in matches[:4]:
@@ -804,7 +856,6 @@ elif nav == "🧭 Mon département":
                                 st.markdown(f"[Source officielle]({relay['source_url']})")
                 else:
                     st.info("Aucun relais indexé localement pour ce département.")
-                    st.link_button("Ouvrir la carte officielle des relais", "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/", use_container_width=True)
             with r:
                 st.markdown(f"#### Rendez-vous à moins de {radius} km · {len(nearby)}")
                 if nearby:
@@ -812,16 +863,14 @@ elif nav == "🧭 Mon département":
                     st.map(map_df, latitude="lat", longitude="lon", size=45)
                 else:
                     st.info("Aucun rendez-vous géolocalisé dans ce rayon.")
-            for e in nearby[:8]:
+            for e in nearby[:6]:
                 with st.container(border=True):
                     a, b = st.columns([5, 1])
                     a.markdown(f"**{e.get('title','Événement')}**")
                     a.caption(f"{e.get('date_label') or e.get('date','')} · {e.get('location','')} · {e['distance_km']:.0f} km")
-                    if e.get("description"):
-                        a.write(str(e.get("description"))[:350])
                     link = e.get("registration_url") or e.get("url")
                     if link:
-                        b.link_button("Détails", link, use_container_width=True)
+                        b.link_button("Détails", link, width="stretch")
 
 # -----------------------------------------------------------------------------
 # AGENDA
@@ -858,7 +907,7 @@ elif nav == "🗓️ Agenda":
                     a.write(str(e.get("description"))[:420])
                 link = e.get("registration_url") or e.get("url")
                 if link:
-                    b.link_button("Voir", link, use_container_width=True)
+                    b.link_button("Voir", link, width="stretch")
 
 # -----------------------------------------------------------------------------
 # ASK NE
@@ -870,7 +919,7 @@ elif nav == "💬 Ask NE":
         st.session_state["ask_ne_input"] = ""
     cols = st.columns(4)
     for i, ex in enumerate(examples):
-        if cols[i].button(ex, key=f"askne_{i}", use_container_width=True):
+        if cols[i].button(ex, key=f"askne_{i}", width="stretch"):
             st.session_state["ask_ne_input"] = ex
     q = st.text_input("Question", key="ask_ne_input", placeholder="Votre question sur le programme…")
     if q:
@@ -914,13 +963,13 @@ elif nav == "🧰 Ressources":
     for i, (ico, title, desc, url) in enumerate(resources):
         with cols[i % 4]:
             st.markdown(f'<div class="ne-card"><h4>{ico} {title}</h4><p>{desc}</p></div>', unsafe_allow_html=True)
-            st.link_button("Ouvrir", url, use_container_width=True)
+            st.link_button("Ouvrir", url, width="stretch")
     st.divider()
     st.markdown("#### Participer")
     p1, p2, p3 = st.columns(3)
-    p1.link_button("Devenir bénévole", "https://www.unenouvelleenergie.fr/devenir-benevole/", use_container_width=True)
-    p2.link_button("Proposer des idées", "https://www.unenouvelleenergie.fr/notre-programme/pole-de-travail-et-didees/", use_container_width=True)
-    p3.link_button("Site de soutien / adhésion", "https://soutenir.unenouvelleenergie.fr/", use_container_width=True)
+    p1.link_button("Devenir bénévole", "https://www.unenouvelleenergie.fr/devenir-benevole/", width="stretch")
+    p2.link_button("Proposer des idées", "https://www.unenouvelleenergie.fr/notre-programme/pole-de-travail-et-didees/", width="stretch")
+    p3.link_button("Site de soutien / adhésion", "https://soutenir.unenouvelleenergie.fr/", width="stretch")
 
 # -----------------------------------------------------------------------------
 # ADMINISTRATION
@@ -934,7 +983,7 @@ elif nav == "⚙️ Administration":
         st.warning("Mode lecture seule. Entrez le mot de passe administrateur pour synchroniser les données.")
     else:
         c1, c2, c3 = st.columns(3)
-        if c1.button("Synchroniser le site officiel", use_container_width=True):
+        if c1.button("Synchroniser le site officiel", width="stretch"):
             with st.spinner("Indexation du site…"):
                 cp = subprocess.run([sys.executable, str(BASE / "sync_ne.py")], capture_output=True, text=True, timeout=240, encoding="utf-8", errors="replace")
                 if cp.returncode == 0:
@@ -942,7 +991,7 @@ elif nav == "⚙️ Administration":
                     st.cache_data.clear()
                 else:
                     st.error(cp.stderr[-1500:] or "Échec.")
-        if c2.button("Synchroniser données ouvertes", use_container_width=True):
+        if c2.button("Synchroniser données ouvertes", width="stretch"):
             with st.spinner("Actualités, chiffres officiels et Wikipédia…"):
                 cp = subprocess.run([sys.executable, str(BASE / "sync_public_data.py")], capture_output=True, text=True, timeout=240, encoding="utf-8", errors="replace")
                 if cp.returncode == 0:
@@ -950,7 +999,7 @@ elif nav == "⚙️ Administration":
                     st.cache_data.clear()
                 else:
                     st.error(cp.stderr[-1500:] or "Échec.")
-        if c3.button("Tout synchroniser", type="primary", use_container_width=True):
+        if c3.button("Tout synchroniser", type="primary", width="stretch"):
             with st.spinner("Synchronisation complète…"):
                 messages = []
                 ok = True
@@ -976,10 +1025,10 @@ elif nav == "⚙️ Administration":
             "Dernière modification": datetime.fromtimestamp(path.stat().st_mtime).strftime("%d/%m/%Y %H:%M") if path.exists() else "—",
             "Fichier": str(path.relative_to(BASE)) if path.exists() and path.is_relative_to(BASE) else str(path),
         })
-    st.dataframe(pd.DataFrame(status_rows), use_container_width=True, hide_index=True)
+    st.dataframe(pd.DataFrame(status_rows), width="stretch", hide_index=True)
     st.markdown("#### Mode de déploiement")
     st.code("NE_HUB_PUBLIC_MODE=1\nNE_HUB_ADMIN_PASSWORD=un-mot-de-passe-solide", language="text")
     st.caption("En mode public, la consultation reste ouverte mais les boutons de synchronisation nécessitent le mot de passe administrateur.")
 
 st.divider()
-st.markdown('<div class="ne-footer"><b>NE Hub</b> · portail non officiel de consultation et d’analyse de données publiques. Les positions politiques sont restituées depuis les sources officielles ; les mesures de visibilité ne constituent pas des intentions de vote. Les marques, logos et contenus restent la propriété de leurs titulaires.</div>', unsafe_allow_html=True)
+st.markdown('<div class="ne-footer"><b>NouvelleEnergieAgora</b> · portail non officiel de consultation et d’analyse de données publiques. Les positions politiques sont restituées depuis les sources officielles ; les mesures de visibilité ne constituent pas des intentions de vote. Les marques, logos et contenus restent la propriété de leurs titulaires.</div>', unsafe_allow_html=True)

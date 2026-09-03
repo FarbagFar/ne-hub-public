@@ -488,7 +488,7 @@ def _render_sources(measures: list[dict], only_quantified: bool):
     cfg={}
     if hasattr(st.column_config, "LinkColumn"):
         cfg["Source"] = st.column_config.LinkColumn("Source", display_text="Ouvrir")
-    st.dataframe(df, hide_index=True, use_container_width=True, height=min(520, 36*(len(df)+1)), column_config=cfg)
+    st.dataframe(df, hide_index=True, width="stretch", height=min(520, 36*(len(df)+1)), column_config=cfg)
     st.caption("Un repère chiffré n'est pas automatiquement un impact budgétaire calculable. Les sous-mesures susceptibles d'être comprises dans les 200 Md€ ne sont pas additionnées une seconde fois.")
 
 
@@ -510,7 +510,7 @@ def _render_program_numbers(measures: list[dict]):
                 }
             )
     df = pd.DataFrame(rows)
-    st.dataframe(df, use_container_width=True, hide_index=True, height=min(430, 38 * (len(df) + 1)))
+    st.dataframe(df, width="stretch", hide_index=True, height=min(430, 38 * (len(df) + 1)))
 
 
 def _render_measure_detail(measures: list[dict]):
@@ -561,7 +561,7 @@ def _render_budget_waterfall(scenario: dict):
         yaxis_title="Déficit (Md€)",
     )
     st.markdown('<div class="impact-section-title">Comment le déficit évolue</div>', unsafe_allow_html=True)
-    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+    st.plotly_chart(fig, width="stretch", config={"displayModeBar": False})
     st.caption("Lecture : les économies réduisent le déficit ; les baisses de prélèvements réduisent les recettes et l'augmentent mécaniquement. Aucun effet macroéconomique indirect n'est ajouté.")
 
 
@@ -586,7 +586,7 @@ def _render_scenario_comparison(baseline: dict, phase: str, selected_pct: float)
     } for label, _, sc in values])
     fig = px.bar(df, x="Scénario", y="Déficit (Md€)", text_auto=".1f", title="Déficit selon le niveau de réalisation des économies")
     fig.update_layout(height=285, margin=dict(l=5,r=5,t=42,b=5), paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", showlegend=False)
-    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+    st.plotly_chart(fig, width="stretch", config={"displayModeBar": False})
 
 
 def _render_why_this_number(scenario: dict):
@@ -608,56 +608,57 @@ def _render_share_link(phase: str, realization_pct: float, scenario_mode: str, u
 
 
 def _render_france(baseline: dict, measures: list[dict], phase: str):
-    # Deux lectures : le scénario publié est verrouillé pour éviter les combinaisons incohérentes,
-    # le mode personnalisé sert à comprendre la mécanique budgétaire.
-    requested_mode = str(st.query_params.get("mode", "programme") or "programme").lower()
-    default_mode = "Personnaliser" if requested_mode.startswith("person") else "Programme publié"
-    if hasattr(st, "segmented_control"):
-        scenario_mode = st.segmented_control(
-            "Scénario",
-            ["Programme publié", "Personnaliser"],
-            default=default_mode,
-            key="impact_scenario_mode",
-        ) or default_mode
-    else:
-        scenario_mode = st.radio(
-            "Scénario",
-            ["Programme publié", "Personnaliser"],
-            horizontal=True,
-            key="impact_scenario_mode",
+    """Vue France simplifiée : le scénario publié est montré d'abord,
+    les stress-tests et détails restent disponibles mais repliés.
+    """
+    scenario_mode = "Programme publié"
+    use_spending = use_workers = use_production = True
+    realization_pct = 100
+
+    st.markdown("### Le scénario en une lecture")
+    st.caption("Par défaut, vous voyez le scénario publié. Les réglages avancés sont facultatifs.")
+
+    with st.expander("⚙️ Tester un scénario différent", expanded=False):
+        activate_test = st.toggle(
+            "Activer le mode test",
+            value=False,
+            key=f"impact_activate_test_{phase}",
+            help="Permet de tester une réalisation partielle des économies ou de désactiver certains leviers. Ce n'est plus nécessairement le programme publié.",
         )
+        if activate_test:
+            if hasattr(st, "segmented_control"):
+                scenario_mode = st.segmented_control(
+                    "Type de test",
+                    ["Programme publié", "Personnaliser"],
+                    default="Programme publié",
+                    key="impact_scenario_mode",
+                ) or "Programme publié"
+            else:
+                scenario_mode = st.radio(
+                    "Type de test",
+                    ["Programme publié", "Personnaliser"],
+                    horizontal=True,
+                    key="impact_scenario_mode",
+                )
+
+            if scenario_mode == "Personnaliser":
+                c1, c2, c3 = st.columns(3)
+                use_spending = c1.toggle("Économies de dépenses", value=True, key=f"impact_spend_{phase}")
+                use_workers = c2.toggle("Baisse prélèvements actifs", value=True, key=f"impact_workers_{phase}")
+                use_production = c3.toggle("Baisse impôts production", value=True, key=f"impact_prod_{phase}")
+
+            realization_pct = st.slider(
+                "Part des économies effectivement réalisées",
+                min_value=50,
+                max_value=100,
+                value=100,
+                step=5,
+                key=f"impact_realization_{phase}_{scenario_mode}",
+                help="Stress-test : les baisses de prélèvements restent au niveau prévu afin de rendre visible un éventuel manque de financement.",
+            )
+            st.caption("Ce réglage sert à comprendre la mécanique budgétaire ; il ne constitue pas une prévision.")
+
     program_mode = scenario_mode == "Programme publié"
-
-    if program_mode:
-        use_spending = use_workers = use_production = True
-        st.caption("Scénario de référence 60 % / 20 % / 20 %. Le curseur ci-dessous sert uniquement à tester ce qui se passe si une partie des économies annoncées n'est pas effectivement réalisée.")
-    else:
-        st.caption("Mode pédagogique libre : activez ou désactivez les trois leviers. Ce mode ne représente plus nécessairement le programme publié.")
-        def _qp_bool(name: str, default: bool = True) -> bool:
-            raw = str(st.query_params.get(name, "1" if default else "0") or "").lower()
-            return raw not in {"0", "false", "non", "no", "off"}
-        c1, c2, c3 = st.columns(3)
-        use_spending = c1.toggle("Économies de dépenses", value=_qp_bool("spend", True), key=f"impact_spend_{phase}")
-        use_workers = c2.toggle("Baisse prélèvements actifs", value=_qp_bool("workers", True), key=f"impact_workers_{phase}")
-        use_production = c3.toggle("Baisse impôts production", value=_qp_bool("prod", True), key=f"impact_prod_{phase}")
-
-    try:
-        requested_realization = int(float(st.query_params.get("realisation", 100) or 100))
-    except Exception:
-        requested_realization = 100
-    requested_realization = max(50, min(100, int(round(requested_realization / 5.0) * 5)))
-    realization_pct = st.slider(
-        "Part des économies effectivement réalisées",
-        min_value=50,
-        max_value=100,
-        value=requested_realization,
-        step=5,
-        key=f"impact_realization_{phase}_{scenario_mode}",
-        help="Stress-test : le curseur réduit uniquement les économies réalisées. Les baisses de prélèvements restent au niveau prévu à l'horizon choisi afin de rendre visible un éventuel manque de financement.",
-    )
-    if realization_pct < 100:
-        st.caption(f"Stress-test : {realization_pct} % des économies prévues sont réalisées. Les baisses de prélèvements restent inchangées dans ce test.")
-
     scenario = compute_program_scenario(
         baseline,
         phase,
@@ -667,142 +668,86 @@ def _render_france(baseline: dict, measures: list[dict], phase: str):
         realization_pct=realization_pct,
     )
 
-    if scenario["funding_gap"] < -1e-9:
+    improvement = float(scenario["deficit_improvement"])
+    if improvement > 1e-9:
+        summary = (
+            f"À {phase.lower()}, le déficit passe mécaniquement de {fmt_bn(scenario['deficit_before'])} "
+            f"à {fmt_bn(scenario['deficit_after'])}, soit {fmt_bn(improvement)} de déficit en moins."
+        )
+        st.success(summary)
+    elif improvement < -1e-9:
         st.error(
-            f"Financement incomplet : les économies réalisées couvrent {scenario['funding_coverage_pct']:.0f} % des baisses de prélèvements sélectionnées. "
-            f"Il manque mécaniquement {fmt_bn(abs(scenario['funding_gap']))}."
+            f"Dans ce test, le déficit augmente mécaniquement de {fmt_bn(abs(improvement))} : "
+            f"{fmt_bn(scenario['deficit_before'])} → {fmt_bn(scenario['deficit_after'])}."
         )
-    elif scenario["funding_gap"] > 1e-9 and (scenario["worker_relief"] or scenario["production_relief"]):
-        st.success(
-            f"Après financement des baisses de prélèvements, il reste mécaniquement {fmt_bn(scenario['funding_gap'])} pour améliorer le solde public."
-        )
-
-    if not program_mode:
-        if scenario["deficit_improvement"] < -1e-9:
-            st.error(f"Ce scénario baisse les prélèvements davantage qu'il ne réduit les dépenses : le déficit augmente mécaniquement de {fmt_bn(abs(scenario['deficit_improvement']))}.")
-        elif scenario["deficit_improvement"] > 1e-9:
-            st.info(f"Scénario personnalisé : le solde public s'améliore mécaniquement de {fmt_bn(scenario['deficit_improvement'])}.")
-        else:
-            st.info("Scénario personnalisé : l'effet mécanique net sur le déficit est nul.")
+    else:
+        st.info(f"Dans ce scénario, le déficit reste mécaniquement à {fmt_bn(scenario['deficit_after'])}.")
 
     _render_before_after(baseline, scenario)
-    _render_compact_kpis(scenario)
-    _render_why_this_number(scenario)
-    st.caption("* Calcul mécanique à PIB constant. Le vert signifie uniquement que l’indicateur affiché évolue dans le sens indiqué ; aucun effet de croissance, d’emploi ou de comportement n’est ajouté.")
-
     _render_allocation_flow(scenario, program_mode and realization_pct == 100)
-    _render_budget_waterfall(scenario)
-    if program_mode:
-        _render_scenario_comparison(baseline, phase, realization_pct)
-    _render_progress_to_targets(baseline, scenario)
 
-    improvement=float(scenario["deficit_improvement"])
-    if improvement > 1e-9:
-        explain=(f"À {phase.lower()}, {fmt_bn(scenario['spending_savings'])} d'économies sont effectivement réalisées. "
-                 f"Après {fmt_bn(scenario['worker_relief'])} de baisse de prélèvements sur les actifs et {fmt_bn(scenario['production_relief'])} sur la production, "
-                 f"le déficit est mécaniquement réduit de {fmt_bn(improvement)} : {fmt_bn(scenario['deficit_before'])} → {fmt_bn(scenario['deficit_after'])}.")
-        explain_state="good"
-    elif improvement < -1e-9:
-        explain=(f"Dans ce scénario, les baisses de prélèvements ne sont pas compensées par des économies suffisantes. "
-                 f"Le déficit augmente mécaniquement de {fmt_bn(abs(improvement))} : {fmt_bn(scenario['deficit_before'])} → {fmt_bn(scenario['deficit_after'])}.")
-        explain_state="bad"
-    else:
-        explain=(f"Dans ce scénario, les économies et baisses de recettes se compensent exactement : le déficit reste à {fmt_bn(scenario['deficit_after'])}.")
-        explain_state=""
-    st.markdown(f'<div class="impact-section-title">Ce que cela signifie</div><div class="impact-explain {explain_state}">{html.escape(explain)}</div>',unsafe_allow_html=True)
+    st.caption("Lecture mécanique à PIB constant : aucune croissance, réaction comportementale ou effet d'emploi n'est ajouté.")
 
-    export_payload = {
-        "horizon": phase,
-        "mode": scenario_mode,
-        "realisation_economies_pct": realization_pct,
-        "hypothese_intermediaire": _phase_is_estimated(phase),
-        "economies_cible_milliards": round(scenario["target_savings"], 1),
-        "economies_realisees_milliards": round(scenario["spending_savings"], 1),
-        "baisse_prelevements_actifs_milliards": round(scenario["worker_relief"], 1),
-        "baisse_impots_production_milliards": round(scenario["production_relief"], 1),
-        "deficit_initial_milliards": round(scenario["deficit_before"], 1),
-        "deficit_simule_milliards": round(scenario["deficit_after"], 1),
-        "variation_deficit_milliards": round(scenario["deficit_after"]-scenario["deficit_before"], 1),
-        "deficit_pib_pct": round(scenario["deficit_pct_after"], 2),
-        "note": "Simulation mécanique à PIB constant ; aucune croissance, inflation ou réaction comportementale n'est intégrée.",
-    }
-    st.download_button(
-        "⬇️ Exporter ce scénario (JSON)",
-        data=json.dumps(export_payload, ensure_ascii=False, indent=2),
-        file_name=f"scenario_ne_hub_{_phase_number(phase)}.json",
-        mime="application/json",
-        key=f"impact_export_{phase}_{realization_pct}",
-    )
-    _render_share_link(phase, realization_pct, scenario_mode, use_spending, use_workers, use_production)
+    with st.expander("❓ Comprendre le calcul", expanded=False):
+        _render_compact_kpis(scenario)
+        _render_why_this_number(scenario)
+        _render_budget_waterfall(scenario)
+        _render_progress_to_targets(baseline, scenario)
+        if program_mode:
+            _render_scenario_comparison(baseline, phase, realization_pct)
 
-    if _phase_is_estimated(phase):
-        st.warning(f"{phase} : {scenario['target_savings']:.0f} Md€ est une interpolation linéaire entre 80 Md€ en Année 1 et 200 Md€ en Année 5. Ce montant intermédiaire n'est pas présenté comme un chiffrage officiel.")
-
-    trajectory = compute_five_year_trajectory(baseline, use_spending, use_workers, use_production, realization_pct=realization_pct)
-    st.markdown('<div class="impact-section-title">Trajectoire sur 5 ans</div>', unsafe_allow_html=True)
-    t1, t2 = st.columns([1.6, 1])
-    with t1:
-        traj_plot = trajectory[["Année", "Déficit (Md€)"]].rename(columns={"Déficit (Md€)":"Avec les mesures"})
+    with st.expander("📈 Voir la trajectoire sur 5 ans", expanded=False):
+        trajectory = compute_five_year_trajectory(
+            baseline,
+            use_spending,
+            use_workers,
+            use_production,
+            realization_pct=realization_pct,
+        )
+        traj_plot = trajectory[["Année", "Déficit (Md€)"]].rename(columns={"Déficit (Md€)": "Avec les mesures"})
         traj_plot["Sans mesures"] = float(baseline["deficit_billion"])
         melted = traj_plot.melt(id_vars="Année", var_name="Scénario", value_name="Déficit (Md€)")
         fig_traj = px.line(melted, x="Année", y="Déficit (Md€)", color="Scénario", markers=True)
         fig_traj.add_hline(
-            y=float(baseline["gdp_billion"])*0.03,
+            y=float(baseline["gdp_billion"]) * 0.03,
             line_dash="dot",
             annotation_text="Repère 3 % du PIB",
             annotation_position="bottom right",
         )
         fig_traj.update_layout(
-            height=320,
-            margin=dict(l=5,r=5,t=20,b=5),
+            height=330,
+            margin=dict(l=5, r=5, t=20, b=5),
             legend_title_text="",
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(0,0,0,0)",
             hovermode="x unified",
         )
-        st.plotly_chart(fig_traj, use_container_width=True, config={"displayModeBar": False})
-    with t2:
-        end=trajectory.iloc[-1]
-        year1=float(trajectory.iloc[0]["Déficit (Md€)"])
-        year5=float(end["Déficit (Md€)"])
-        debt_gap=float(end["Écart de dette vs référence (Md€)"])
-        _cards([
-            {"label":"Déficit Année 1","value":fmt_bn(year1),"delta":_delta_text(float(baseline['deficit_billion']),year1,"Md€"),"good":year1<float(baseline['deficit_billion']),"bad":year1>float(baseline['deficit_billion']),"delta_kind":"good" if year1<float(baseline['deficit_billion']) else ("bad" if year1>float(baseline['deficit_billion']) else "")},
-            {"label":"Déficit Année 5","value":fmt_bn(year5),"delta":_delta_text(float(baseline['deficit_billion']),year5,"Md€"),"good":year5<float(baseline['deficit_billion']),"bad":year5>float(baseline['deficit_billion']),"delta_kind":"good" if year5<float(baseline['deficit_billion']) else ("bad" if year5>float(baseline['deficit_billion']) else "")},
-            {"label":"Écart de dette à 5 ans*","value":fmt_bn(abs(debt_gap)),"delta":"dette mécanique ↓" if debt_gap>0 else ("dette mécanique ↑" if debt_gap<0 else "inchangée"),"good":debt_gap>0,"bad":debt_gap<0,"delta_kind":"good" if debt_gap>0 else ("bad" if debt_gap<0 else "")},
-        ])
-        st.caption("* Écart cumulé par rapport à un scénario mécanique répétant chaque année le déficit 2025. Ce n'est pas une prévision macroéconomique.")
+        st.plotly_chart(fig_traj, width="stretch", config={"displayModeBar": False})
+        st.caption("Années 2 à 4 : interpolation linéaire de visualisation entre les repères Année 1 et Année 5.")
 
-    with st.expander("Voir le détail annuel", expanded=False):
-        st.dataframe(
-            trajectory[["Année", "Économies (Md€)", "Déficit (Md€)", "Déficit / PIB (%)", "Écart de dette vs référence (Md€)", "Statut"]],
-            hide_index=True,
-            use_container_width=True,
-            height=245,
-            column_config={
-                "Économies (Md€)": st.column_config.NumberColumn(format="%.0f"),
-                "Déficit (Md€)": st.column_config.NumberColumn(format="%.1f"),
-                "Déficit / PIB (%)": st.column_config.NumberColumn(format="%.1f %%"),
-                "Écart de dette vs référence (Md€)": st.column_config.NumberColumn(format="%.1f"),
-            },
-        )
-        st.caption("Années 2 à 4 : interpolation linéaire de visualisation. Le curseur de réalisation est appliqué à chaque année de la trajectoire.")
+        with st.expander("Voir le détail annuel", expanded=False):
+            st.dataframe(
+                trajectory[["Année", "Économies (Md€)", "Déficit (Md€)", "Déficit / PIB (%)", "Écart de dette vs référence (Md€)", "Statut"]],
+                hide_index=True,
+                width="stretch",
+                height=245,
+                column_config={
+                    "Économies (Md€)": st.column_config.NumberColumn(format="%.0f"),
+                    "Déficit (Md€)": st.column_config.NumberColumn(format="%.1f"),
+                    "Déficit / PIB (%)": st.column_config.NumberColumn(format="%.1f %%"),
+                    "Écart de dette vs référence (Md€)": st.column_config.NumberColumn(format="%.1f"),
+                },
+            )
 
-    with st.expander("Repères de solde et dette", expanded=False):
-        a,b,c=st.columns(3)
-        a.metric("Seuil 3 % du PIB", fmt_bn(scenario["three_pct_deficit"]))
-        b.metric("Écart restant vers 3 %", fmt_bn(scenario["gap_to_three_pct"]))
-        c.metric("Écart jusqu'à l'équilibre", fmt_bn(max(0.0, scenario["deficit_after"])))
-        d1,d2,d3=st.columns(3)
-        d1.metric("Dette fin 2025", fmt_bn(scenario["debt_before"]))
-        d2.metric("Déficit restant", fmt_bn(scenario["deficit_after"]))
-        d3.metric("Dette mécanique à +1 an", fmt_bn(scenario["debt_next"]), f"{scenario['debt_next_pct']:.1f} % du PIB")
-        st.caption("Tant que le budget reste déficitaire, la dette brute continue mécaniquement d'augmenter. Projection à PIB constant, hors ajustements stock-flux et effets macroéconomiques.")
-
-    with st.expander("Programme en chiffres · sources et détails", expanded=False):
-        st.caption("Les lignes détaillées ne sont pas additionnées au scénario de 200 Md€ lorsqu’elles peuvent déjà faire partie de cette enveloppe : cela évite les doubles comptes.")
+    with st.expander("📚 Programme en chiffres et détails", expanded=False):
+        st.caption("Les sous-mesures susceptibles d'être comprises dans l'enveloppe de 200 Md€ ne sont pas additionnées une seconde fois.")
         _render_program_numbers(measures)
         _render_measure_detail(measures)
+
+    if _phase_is_estimated(phase):
+        st.caption(
+            f"{phase} : {scenario['target_savings']:.0f} Md€ est une interpolation de visualisation entre 80 Md€ en Année 1 et 200 Md€ en Année 5."
+        )
 
 def _person_direct_impact(monthly_income: float, status: str, phase: str) -> dict:
     """Effets directs individuels uniquement, sans comportement ni fiscalité complète."""
@@ -911,7 +856,7 @@ def _render_you(phase: str):
     st.dataframe(
         rdf,
         hide_index=True,
-        use_container_width=True,
+        width="stretch",
         column_config={
             "Revenu avant": st.column_config.NumberColumn(format="%.0f €"),
             "Cotisations / travail": st.column_config.NumberColumn(format="%+.0f €"),
@@ -978,7 +923,7 @@ def _render_profiles(phase: str):
     df["Variation %"] = df.apply(lambda r: r["Variation"] / r["Avant"] * 100 if r["Avant"] else 0.0, axis=1)
     st.dataframe(
         df,
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
         column_config={
             "Avant": st.column_config.NumberColumn(format="%.0f €"),
@@ -990,7 +935,7 @@ def _render_profiles(phase: str):
     )
     fig = px.bar(df, x="Profil", y="Variation", title=f"Variation mensuelle directement modélisée — {phase}")
     fig.update_layout(height=310, margin=dict(l=5, r=5, t=45, b=5), paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
-    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+    st.plotly_chart(fig, width="stretch", config={"displayModeBar": False})
     st.caption("Repères de revenu : SMIC net juin 2026 (ministère du Travail), salaire médian privé et cadre moyen 2024 (Insee). Le +400 € est l’ordre de grandeur publié par Nouvelle Énergie, pas un barème individuel.")
 
 
@@ -1056,68 +1001,59 @@ def render_impact_simulator():
 
     st.markdown("## 🧮 Simulateur d’impact")
     st.markdown(
-        '<div class="impact-intro">Voir concrètement ce que changent les mesures chiffrées : comptes publics, revenu disponible et profils-types. Chaque résultat indique ce qui vient du programme, d’une donnée publique ou d’une hypothèse de calcul.</div>',
+        '<div class="impact-intro"><b>En pratique :</b> choisissez quand vous voulez regarder l’effet, puis ouvrez <b>France</b> ou <b>Mon foyer</b>. Les détails techniques restent disponibles mais sont repliés.</div>',
         unsafe_allow_html=True,
     )
 
-    top1, top2, top3 = st.columns([1.15, 2.1, 1.05])
-    with top1:
-        try:
-            requested_year = int(float(st.query_params.get("year", 5) or 5))
-        except Exception:
-            requested_year = 5
-        requested_year = max(1, min(5, requested_year))
-        requested_phase = f"Année {requested_year}"
-        if hasattr(st, "segmented_control"):
-            phase = st.segmented_control(
-                "Horizon",
-                options=PHASE_LABELS,
-                default=requested_phase,
-                key="impact_phase",
-            )
-            if phase is None:
-                phase = "Année 5"
-        else:
-            phase = st.radio(
-                "Horizon",
-                PHASE_LABELS,
-                index=requested_year-1,
-                horizontal=True,
-                key="impact_phase",
-            )
-    with top2:
-        if _phase_is_estimated(phase):
-            st.caption(f"{phase} = interpolation linéaire entre 80 Md€ en Année 1 et 200 Md€ en Année 5. Aucune croissance supplémentaire n’est supposée.")
-        else:
-            st.caption("Année 1 = 80 Md€ annoncés. Année 5 = cible de 200 Md€. Années 2 à 4 = hypothèses linéaires clairement signalées.")
-    with top3:
-        only_quantified = st.toggle("Chiffré uniquement", value=False, key="impact_only_quantified", help="Masque dans les tableaux les mesures sans repère chiffré explicite.")
-
-    shown_measures = [m for m in measures if (not only_quantified or _quantified_measure(m))]
-    stats = _measure_summary(measures)
     try:
-        catalog_updated = pd.Timestamp(MEASURES_PATH.stat().st_mtime, unit="s").strftime("%d/%m/%Y")
+        requested_year = int(float(st.query_params.get("year", 5) or 5))
     except Exception:
-        catalog_updated = "—"
-    st.markdown(
-        f'<div class="impact-source-row"><span class="impact-source-pill">Base France : {html.escape(str(baseline.get("as_of", "2025")))}</span>'
-        f'<span class="impact-source-pill">Catalogue : {catalog_updated}</span>'
-        f'<span class="impact-source-pill">{stats["total"]} mesures / objectifs suivis</span>'
-        f'<span class="impact-source-pill">{stats["quantified"]} avec repère chiffré</span>'
-        f'<span class="impact-source-pill">{stats["modeled"]} à effet direct modélisé</span></div>',
-        unsafe_allow_html=True,
-    )
+        requested_year = 5
+    requested_year = max(1, min(5, requested_year))
+    requested_phase = f"Année {requested_year}"
 
-    tabs = st.tabs(["🇫🇷 France", "👤 Vous", "👥 Profils", "📚 Sources", "🧭 Méthode"])
+    st.markdown("### 1. À quel horizon ?")
+    if hasattr(st, "segmented_control"):
+        phase = st.segmented_control(
+            "Horizon",
+            options=PHASE_LABELS,
+            default=requested_phase,
+            key="impact_phase",
+            label_visibility="collapsed",
+        ) or requested_phase
+    else:
+        phase = st.radio(
+            "Horizon",
+            PHASE_LABELS,
+            index=requested_year - 1,
+            horizontal=True,
+            key="impact_phase",
+            label_visibility="collapsed",
+        )
+
+    if _phase_is_estimated(phase):
+        st.caption(f"{phase} est une interpolation de visualisation entre les repères publiés de l’Année 1 et de l’Année 5.")
+    else:
+        st.caption("Année 1 : premier repère. Année 5 : cible du scénario. Les calculs restent mécaniques et sourcés.")
+
+    st.markdown("### 2. Qu’est-ce que vous voulez voir ?")
+    tabs = st.tabs(["🇫🇷 France", "👤 Mon foyer", "👥 Exemples de profils"])
     with tabs[0]:
-        _render_france(baseline, shown_measures, phase)
+        _render_france(baseline, measures, phase)
     with tabs[1]:
         _render_you(phase)
     with tabs[2]:
         _render_profiles(phase)
-    with tabs[3]:
+
+    with st.expander("📚 Sources, hypothèses et méthode", expanded=False):
+        st.caption("Cette partie documente les chiffres et les limites du simulateur. Elle n’est pas nécessaire pour une lecture rapide.")
+        only_quantified = st.toggle(
+            "Afficher uniquement les mesures chiffrées",
+            value=False,
+            key="impact_only_quantified",
+        )
         _render_sources(measures, only_quantified)
-    with tabs[4]:
+        st.divider()
         _render_methodology(baseline, measures)
 
 
