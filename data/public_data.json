@@ -1,5 +1,5 @@
 {
-  "last_sync": "03/09/2026 10:36",
+  "last_sync": "04/09/2026 11:40",
   "movement": {
     "members": 27600,
     "elected": 1800,
@@ -7,9 +7,27 @@
     "as_of_label": "31 août 2026",
     "source_url": "https://www.unenouvelleenergie.fr/questions/combien-d-adherents-compte-nouvelle-energie/",
     "publications_source_url": "https://www.unenouvelleenergie.fr/actualites/",
-    "source_checked_at": "03/09/2026 10:36"
+    "source_checked_at": "04/09/2026 11:40"
   },
   "official_news": [
+    {
+      "title": "Facturation électronique : \"Les PME aéronautiques n'ont pas envie de voir leurs secrets commerciaux d'Airbus se retrouver dans la nature\", met en garde David Lisnard  David Lisnard a été le premier à demander au gouvernement de suspendre l’entrée en vigueur de",
+      "date": "2026-09-04",
+      "url": "https://www.unenouvelleenergie.fr/facturation-lectronique--les-pme-aronautiques-nont-pas-envie-de-voir-leurs-secrets-commerciaux-dairbus-se-retrouver-dans-la-nature-met-en-garde-david-lisnard/",
+      "source": "Nouvelle Énergie"
+    },
+    {
+      "title": "«Il faut éliminer les macronistes» : David Lisnard veut une compétition à droite avant le 1er tour de la présidentielle  Samedi soir, le président de Nouvelle Énergie, candidat à l’élection présidentielle, a répété son intention de ne jamais gouverner demain a",
+      "date": "2026-09-03",
+      "url": "https://www.unenouvelleenergie.fr/il-faut-liminer-les-macronistes-david-lisnard-veut-une-comptition--droite-avant-le-1er-tour-de-la-prsidentielle/",
+      "source": "Nouvelle Énergie"
+    },
+    {
+      "title": "David Lisnard sur CNews et Europe 1 : «Je veux une alternative, pas simplement une alternance»  Invité de Laurence Ferrari dans La Grande Interview, David Lisnard a défendu une ligne de rupture avec l’étatisme, la centralisation et les arrangements.",
+      "date": "2026-09-03",
+      "url": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1--je-veux-une-alternative-pas-simplement-une-alternance/",
+      "source": "Nouvelle Énergie"
+    },
     {
       "title": "« L'équipe de France du bon sens » : David Lisnard lance la bataille de 2027  Près de 4 000 personnes réunies à Cannes pour la première journée du Campus de la Gagne.",
       "date": "2026-09-01",
@@ -63,24 +81,6 @@
       "date": "2026-08-25",
       "url": "https://www.unenouvelleenergie.fr/-la-libert-ne-demande-pas-do-lon-vient--elle-demande-ce-que-lon-est-prt--risquer-pour-elle-/",
       "source": "Nouvelle Énergie"
-    },
-    {
-      "title": "La Mairie de Cannes dote sa Police Municipale de trois détecteurs de protoxyde d’azote, une première en France  Cannes devient la première mairie de France à équiper sa Police Municipale de trois détecteurs de protoxyde d’azote. Une innovation concrète.",
-      "date": "2026-08-24",
-      "url": "https://www.unenouvelleenergie.fr/la-mairie-de-cannes-dote-sa-police-municipale-de-trois-dtecteurs-de-protoxyde-dazote-une-premire-en-france/",
-      "source": "Nouvelle Énergie"
-    },
-    {
-      "title": "Venez assister au discours de rentrée de David Lisnard  Venez assister au discours de rentrée de David Lisnard à Cannes, sur la Butte de Saint-Cassien, samedi 29 août.",
-      "date": "2026-08-21",
-      "url": "https://www.unenouvelleenergie.fr/iscours-de-rentre/",
-      "source": "Nouvelle Énergie"
-    },
-    {
-      "title": "La Gagne : le Campus d’été de Nouvelle Énergie  La Gagne : le Campus d’été de Nouvelle Énergie 2026. Retrouvez le programme et les intervenants pour cette édition.",
-      "date": "2026-08-21",
-      "url": "https://www.unenouvelleenergie.fr/la-gagne--le-campus-dt-de-nouvelle-nergie/",
-      "source": "Nouvelle Énergie"
     }
   ],
   "wikipedia": {
@@ -92,18 +92,10 @@
       "Bruno Retailleau": "Bruno Retailleau",
       "Édouard Philippe": "Édouard Philippe",
       "Gabriel Attal": "Gabriel Attal",
-      "Xavier Bertrand": "Xavier Bertrand",
-      "Marine Le Pen": "Marine Le Pen",
-      "Jordan Bardella": "Jordan Bardella",
-      "Jean-Luc Mélenchon": "Jean-Luc Mélenchon",
-      "Raphaël Glucksmann": "Raphaël Glucksmann"
+      "Xavier Bertrand": "Xavier Bertrand"
     },
     "series": {
       "David Lisnard": [
-        {
-          "date": "2026-06-05",
-          "views": 923
-        },
         {
           "date": "2026-06-06",
           "views": 1306
@@ -459,13 +451,13 @@
         {
           "date": "2026-09-02",
           "views": 7999
+        },
+        {
+          "date": "2026-09-03",
+          "views": 11637
         }
       ],
       "Bruno Retailleau": [
-        {
-          "date": "2026-06-05",
-          "views": 1508
-        },
         {
           "date": "2026-06-06",
           "views": 1402
@@ -821,13 +813,13 @@
         {
           "date": "2026-09-02",
           "views": 1907
+        },
+        {
+          "date": "2026-09-03",
+          "views": 2073
         }
       ],
       "Édouard Philippe": [
-        {
-          "date": "2026-06-05",
-          "views": 1487
-        },
         {
           "date": "2026-06-06",
           "views": 1359
@@ -1183,13 +1175,13 @@
         {
           "date": "2026-09-02",
           "views": 2815
+        },
+        {
+          "date": "2026-09-03",
+          "views": 2196
         }
       ],
       "Gabriel Attal": [
-        {
-          "date": "2026-06-05",
-          "views": 2937
-        },
         {
           "date": "2026-06-06",
           "views": 2629
@@ -1545,6 +1537,10 @@
         {
           "date": "2026-09-02",
           "views": 4278
+        },
+        {
+          "date": "2026-09-03",
+          "views": 2988
         }
       ],
       "Xavier Bertrand": [
@@ -3358,6 +3354,6 @@
         }
       ]
     },
-    "as_of": "2026-09-02"
+    "as_of": "2026-09-03"
   }
 }

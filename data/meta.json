@@ -1,14 +1,20 @@
 {
-  "last_sync": "03/09/2026 10:36",
+  "last_sync": "04/09/2026 11:40",
   "changes": {
-    "new_documents": [],
-    "new_events": [],
+    "new_documents": [
+      "AFTERWORK HAUTE-GARONNE",
+      "https://www.unenouvelleenergie.fr/event/afterwork-haute-garonne/calendar.ics/"
+    ],
+    "new_events": [
+      "AFTERWORK HAUTE-GARONNE",
+      "https://www.unenouvelleenergie.fr/event/afterwork-haute-garonne/calendar.ics/"
+    ],
     "new_relays": []
   },
-  "documents": 96,
-  "events": 18,
+  "documents": 98,
+  "events": 20,
   "relays": 162,
   "brand_source": null,
   "relays_source": "page officielle des relais (donnees structurees)",
-  "events_json_ld": 9
+  "events_json_ld": 10
 }
