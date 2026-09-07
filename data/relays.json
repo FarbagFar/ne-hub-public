@@ -354,6 +354,19 @@
   {
     "department_code": "21",
     "department_name": "Cote d Or",
+    "name": "TRISTAN PERRY",
+    "email": null,
+    "emails": [],
+    "role": "RELAIS JEUNES ÉNERGIES",
+    "profession": "AGENT D'ACCEUIL",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": null,
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "21",
+    "department_name": "Cote d Or",
     "name": "Valérie Grandet",
     "email": "cotedor@unenouvelleenergie.fr",
     "emails": [
@@ -1435,6 +1448,19 @@
     "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
   },
   {
+    "department_code": "71",
+    "department_name": "Saône et Loire",
+    "name": "SIMON VACHERON",
+    "email": null,
+    "emails": [],
+    "role": "RELAIS JEUNES ÉNERGIES Saône-et-Loire",
+    "profession": "Barman",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Simon%20Vacheron.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
     "department_code": "72",
     "department_name": "Sarthe",
     "name": "Antoine d'Amécourt",
@@ -1511,30 +1537,13 @@
     "department_code": "75",
     "department_name": "Paris",
     "name": "Alexis Reichert",
-    "email": "paris@unenouvelleenergie.fr",
-    "emails": [
-      "paris@unenouvelleenergie.fr"
-    ],
+    "email": null,
+    "emails": [],
     "role": "Relais départemental",
     "profession": "Cadre dans l'industrie agroalimentaire",
     "mandate": null,
     "scope": "departement",
     "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Alexis%20Reichert.jpg",
-    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
-  },
-  {
-    "department_code": "75",
-    "department_name": "Paris",
-    "name": "Alix Darcet",
-    "email": "paris@unenouvelleenergie.fr",
-    "emails": [
-      "paris@unenouvelleenergie.fr"
-    ],
-    "role": "Relais départemental",
-    "profession": "Collaboratrice d'élu",
-    "mandate": null,
-    "scope": "departement",
-    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Alix%20Darcet-scaled.jpg",
     "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
   },
   {
@@ -2377,6 +2386,21 @@
     "mandate": null,
     "scope": "international",
     "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Etienne-Arnoux-1.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "75",
+    "department_name": "Paris",
+    "name": "Alix Darcet",
+    "email": "paris@unenouvelleenergie.fr",
+    "emails": [
+      "paris@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Collaboratrice d'élu",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Alix%20Darcet-scaled.jpg",
     "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
   }
 ]

@@ -1,15 +1,21 @@
 {
-  "last_sync": "04/09/2026 11:40",
+  "last_sync": "07/09/2026 14:10",
   "movement": {
-    "members": 27600,
+    "members": 28900,
     "elected": 1800,
     "official_publications": 1466,
-    "as_of_label": "31 août 2026",
+    "as_of_label": "7 septembre 2026",
     "source_url": "https://www.unenouvelleenergie.fr/questions/combien-d-adherents-compte-nouvelle-energie/",
     "publications_source_url": "https://www.unenouvelleenergie.fr/actualites/",
-    "source_checked_at": "04/09/2026 11:40"
+    "source_checked_at": "07/09/2026 14:10"
   },
   "official_news": [
+    {
+      "title": "David Lisnard franchit le cap des 500 promesses de parrainage pour 2027  David Lisnard a annoncé avoir déjà recueilli 500 promesses de parrainage d’élus en vue de l’élection présidentielle de 2027.",
+      "date": "2026-09-04",
+      "url": "https://www.unenouvelleenergie.fr/david-lisnard-franchit-le-cap-des-500-promesses-de-parrainage-pour-2027/",
+      "source": "Nouvelle Énergie"
+    },
     {
       "title": "Facturation électronique : \"Les PME aéronautiques n'ont pas envie de voir leurs secrets commerciaux d'Airbus se retrouver dans la nature\", met en garde David Lisnard  David Lisnard a été le premier à demander au gouvernement de suspendre l’entrée en vigueur de",
       "date": "2026-09-04",
@@ -26,6 +32,12 @@
       "title": "David Lisnard sur CNews et Europe 1 : «Je veux une alternative, pas simplement une alternance»  Invité de Laurence Ferrari dans La Grande Interview, David Lisnard a défendu une ligne de rupture avec l’étatisme, la centralisation et les arrangements.",
       "date": "2026-09-03",
       "url": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1--je-veux-une-alternative-pas-simplement-une-alternance/",
+      "source": "Nouvelle Énergie"
+    },
+    {
+      "title": "À la Foire de Châlons, David Lisnard défend une agriculture libérée des impôts de production et de la bureaucratie  David Lisnard s’est rendu à la 80e Foire de Châlons-en-Champagne, deuxième rendez-vous agricole de France.",
+      "date": "2026-09-03",
+      "url": "https://www.unenouvelleenergie.fr/-la-foire-de-chlons-david-lisnard-dfend-une-agriculture-libre-des-impts-de-production-et-de-la-bureaucratie/",
       "source": "Nouvelle Énergie"
     },
     {
@@ -69,18 +81,6 @@
       "date": "2026-08-28",
       "url": "https://www.unenouvelleenergie.fr/-il-est-temps-de-redonner-le-pouvoir-aux-franais-/",
       "source": "Nouvelle Énergie"
-    },
-    {
-      "title": "Disparition de Philippe Bouvard : David Lisnard salue une figure majeure de l’esprit français  David Lisnard a rendu hommage à « une personnalité hors du commun » qui aura marqué plusieurs générations de Français",
-      "date": "2026-08-25",
-      "url": "https://www.unenouvelleenergie.fr/disparition-de-philippe-bouvard--david-lisnard-salue-une-figure-majeure-de-lesprit-franais/",
-      "source": "Nouvelle Énergie"
-    },
-    {
-      "title": "« La liberté ne demande pas d’où l’on vient ; elle demande ce que l’on est prêt à risquer pour elle »  À l’occasion du 82e anniversaire de la Libération de Cannes, lundi , David Lisnard a prononcé une allocution consacrée à la liberté, au courage et au redress",
-      "date": "2026-08-25",
-      "url": "https://www.unenouvelleenergie.fr/-la-libert-ne-demande-pas-do-lon-vient--elle-demande-ce-que-lon-est-prt--risquer-pour-elle-/",
-      "source": "Nouvelle Énergie"
     }
   ],
   "wikipedia": {
@@ -96,18 +96,6 @@
     },
     "series": {
       "David Lisnard": [
-        {
-          "date": "2026-06-06",
-          "views": 1306
-        },
-        {
-          "date": "2026-06-07",
-          "views": 1459
-        },
-        {
-          "date": "2026-06-08",
-          "views": 1346
-        },
         {
           "date": "2026-06-09",
           "views": 1578
@@ -455,21 +443,21 @@
         {
           "date": "2026-09-03",
           "views": 11637
+        },
+        {
+          "date": "2026-09-04",
+          "views": 5757
+        },
+        {
+          "date": "2026-09-05",
+          "views": 5450
+        },
+        {
+          "date": "2026-09-06",
+          "views": 5706
         }
       ],
       "Bruno Retailleau": [
-        {
-          "date": "2026-06-06",
-          "views": 1402
-        },
-        {
-          "date": "2026-06-07",
-          "views": 1893
-        },
-        {
-          "date": "2026-06-08",
-          "views": 1970
-        },
         {
           "date": "2026-06-09",
           "views": 1981
@@ -817,21 +805,21 @@
         {
           "date": "2026-09-03",
           "views": 2073
+        },
+        {
+          "date": "2026-09-04",
+          "views": 1492
+        },
+        {
+          "date": "2026-09-05",
+          "views": 1228
+        },
+        {
+          "date": "2026-09-06",
+          "views": 2511
         }
       ],
       "Édouard Philippe": [
-        {
-          "date": "2026-06-06",
-          "views": 1359
-        },
-        {
-          "date": "2026-06-07",
-          "views": 1427
-        },
-        {
-          "date": "2026-06-08",
-          "views": 1560
-        },
         {
           "date": "2026-06-09",
           "views": 1297
@@ -1179,21 +1167,21 @@
         {
           "date": "2026-09-03",
           "views": 2196
+        },
+        {
+          "date": "2026-09-04",
+          "views": 1780
+        },
+        {
+          "date": "2026-09-05",
+          "views": 1905
+        },
+        {
+          "date": "2026-09-06",
+          "views": 2398
         }
       ],
       "Gabriel Attal": [
-        {
-          "date": "2026-06-06",
-          "views": 2629
-        },
-        {
-          "date": "2026-06-07",
-          "views": 2411
-        },
-        {
-          "date": "2026-06-08",
-          "views": 2394
-        },
         {
           "date": "2026-06-09",
           "views": 2084
@@ -1541,6 +1529,18 @@
         {
           "date": "2026-09-03",
           "views": 2988
+        },
+        {
+          "date": "2026-09-04",
+          "views": 2347
+        },
+        {
+          "date": "2026-09-05",
+          "views": 2969
+        },
+        {
+          "date": "2026-09-06",
+          "views": 3720
         }
       ],
       "Xavier Bertrand": [
@@ -3354,6 +3354,6 @@
         }
       ]
     },
-    "as_of": "2026-09-03"
+    "as_of": "2026-09-06"
   }
 }

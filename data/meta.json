@@ -1,20 +1,27 @@
 {
-  "last_sync": "04/09/2026 11:40",
+  "last_sync": "07/09/2026 14:10",
   "changes": {
     "new_documents": [
-      "AFTERWORK HAUTE-GARONNE",
-      "https://www.unenouvelleenergie.fr/event/afterwork-haute-garonne/calendar.ics/"
+      "AFTERWORK JEUNES ÉNERGIES VAL-D'OISE",
+      "https://www.unenouvelleenergie.fr/event/afterwork-jeunes-nergies-val-doise/calendar.ics/",
+      "AFTERWORK DE RENTRÉE PARIS 15E",
+      "https://www.unenouvelleenergie.fr/event/afterwork-de-rentre-paris-15e/calendar.ics/"
     ],
     "new_events": [
-      "AFTERWORK HAUTE-GARONNE",
-      "https://www.unenouvelleenergie.fr/event/afterwork-haute-garonne/calendar.ics/"
+      "AFTERWORK DE RENTRÉE PARIS 15E",
+      "https://www.unenouvelleenergie.fr/event/afterwork-de-rentre-paris-15e/calendar.ics/",
+      "AFTERWORK JEUNES ÉNERGIES VAL-D'OISE",
+      "https://www.unenouvelleenergie.fr/event/afterwork-jeunes-nergies-val-doise/calendar.ics/"
     ],
-    "new_relays": []
+    "new_relays": [
+      "Cote d Or — TRISTAN PERRY",
+      "Saône et Loire — SIMON VACHERON"
+    ]
   },
-  "documents": 98,
-  "events": 20,
-  "relays": 162,
+  "documents": 96,
+  "events": 18,
+  "relays": 164,
   "brand_source": null,
   "relays_source": "page officielle des relais (donnees structurees)",
-  "events_json_ld": 10
+  "events_json_ld": 9
 }
