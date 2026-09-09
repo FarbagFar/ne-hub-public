@@ -75,6 +75,19 @@
   {
     "department_code": "03",
     "department_name": "Allier",
+    "name": "CHARLES GERMAIN",
+    "email": null,
+    "emails": [],
+    "role": "RELAIS JEUNES ÉNERGIES",
+    "profession": "Ingénieur (moteurs électriques)",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp%20Image%202026-09-07%20at%2021.19.59.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "03",
+    "department_name": "Allier",
     "name": "Jérémy Thomas",
     "email": "allier@unenouvelleenergie.fr",
     "emails": [

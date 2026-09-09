@@ -1,15 +1,33 @@
 {
-  "last_sync": "07/09/2026 14:10",
+  "last_sync": "09/09/2026 10:53",
   "movement": {
-    "members": 28900,
+    "members": 29400,
     "elected": 1800,
     "official_publications": 1466,
-    "as_of_label": "7 septembre 2026",
+    "as_of_label": "9 septembre 2026",
     "source_url": "https://www.unenouvelleenergie.fr/questions/combien-d-adherents-compte-nouvelle-energie/",
     "publications_source_url": "https://www.unenouvelleenergie.fr/actualites/",
-    "source_checked_at": "07/09/2026 14:10"
+    "source_checked_at": "09/09/2026 10:53"
   },
   "official_news": [
+    {
+      "title": "Viva Associations 2026 : la force de l’engagement associatif  David Lisnard s’est rendu à Viva Associations 2026, au Palais des Festivals et des Congrès de Cannes.",
+      "date": "2026-09-08",
+      "url": "https://www.unenouvelleenergie.fr/viva-associations-2026--la-force-de-lengagement-associatif/",
+      "source": "Nouvelle Énergie"
+    },
+    {
+      "title": "«C’est un accomplissement de recevoir ce prix»  Le « prix de l’excellence éducative Jacqueline de Romilly », accompagné d’une bourse d’études, a été remis à 38 bacheliers qui ont eu la mention Très bien.",
+      "date": "2026-09-08",
+      "url": "https://www.unenouvelleenergie.fr/cest-un-accomplissement-de-recevoir-ce-prix/",
+      "source": "Nouvelle Énergie"
+    },
+    {
+      "title": "Cannes : un été record pour les parkings municipaux  Avec 609 292 visiteurs enregistrés cet été dans les parkings municipaux, Cannes atteint un nouveau record de fréquentation",
+      "date": "2026-09-08",
+      "url": "https://www.unenouvelleenergie.fr/cannes--un-t-record-pour-les-parkings-municipaux/",
+      "source": "Nouvelle Énergie"
+    },
     {
       "title": "David Lisnard franchit le cap des 500 promesses de parrainage pour 2027  David Lisnard a annoncé avoir déjà recueilli 500 promesses de parrainage d’élus en vue de l’élection présidentielle de 2027.",
       "date": "2026-09-04",
@@ -63,24 +81,6 @@
       "date": "2026-09-01",
       "url": "https://www.unenouvelleenergie.fr/des-coles-plus-confortables-et-une-ducation-plus-complte-pour-les-enfants-cannois/",
       "source": "Nouvelle Énergie"
-    },
-    {
-      "title": "« Sans une grande primaire ouverte à tous, la droite et le centre ne seront pas en mesure de l’emporter »  Pour éviter la division, la multiplication des candidatures, David Lisnard appelle ses concurrents de la droite à accepter une primaire.",
-      "date": "2026-08-28",
-      "url": "https://www.unenouvelleenergie.fr/sans-une-grande-primaire-ouverte--tous-la-droite-et-le-centre-ne-seront-pas-en-mesure-de-lemporter/",
-      "source": "Nouvelle Énergie"
-    },
-    {
-      "title": "« Il faut libérer l’industrie »  David Lisnard invité de la Rencontre des Entrepreneurs de France du MEDEF, jeudi 27 août à Roland-Garros et débat face à Fabien Roussel.",
-      "date": "2026-08-28",
-      "url": "https://www.unenouvelleenergie.fr/-il-faut-librer-lindustrie-/",
-      "source": "Nouvelle Énergie"
-    },
-    {
-      "title": "« Il est temps de redonner le pouvoir aux Français »  David Lisnard était l'invité du Face-à-face d’Apolline de Malherbe sur BFMTV et RMC vendredi 28 août.",
-      "date": "2026-08-28",
-      "url": "https://www.unenouvelleenergie.fr/-il-est-temps-de-redonner-le-pouvoir-aux-franais-/",
-      "source": "Nouvelle Énergie"
     }
   ],
   "wikipedia": {
@@ -96,14 +96,6 @@
     },
     "series": {
       "David Lisnard": [
-        {
-          "date": "2026-06-09",
-          "views": 1578
-        },
-        {
-          "date": "2026-06-10",
-          "views": 1273
-        },
         {
           "date": "2026-06-11",
           "views": 1803
@@ -455,17 +447,17 @@
         {
           "date": "2026-09-06",
           "views": 5706
+        },
+        {
+          "date": "2026-09-07",
+          "views": 4869
+        },
+        {
+          "date": "2026-09-08",
+          "views": 11724
         }
       ],
       "Bruno Retailleau": [
-        {
-          "date": "2026-06-09",
-          "views": 1981
-        },
-        {
-          "date": "2026-06-10",
-          "views": 2417
-        },
         {
           "date": "2026-06-11",
           "views": 6143
@@ -817,17 +809,17 @@
         {
           "date": "2026-09-06",
           "views": 2511
+        },
+        {
+          "date": "2026-09-07",
+          "views": 1941
+        },
+        {
+          "date": "2026-09-08",
+          "views": 4775
         }
       ],
       "Édouard Philippe": [
-        {
-          "date": "2026-06-09",
-          "views": 1297
-        },
-        {
-          "date": "2026-06-10",
-          "views": 1129
-        },
         {
           "date": "2026-06-11",
           "views": 1096
@@ -1179,17 +1171,17 @@
         {
           "date": "2026-09-06",
           "views": 2398
+        },
+        {
+          "date": "2026-09-07",
+          "views": 2454
+        },
+        {
+          "date": "2026-09-08",
+          "views": 2812
         }
       ],
       "Gabriel Attal": [
-        {
-          "date": "2026-06-09",
-          "views": 2084
-        },
-        {
-          "date": "2026-06-10",
-          "views": 2709
-        },
         {
           "date": "2026-06-11",
           "views": 3234
@@ -1541,6 +1533,14 @@
         {
           "date": "2026-09-06",
           "views": 3720
+        },
+        {
+          "date": "2026-09-07",
+          "views": 2755
+        },
+        {
+          "date": "2026-09-08",
+          "views": 3860
         }
       ],
       "Xavier Bertrand": [
@@ -3354,6 +3354,6 @@
         }
       ]
     },
-    "as_of": "2026-09-06"
+    "as_of": "2026-09-08"
   }
 }

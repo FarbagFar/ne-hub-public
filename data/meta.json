@@ -1,27 +1,42 @@
 {
-  "last_sync": "07/09/2026 14:10",
+  "last_sync": "09/09/2026 10:53",
   "changes": {
     "new_documents": [
-      "AFTERWORK JEUNES ÉNERGIES VAL-D'OISE",
-      "https://www.unenouvelleenergie.fr/event/afterwork-jeunes-nergies-val-doise/calendar.ics/",
-      "AFTERWORK DE RENTRÉE PARIS 15E",
-      "https://www.unenouvelleenergie.fr/event/afterwork-de-rentre-paris-15e/calendar.ics/"
+      "AFTERWORK DE RENTRÉE NE UK",
+      "https://www.unenouvelleenergie.fr/event/afterwork-de-rentre-ne-uk/calendar.ics/",
+      "Rencontre Nouvelle Énergie dans le cadre des élections sénatoriales",
+      "https://www.unenouvelleenergie.fr/event/rencontre-nouvelle-nergie-dans-le-cadre-des-lections-snatoriales/calendar.ics/",
+      "AFTERWORK NOUVELLE ÉNERGIE ANDORRE",
+      "https://www.unenouvelleenergie.fr/event/afterwork-nouvelle-nergie-andorre/calendar.ics/",
+      "AFTERWORK JEUNES ÉNERGIES TOULOUSE",
+      "https://www.unenouvelleenergie.fr/event/afterwork-jeunes-nergies-toulouse/calendar.ics/",
+      "TRACTAGE & REPAS DE RENTRÉE NE 62",
+      "https://www.unenouvelleenergie.fr/event/tractage--repas-de-rentre-ne-62/calendar.ics/",
+      "RENCONTRE DÉBAT - AIX-EN-PROVENCE",
+      "https://www.unenouvelleenergie.fr/event/rencontre-dbat---aix-en-provence/calendar.ics/"
     ],
     "new_events": [
-      "AFTERWORK DE RENTRÉE PARIS 15E",
-      "https://www.unenouvelleenergie.fr/event/afterwork-de-rentre-paris-15e/calendar.ics/",
-      "AFTERWORK JEUNES ÉNERGIES VAL-D'OISE",
-      "https://www.unenouvelleenergie.fr/event/afterwork-jeunes-nergies-val-doise/calendar.ics/"
+      "AFTERWORK DE RENTRÉE NE UK",
+      "https://www.unenouvelleenergie.fr/event/afterwork-de-rentre-ne-uk/calendar.ics/",
+      "AFTERWORK JEUNES ÉNERGIES TOULOUSE",
+      "https://www.unenouvelleenergie.fr/event/afterwork-jeunes-nergies-toulouse/calendar.ics/",
+      "AFTERWORK NOUVELLE ÉNERGIE ANDORRE",
+      "https://www.unenouvelleenergie.fr/event/afterwork-nouvelle-nergie-andorre/calendar.ics/",
+      "RENCONTRE DÉBAT - AIX-EN-PROVENCE",
+      "https://www.unenouvelleenergie.fr/event/rencontre-dbat---aix-en-provence/calendar.ics/",
+      "Rencontre Nouvelle Énergie dans le cadre des élections sénatoriales",
+      "https://www.unenouvelleenergie.fr/event/rencontre-nouvelle-nergie-dans-le-cadre-des-lections-snatoriales/calendar.ics/",
+      "TRACTAGE & REPAS DE RENTRÉE NE 62",
+      "https://www.unenouvelleenergie.fr/event/tractage--repas-de-rentre-ne-62/calendar.ics/"
     ],
     "new_relays": [
-      "Cote d Or — TRISTAN PERRY",
-      "Saône et Loire — SIMON VACHERON"
+      "Allier — CHARLES GERMAIN"
     ]
   },
-  "documents": 96,
-  "events": 18,
-  "relays": 164,
+  "documents": 106,
+  "events": 28,
+  "relays": 165,
   "brand_source": null,
   "relays_source": "page officielle des relais (donnees structurees)",
-  "events_json_ld": 9
+  "events_json_ld": 14
 }
