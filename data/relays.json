@@ -1047,21 +1047,6 @@
   {
     "department_code": "50",
     "department_name": "Manche",
-    "name": "Charly Varin",
-    "email": "manche@unenouvelleenergie.fr",
-    "emails": [
-      "manche@unenouvelleenergie.fr"
-    ],
-    "role": "Relais départemental",
-    "profession": "Chargé de mission",
-    "mandate": "Maire de Percy-en-Normandie, Conseiller départemental",
-    "scope": "departement",
-    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Charly%2520Varin.jpg",
-    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
-  },
-  {
-    "department_code": "50",
-    "department_name": "Manche",
     "name": "Daniel Coulomb",
     "email": "manche@unenouvelleenergie.fr",
     "emails": [
@@ -1072,21 +1057,6 @@
     "mandate": null,
     "scope": "departement",
     "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Daniel-Coulomb.jpg",
-    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
-  },
-  {
-    "department_code": "50",
-    "department_name": "Manche",
-    "name": "Mélodie Peschet,",
-    "email": "manche@unenouvelleenergie.fr",
-    "emails": [
-      "manche@unenouvelleenergie.fr"
-    ],
-    "role": "Relais Jeunes Énergies",
-    "profession": "étudiante en licence d’administration publique",
-    "mandate": null,
-    "scope": "departement",
-    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp-Image-2026-06-05-at-19.56.34.jpg",
     "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
   },
   {
@@ -2399,6 +2369,36 @@
     "mandate": null,
     "scope": "international",
     "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Etienne-Arnoux-1.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "50",
+    "department_name": "Manche",
+    "name": "Charly Varin",
+    "email": "manche@unenouvelleenergie.fr",
+    "emails": [
+      "manche@unenouvelleenergie.fr"
+    ],
+    "role": "Relais départemental",
+    "profession": "Chargé de mission",
+    "mandate": "Maire de Percy-en-Normandie, Conseiller départemental",
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Charly%2520Varin.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "50",
+    "department_name": "Manche",
+    "name": "Mélodie Peschet,",
+    "email": "manche@unenouvelleenergie.fr",
+    "emails": [
+      "manche@unenouvelleenergie.fr"
+    ],
+    "role": "Relais Jeunes Énergies",
+    "profession": "étudiante en licence d’administration publique",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp-Image-2026-06-05-at-19.56.34.jpg",
     "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
   },
   {

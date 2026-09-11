@@ -1,42 +1,36 @@
 {
-  "last_sync": "09/09/2026 10:53",
+  "last_sync": "11/09/2026 11:19",
   "changes": {
     "new_documents": [
-      "AFTERWORK DE RENTRÉE NE UK",
-      "https://www.unenouvelleenergie.fr/event/afterwork-de-rentre-ne-uk/calendar.ics/",
-      "Rencontre Nouvelle Énergie dans le cadre des élections sénatoriales",
-      "https://www.unenouvelleenergie.fr/event/rencontre-nouvelle-nergie-dans-le-cadre-des-lections-snatoriales/calendar.ics/",
-      "AFTERWORK NOUVELLE ÉNERGIE ANDORRE",
-      "https://www.unenouvelleenergie.fr/event/afterwork-nouvelle-nergie-andorre/calendar.ics/",
-      "AFTERWORK JEUNES ÉNERGIES TOULOUSE",
-      "https://www.unenouvelleenergie.fr/event/afterwork-jeunes-nergies-toulouse/calendar.ics/",
-      "TRACTAGE & REPAS DE RENTRÉE NE 62",
-      "https://www.unenouvelleenergie.fr/event/tractage--repas-de-rentre-ne-62/calendar.ics/",
-      "RENCONTRE DÉBAT - AIX-EN-PROVENCE",
-      "https://www.unenouvelleenergie.fr/event/rencontre-dbat---aix-en-provence/calendar.ics/"
+      "AFTERWORK DE RENTRÉE - EURE-ET-LOIRE",
+      "https://www.unenouvelleenergie.fr/event/afterwork-de-rentre---eure-et-loire/calendar.ics/",
+      "AFTERWOKR DES JEUNES ÉNERGIES YVELINES",
+      "https://www.unenouvelleenergie.fr/event/afterwokr-des-jeunes-nergies-yvelines/calendar.ics/",
+      "AFTERWORK JEUNES ÉNERGIES AIN",
+      "https://www.unenouvelleenergie.fr/event/afterwork-jeunes-nergies-ain/calendar.ics/",
+      "RÉUNION NOUVELLE ÉNERGIE GIRONDE",
+      "https://www.unenouvelleenergie.fr/event/runion-nouvelle-nergie-gironde/calendar.ics/",
+      "RÉUNION PUBLIQUE NOUVELLE ÉNERGIE GIRONDE",
+      "https://www.unenouvelleenergie.fr/event/runion-publique-nouvelle-nergie-gironde/calendar.ics/"
     ],
     "new_events": [
-      "AFTERWORK DE RENTRÉE NE UK",
-      "https://www.unenouvelleenergie.fr/event/afterwork-de-rentre-ne-uk/calendar.ics/",
-      "AFTERWORK JEUNES ÉNERGIES TOULOUSE",
-      "https://www.unenouvelleenergie.fr/event/afterwork-jeunes-nergies-toulouse/calendar.ics/",
-      "AFTERWORK NOUVELLE ÉNERGIE ANDORRE",
-      "https://www.unenouvelleenergie.fr/event/afterwork-nouvelle-nergie-andorre/calendar.ics/",
-      "RENCONTRE DÉBAT - AIX-EN-PROVENCE",
-      "https://www.unenouvelleenergie.fr/event/rencontre-dbat---aix-en-provence/calendar.ics/",
-      "Rencontre Nouvelle Énergie dans le cadre des élections sénatoriales",
-      "https://www.unenouvelleenergie.fr/event/rencontre-nouvelle-nergie-dans-le-cadre-des-lections-snatoriales/calendar.ics/",
-      "TRACTAGE & REPAS DE RENTRÉE NE 62",
-      "https://www.unenouvelleenergie.fr/event/tractage--repas-de-rentre-ne-62/calendar.ics/"
+      "AFTERWOKR DES JEUNES ÉNERGIES YVELINES",
+      "https://www.unenouvelleenergie.fr/event/afterwokr-des-jeunes-nergies-yvelines/calendar.ics/",
+      "AFTERWORK DE RENTRÉE - EURE-ET-LOIRE",
+      "https://www.unenouvelleenergie.fr/event/afterwork-de-rentre---eure-et-loire/calendar.ics/",
+      "AFTERWORK JEUNES ÉNERGIES AIN",
+      "https://www.unenouvelleenergie.fr/event/afterwork-jeunes-nergies-ain/calendar.ics/",
+      "RÉUNION NOUVELLE ÉNERGIE GIRONDE",
+      "https://www.unenouvelleenergie.fr/event/runion-nouvelle-nergie-gironde/calendar.ics/",
+      "RÉUNION PUBLIQUE NOUVELLE ÉNERGIE GIRONDE",
+      "https://www.unenouvelleenergie.fr/event/runion-publique-nouvelle-nergie-gironde/calendar.ics/"
     ],
-    "new_relays": [
-      "Allier — CHARLES GERMAIN"
-    ]
+    "new_relays": []
   },
-  "documents": 106,
-  "events": 28,
+  "documents": 112,
+  "events": 34,
   "relays": 165,
   "brand_source": null,
   "relays_source": "page officielle des relais (donnees structurees)",
-  "events_json_ld": 14
+  "events_json_ld": 17
 }
