@@ -601,6 +601,19 @@
     "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
   },
   {
+    "department_code": "30",
+    "department_name": "Gard",
+    "name": "MAXIME CAIROCHE",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Chef d'entreprise",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp%20Image%202026-09-13%20at%2016.05.47.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
     "department_code": "31",
     "department_name": "Haute Garonne",
     "name": "Dominique Mazel Sonnet",
@@ -763,6 +776,19 @@
     "mandate": null,
     "scope": "departement",
     "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Victor%2520Roulet.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "36",
+    "department_name": "Indre",
+    "name": "Christian de Grandry",
+    "email": null,
+    "emails": [],
+    "role": "RELAIS NOUVELLE ÉNERGIE",
+    "profession": "Retraité",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp%20Image%202026-09-13%20at%2007.38.21.jpg",
     "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
   },
   {
@@ -1195,6 +1221,19 @@
     "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
   },
   {
+    "department_code": "59",
+    "department_name": "Nord",
+    "name": "Tristan Crochard",
+    "email": null,
+    "emails": [],
+    "role": "Relais Jeunes Énergies",
+    "profession": "Restaurateur",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp%20Image%202026-09-13%20at%2016.29.34%20(1).jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
     "department_code": "60",
     "department_name": "Oise",
     "name": "Ludovic Castanié",
@@ -1533,8 +1572,10 @@
     "department_code": "75",
     "department_name": "Paris",
     "name": "Niels Holm",
-    "email": null,
-    "emails": [],
+    "email": "nielsholmpro@icloud.com",
+    "emails": [
+      "nielsholmpro@icloud.com"
+    ],
     "role": "Relais Jeunes Énergies",
     "profession": "Consultant en Influence & Relations Institutionnelles",
     "mandate": null,
@@ -1768,6 +1809,19 @@
     "mandate": null,
     "scope": "departement",
     "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/Theo-Abdallah-1.jpg",
+    "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
+  },
+  {
+    "department_code": "86",
+    "department_name": "Vienne",
+    "name": "DYLAN SUAUD",
+    "email": null,
+    "emails": [],
+    "role": "RELAIS NOUVELLE ÉNERGIE",
+    "profession": "Doctorant en sciences économiques et collaborateur parlementaire",
+    "mandate": null,
+    "scope": "departement",
+    "portrait_url": "https://www.unenouvelleenergie.fr/api/media/file/WhatsApp%20Image%202026-09-14%20at%2018.25.38.jpg",
     "source_url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/les-relais/"
   },
   {
