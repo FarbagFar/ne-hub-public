@@ -995,7 +995,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-344@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142002Z\r\nDTSTART:20260917T163000Z\r\nDTEND:20260917T183000Z\r\nSUMMARY:AFTERWORK NOUVELLE ÉNERGIE MARNE\r\nDESCRIPTION:Thomas Gibelin\\, relais Nouvelle Énergie Marne\\, organise un afterwork  de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\nJeudi 17 Septembre à 18h30 à Reims\\nAdresse : L'Univers - 67 rue de Courcelles\\nInscription obligatoire : marne@unenouvelleenergie.fr\r\nLOCATION:REIMS\\, MARNE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-344@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155114Z\r\nDTSTART:20260917T163000Z\r\nDTEND:20260917T183000Z\r\nSUMMARY:AFTERWORK NOUVELLE ÉNERGIE MARNE\r\nDESCRIPTION:Thomas Gibelin\\, relais Nouvelle Énergie Marne\\, organise un afterwork  de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\nJeudi 17 Septembre à 18h30 à Reims\\nAdresse : L'Univers - 67 rue de Courcelles\\nInscription obligatoire : marne@unenouvelleenergie.fr\r\nLOCATION:REIMS\\, MARNE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "c8a1ccb89a6a",
@@ -1005,7 +1005,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-321@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142002Z\r\nDTSTART:20260917T170000Z\r\nDTEND:20260917T190000Z\r\nSUMMARY:AFTERWORK NOUVELLE ÉNERGIE ANDORRE\r\nDESCRIPTION:Arnaud Lejeune \\, relais Nouvelle Énergie Andorre\\, organise afterwork de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nJeudi 17 Septembre à 19h\\, Adresse : boulangerie ANGE. \\nEd. La Torre\\, Passatge Arnaldeta de Caboet 11\\, Local\\, 4\\, AD700 Escaldes-Engordany\\, Andorre\r\nLOCATION:Escaldes-Engordany\\, Andorre\\, oulangerie ANGE.  Ed. La Torre\\, Passatge Arnaldeta de Caboet 11\\, Local\\, 4\\, AD700\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-321@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155115Z\r\nDTSTART:20260917T170000Z\r\nDTEND:20260917T190000Z\r\nSUMMARY:AFTERWORK NOUVELLE ÉNERGIE ANDORRE\r\nDESCRIPTION:Arnaud Lejeune \\, relais Nouvelle Énergie Andorre\\, organise afterwork de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nJeudi 17 Septembre à 19h\\, Adresse : boulangerie ANGE. \\nEd. La Torre\\, Passatge Arnaldeta de Caboet 11\\, Local\\, 4\\, AD700 Escaldes-Engordany\\, Andorre\r\nLOCATION:Escaldes-Engordany\\, Andorre\\, oulangerie ANGE.  Ed. La Torre\\, Passatge Arnaldeta de Caboet 11\\, Local\\, 4\\, AD700\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "ff983d0949ab",
@@ -1016,7 +1016,7 @@
       "énergie",
       "Europe"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-332@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142002Z\r\nDTSTART:20260917T170000Z\r\nDTEND:20260917T190000Z\r\nSUMMARY:AFTERWORK DES JEUNES ÉNERGIES YVELINES\r\nDESCRIPTION:Damien Girard\\, relais Jeunes Énergies Yvelines\\, organise afterwork de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nJeudi 17 Septembre à 19h\\, Brasserie Toussaint\\, 2 avenue de l'europe\\n\\nNoisy-Le-Roi\\,  78590\r\nLOCATION:NOISY-LE-ROI\\, YVELINES\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-332@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155115Z\r\nDTSTART:20260917T170000Z\r\nDTEND:20260917T190000Z\r\nSUMMARY:AFTERWORK DES JEUNES ÉNERGIES YVELINES\r\nDESCRIPTION:Damien Girard\\, relais Jeunes Énergies Yvelines\\, organise afterwork de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nJeudi 17 Septembre à 19h\\, Brasserie Toussaint\\, 2 avenue de l'europe\\n\\nNoisy-Le-Roi\\,  78590\r\nLOCATION:NOISY-LE-ROI\\, YVELINES\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "00138613f9a8",
@@ -1026,7 +1026,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-340@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142002Z\r\nDTSTART:20260918T163000Z\r\nDTEND:20260918T183000Z\r\nSUMMARY:RÉUNION NOUVELLE ÉNERGIE MORBIHAN\r\nDESCRIPTION:Patrick Rivard\\, relais Nouvelle Énergie Côtes-d'Armor\\, organise une réunion de rentrée pour Nouvelle Énergie Morbihan. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nVendredi 18 Septembre à 18h30 à Pontivy\\n\\nPalais des congrés - Salle 2 - Moutons Blancs\\, Place des ducs de Rohan\r\nLOCATION:Pontivy\\, Morbihan\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-340@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155115Z\r\nDTSTART:20260918T163000Z\r\nDTEND:20260918T183000Z\r\nSUMMARY:RÉUNION NOUVELLE ÉNERGIE MORBIHAN\r\nDESCRIPTION:Patrick Rivard\\, relais Nouvelle Énergie Côtes-d'Armor\\, organise une réunion de rentrée pour Nouvelle Énergie Morbihan. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nVendredi 18 Septembre à 18h30 à Pontivy\\n\\nPalais des congrés - Salle 2 - Moutons Blancs\\, Place des ducs de Rohan\r\nLOCATION:Pontivy\\, Morbihan\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "f8c794247508",
@@ -1046,7 +1046,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-329@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142002Z\r\nDTSTART:20260918T170000Z\r\nDTEND:20260918T190000Z\r\nSUMMARY:AFTERWORK JEUNES ÉNERGIES AIN\r\nDESCRIPTION:Justine Roche\\, relais Jeunes Énergies de l'Ain\\, organise afterwrork de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nVendredi 18 Septembre à 19h\\, La Buvette\\, 7 Rue Guichenon\\n\\nBourg-en-Bresse\r\nLOCATION:BOURG-EN-BRESSE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-329@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155115Z\r\nDTSTART:20260918T170000Z\r\nDTEND:20260918T190000Z\r\nSUMMARY:AFTERWORK JEUNES ÉNERGIES AIN\r\nDESCRIPTION:Justine Roche\\, relais Jeunes Énergies de l'Ain\\, organise afterwrork de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nVendredi 18 Septembre à 19h\\, La Buvette\\, 7 Rue Guichenon\\n\\nBourg-en-Bresse\r\nLOCATION:BOURG-EN-BRESSE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "94784ad9c4d2",
@@ -1064,7 +1064,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-338@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142002Z\r\nDTSTART:20260919T070000Z\r\nDTEND:20260919T090000Z\r\nSUMMARY:CAFÉ DES ADHÉRENTS - GARD\r\nDESCRIPTION:Guillaume Rosenberg\\, relais Nouvelle Energie Gard\\, vous convie à un café des adhérents\\, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\\nSamedi 19 septembre\\, 9h15\\, à Alès\\nMaison de Bargas\\, 30 rue des la République\\nInfos et contact : gard@unenouvelleenergie.fr\r\nLOCATION:ALÈS\\, GARD\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-338@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155115Z\r\nDTSTART:20260919T070000Z\r\nDTEND:20260919T090000Z\r\nSUMMARY:CAFÉ DES ADHÉRENTS - GARD\r\nDESCRIPTION:Guillaume Rosenberg\\, relais Nouvelle Energie Gard\\, vous convie à un café des adhérents\\, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\\nSamedi 19 septembre\\, 9h15\\, à Alès\\nMaison de Bargas\\, 30 rue des la République\\nInfos et contact : gard@unenouvelleenergie.fr\r\nLOCATION:ALÈS\\, GARD\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "d25167ecedbf",
@@ -1082,7 +1082,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-307@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142002Z\r\nDTSTART:20260919T153000Z\r\nDTEND:20260919T173000Z\r\nSUMMARY:Rentrée politique NE Aube\r\nDESCRIPTION:Thomas Danrée\\, relais Nouvelle Energie Aube\\, vous convie à la rentrée politique du parti dans le département\\, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\r\nLOCATION:Troyes\\, Aube\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-307@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155115Z\r\nDTSTART:20260919T153000Z\r\nDTEND:20260919T173000Z\r\nSUMMARY:Rentrée politique NE Aube\r\nDESCRIPTION:Thomas Danrée\\, relais Nouvelle Energie Aube\\, vous convie à la rentrée politique du parti dans le département\\, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\r\nLOCATION:Troyes\\, Aube\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "0c52e317b2bc",
@@ -1100,7 +1100,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-305@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142002Z\r\nDTSTART:20260920T100000Z\r\nDTEND:20260920T120000Z\r\nSUMMARY:Rentrée politique NE Manche\r\nDESCRIPTION:Daniel Coulomb\\, relais Nouvelle Energie Manche\\, organise un pique-nique convivial pour la rentrée politique du parti dans le département. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir. \r\nLOCATION:Gouville-sur-Mer\\, Manche\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-305@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155115Z\r\nDTSTART:20260920T100000Z\r\nDTEND:20260920T120000Z\r\nSUMMARY:Rentrée politique NE Manche\r\nDESCRIPTION:Daniel Coulomb\\, relais Nouvelle Energie Manche\\, organise un pique-nique convivial pour la rentrée politique du parti dans le département. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir. \r\nLOCATION:Gouville-sur-Mer\\, Manche\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "16a8cba59c7e",
@@ -1120,7 +1120,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-348@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142003Z\r\nDTSTART:20260921T163000Z\r\nDTEND:20260921T183000Z\r\nSUMMARY:AFTERWORK DE RENTRÉE PARIS 6EME\r\nDESCRIPTION:Peggy Desplats \\, référente Nouvelle Energie Paris 6e\\, organise afterwork de rentrée en présence d'Alexis Reichert\\, relais Nouvelle Energie Paris et Romain Marsily Directeur Général de Nouvelle Énergie. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nLundi 21 Septembre à 18h30\\, LM Restaurant\\, 13 Rue Médicis\\, 75006\\, Paris\r\nLOCATION:PARIS 6EME\\, ILE-DE-FRANCE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-348@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155115Z\r\nDTSTART:20260921T163000Z\r\nDTEND:20260921T183000Z\r\nSUMMARY:AFTERWORK DE RENTRÉE PARIS 6EME\r\nDESCRIPTION:Peggy Desplats \\, référente Nouvelle Energie Paris 6e\\, organise afterwork de rentrée en présence d'Alexis Reichert\\, relais Nouvelle Energie Paris et Romain Marsily Directeur Général de Nouvelle Énergie. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nLundi 21 Septembre à 18h30\\, LM Restaurant\\, 13 Rue Médicis\\, 75006\\, Paris\r\nLOCATION:PARIS 6EME\\, ILE-DE-FRANCE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "26caafb67f6e",
@@ -1140,7 +1140,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-337@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142003Z\r\nDTSTART:20260922T170000Z\r\nDTEND:20260922T190000Z\r\nSUMMARY:RÉUNION NOUVELLE ÉNERGIE SAÔNE-ET-LOIRE\r\nDESCRIPTION:Mario Barravecchia\\, relais Nouvelle Énergie Saône-et-Loire\\, est ravi d’accueillir le directeur général adjoint et porte-voix de NE \\, Quentin Hoster\\, pour une réunion publique.\\n\\nMardi 22 Septembre\\, 19h à Châtenoy-en-Bresse\\n\\nGolf de Chalon\\, 1 Prairie Saint-Nicolas\r\nLOCATION:Châtenoy-en-Bresse\\, Saône-et-Loire\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-337@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155115Z\r\nDTSTART:20260922T170000Z\r\nDTEND:20260922T190000Z\r\nSUMMARY:RÉUNION NOUVELLE ÉNERGIE SAÔNE-ET-LOIRE\r\nDESCRIPTION:Mario Barravecchia\\, relais Nouvelle Énergie Saône-et-Loire\\, est ravi d’accueillir le directeur général adjoint et porte-voix de NE \\, Quentin Hoster\\, pour une réunion publique.\\n\\nMardi 22 Septembre\\, 19h à Châtenoy-en-Bresse\\n\\nGolf de Chalon\\, 1 Prairie Saint-Nicolas\r\nLOCATION:Châtenoy-en-Bresse\\, Saône-et-Loire\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "b17bf1285888",
@@ -1160,7 +1160,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-323@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142003Z\r\nDTSTART:20260922T173000Z\r\nDTEND:20260922T193000Z\r\nSUMMARY:AFTERWORK JEUNES ÉNERGIES TOULOUSE\r\nDESCRIPTION:Ylverick Poulet \\, relais Jeunes Énergies Haute-Garonne\\, organise afterwrork de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nMardi 22 Septembre à 19h30\\, The Beer Social Club\\n\\nPlace Marcel Bouilloux-Lafont\\, \\n\\nToulouse\\n\\nFrance\r\nLOCATION:THE BEER SOCIAL CLUB\\, PLACE BOUILLOUX-LAFONT\\, TOULOUSE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-323@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155116Z\r\nDTSTART:20260922T173000Z\r\nDTEND:20260922T193000Z\r\nSUMMARY:AFTERWORK JEUNES ÉNERGIES TOULOUSE\r\nDESCRIPTION:Ylverick Poulet \\, relais Jeunes Énergies Haute-Garonne\\, organise afterwrork de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nMardi 22 Septembre à 19h30\\, The Beer Social Club\\n\\nPlace Marcel Bouilloux-Lafont\\, \\n\\nToulouse\\n\\nFrance\r\nLOCATION:THE BEER SOCIAL CLUB\\, PLACE BOUILLOUX-LAFONT\\, TOULOUSE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "aa9b057d1457",
@@ -1178,7 +1178,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-352@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142003Z\r\nDTSTART:20260922T173000Z\r\nDTEND:20260922T193000Z\r\nSUMMARY:AFTERWORK PARIS 16E\r\nDESCRIPTION:Diane Gendry et Martin Amzallag\\, référents Nouvelle Energie Paris 16e\\, organisent un afterwork de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nMardi 22 septembre\\, 19h30 à Paris 16e\\nLa Terrasse du 16\\, 5 Place de Barcelone\\n\\nInfos : paris@unenouvelleenergie.fr\r\nLOCATION:PARIS 16E\\, ILE-DE-FRANCE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-352@unenouvelleenergie.fr\r\nDTSTAMP:20260917T152155Z\r\nDTSTART:20260922T173000Z\r\nDTEND:20260922T193000Z\r\nSUMMARY:AFTERWORK PARIS 16E\r\nDESCRIPTION:Diane Gendry et Martin Amzallag\\, référents Nouvelle Energie Paris 16e\\, organisent un afterwork de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nMardi 22 septembre\\, 19h30 à Paris 16e\\nLa Terrasse du 16\\, 5 Place de Barcelone\\n\\nInfos : paris@unenouvelleenergie.fr\r\nLOCATION:PARIS 16E\\, ILE-DE-FRANCE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "8b12f4d6060f",
@@ -1198,7 +1198,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-353@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142003Z\r\nDTSTART:20260922T173000Z\r\nDTEND:20260922T193000Z\r\nSUMMARY:RENTRÉE POLITIQUE NOUVELLE ÉNERGIE HAUTS-DE-SEINE\r\nDESCRIPTION:Charles Hubert-Rebout\\, Relais Nouvelle Énergie des Hauts-de-Seine\\, accompagné de Marie Vouillon et Benjamin Landais\\, Relais Jeunes Énergies 92\\, organisent la rentrée politique de Nouvelle Énergie dans le département.\\nL’occasion d’échanger autour de l’actualité politique et de David Lisnard\\, mais aussi de faire le point sur les prochaines échéances et de structurer les actions à venir.\\nMardi 22 septembre\\, 19h30 à Puteaux\\nBar Longchamp\\, 86 Boulevard Richard Wallace\\n: Infos et inscriptions : hautsdeseine@unenouvelleenergie.fr\r\nLOCATION:PUTEAUX\\, HAUTS-DE-SEINE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-353@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155116Z\r\nDTSTART:20260922T173000Z\r\nDTEND:20260922T193000Z\r\nSUMMARY:RENTRÉE POLITIQUE NOUVELLE ÉNERGIE HAUTS-DE-SEINE\r\nDESCRIPTION:Charles Hubert-Rebout\\, Relais Nouvelle Énergie des Hauts-de-Seine\\, accompagné de Marie Vouillon et Benjamin Landais\\, Relais Jeunes Énergies 92\\, organisent la rentrée politique de Nouvelle Énergie dans le département.\\nL’occasion d’échanger autour de l’actualité politique et de David Lisnard\\, mais aussi de faire le point sur les prochaines échéances et de structurer les actions à venir.\\nMardi 22 septembre\\, 19h30 à Puteaux\\nBar Longchamp\\, 86 Boulevard Richard Wallace\\n: Infos et inscriptions : hautsdeseine@unenouvelleenergie.fr\r\nLOCATION:PUTEAUX\\, HAUTS-DE-SEINE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "8dac62ae8ee1",
@@ -1218,7 +1218,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-347@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142003Z\r\nDTSTART:20260923T160000Z\r\nDTEND:20260923T180000Z\r\nSUMMARY:APÉRITIF NOUVELLE ÉNERGIE BRUXELLES\r\nDESCRIPTION:L'équipe Nouvelle Énergie Bruxelles organise apéritif de rentrée !\\n\\nL’occasion d’échanger autour de l’actualité politique et de David Lisnard\\, mais aussi de faire le point sur les prochaines échéances et de structurer les actions à venir.\\n\\nMercredi 23 Septembre à 18h\\n\\n📍 Café Grand Central\\, 190 Rue Belliard\\, Bruxelles\\n\\nInfos : belgique.nouvelleenergie@gmail.com\r\nLOCATION:BRUXELLES\\, BELGIQUE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-347@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155116Z\r\nDTSTART:20260923T160000Z\r\nDTEND:20260923T180000Z\r\nSUMMARY:APÉRITIF NOUVELLE ÉNERGIE BRUXELLES\r\nDESCRIPTION:L'équipe Nouvelle Énergie Bruxelles organise apéritif de rentrée !\\n\\nL’occasion d’échanger autour de l’actualité politique et de David Lisnard\\, mais aussi de faire le point sur les prochaines échéances et de structurer les actions à venir.\\n\\nMercredi 23 Septembre à 18h\\n\\n📍 Café Grand Central\\, 190 Rue Belliard\\, Bruxelles\\n\\nInfos : belgique.nouvelleenergie@gmail.com\r\nLOCATION:BRUXELLES\\, BELGIQUE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "e27426e45080",
@@ -1238,7 +1238,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-355@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142004Z\r\nDTSTART:20260924T180000Z\r\nDTEND:20260924T200000Z\r\nSUMMARY:AFTERWORK DE RENTRÉE PARIS 17E\r\nDESCRIPTION:Geoffroy Boulard\\, Maire du 17ᵉ arrondissement de Paris et en charge des élus de Nouvelle Énergie\\, vous invite à un afterwork de rentrée.\\nL'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\nDate : Jeudi 24 Septembre à 20h\\nAdresse : 4 Avenue de Villiers\\nInfos : Pariss@unenouvelleenergie.fr\r\nLOCATION:PARIS\\, ILE-DE-FRANCE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-355@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155116Z\r\nDTSTART:20260924T180000Z\r\nDTEND:20260924T200000Z\r\nSUMMARY:AFTERWORK DE RENTRÉE PARIS 17E\r\nDESCRIPTION:Geoffroy Boulard\\, Maire du 17ᵉ arrondissement de Paris et en charge des élus de Nouvelle Énergie\\, vous invite à un afterwork de rentrée.\\nL'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\nDate : Jeudi 24 Septembre à 20h\\nAdresse : 4 Avenue de Villiers\\nInfos : Pariss@unenouvelleenergie.fr\r\nLOCATION:PARIS\\, ILE-DE-FRANCE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "6ab411c1792d",
@@ -1259,7 +1259,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-334@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142004Z\r\nDTSTART:20260925T170000Z\r\nDTEND:20260925T190000Z\r\nSUMMARY:Meeting de David Lisnard en Alsace\r\nDESCRIPTION:Après le succès du Campus de Nouvelle Énergie à Cannes\\, qui a rassemblé plus de 4 000 participants\\, la mobilisation se poursuit. David Lisnard sera à Benfeld\\, en Alsace\\, pour un meeting de campagne présidentielle et une nouvelle étape dans la préparation de 2027.\r\nLOCATION:Benfeld\\, Complexe sportif\\, 1 rue d’Ettenheim\\, 67230\\, Benfeld\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-334@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155116Z\r\nDTSTART:20260925T170000Z\r\nDTEND:20260925T190000Z\r\nSUMMARY:Meeting de David Lisnard en Alsace\r\nDESCRIPTION:Après le succès du Campus de Nouvelle Énergie à Cannes\\, qui a rassemblé plus de 4 000 participants\\, la mobilisation se poursuit. David Lisnard sera à Benfeld\\, en Alsace\\, pour un meeting de campagne présidentielle et une nouvelle étape dans la préparation de 2027.\r\nLOCATION:Benfeld\\, Complexe sportif\\, 1 rue d’Ettenheim\\, 67230\\, Benfeld\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "5fcada9ba23a",
@@ -1279,7 +1279,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-342@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142004Z\r\nDTSTART:20260925T170000Z\r\nDTEND:20260925T190000Z\r\nSUMMARY:AFTERWORK NOUVELLE ÉNERGIE GIRONDE\r\nDESCRIPTION:Laurent Toussaint Relais Nouvelle Énergie Gironde\\, et Patrick Robillard référent Nouvelle Énergie\\, vous invitent à une réunion publique vendredi 25 Septembre à Bègles !\\n\\nLieu : Stade André Moga - 1 Impasse Delphine Loche\r\nLOCATION:BÈGLES\\, GIRONDE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-342@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155116Z\r\nDTSTART:20260925T170000Z\r\nDTEND:20260925T190000Z\r\nSUMMARY:AFTERWORK NOUVELLE ÉNERGIE GIRONDE\r\nDESCRIPTION:Laurent Toussaint Relais Nouvelle Énergie Gironde\\, et Patrick Robillard référent Nouvelle Énergie\\, vous invitent à une réunion publique vendredi 25 Septembre à Bègles !\\n\\nLieu : Stade André Moga - 1 Impasse Delphine Loche\r\nLOCATION:BÈGLES\\, GIRONDE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "6bbb160123b0",
@@ -1299,7 +1299,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-325@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142004Z\r\nDTSTART:20260926T073000Z\r\nDTEND:20260926T093000Z\r\nSUMMARY:TRACTAGE & REPAS DE RENTRÉE NE 62\r\nDESCRIPTION:Marie-Pierre PETIT\\, Relais Nouvelle Énergie du Pas-de-Calais\\, et Marie-Céline VINAY Relais Jeunes Énergies du Pas-de-Calais\\, vous invitent à un tractage suivi d'un repas de rentrée lors du Mondial de la Frite.\\n\\nSamedi 26 Septembre à partir de 9h30\\n\\nInscriptions obligatoire !\r\nLOCATION:ARRAS\\, PAS-DE-CALAIS\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-325@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155116Z\r\nDTSTART:20260926T073000Z\r\nDTEND:20260926T093000Z\r\nSUMMARY:TRACTAGE & REPAS DE RENTRÉE NE 62\r\nDESCRIPTION:Marie-Pierre PETIT\\, Relais Nouvelle Énergie du Pas-de-Calais\\, et Marie-Céline VINAY Relais Jeunes Énergies du Pas-de-Calais\\, vous invitent à un tractage suivi d'un repas de rentrée lors du Mondial de la Frite.\\n\\nSamedi 26 Septembre à partir de 9h30\\n\\nInscriptions obligatoire !\r\nLOCATION:ARRAS\\, PAS-DE-CALAIS\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "30a8ec115e19",
@@ -1327,7 +1327,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-333@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142004Z\r\nDTSTART:20260926T073000Z\r\nDTEND:20260926T093000Z\r\nSUMMARY:TOUR DES VOSGES\r\nDESCRIPTION:Florian Charlier relais Nouvelle Energie Vosges\\, vous convie à la rentrée politique du parti dans le département\\, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\\n\\nSamedi 26 septembre\\, 9h30\\, à Vittel\\n\\nInscription obligatoire : https://action.qomon.org/00e493f0-vittel-sixieme-etape-tour-des-vosges/\\nContact : aube@unenouvelleenergie.fr\r\nLOCATION:Vittel\\, Vosges\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-333@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155117Z\r\nDTSTART:20260926T073000Z\r\nDTEND:20260926T093000Z\r\nSUMMARY:TOUR DES VOSGES\r\nDESCRIPTION:Florian Charlier relais Nouvelle Energie Vosges\\, vous convie à la rentrée politique du parti dans le département\\, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\\n\\nSamedi 26 septembre\\, 9h30\\, à Vittel\\n\\nInscription obligatoire : https://action.qomon.org/00e493f0-vittel-sixieme-etape-tour-des-vosges/\\nContact : aube@unenouvelleenergie.fr\r\nLOCATION:Vittel\\, Vosges\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "09d4aa3c423b",
@@ -1347,7 +1347,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-346@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142004Z\r\nDTSTART:20260926T073000Z\r\nDTEND:20260926T093000Z\r\nSUMMARY:CAFÉ POLITIQUE CANNES\r\nDESCRIPTION:L'équipe Nouvelle Énergie Cannes organise un café politique !\\n\\nL’occasion d’échanger autour de l’actualité politique et de David Lisnard\\, mais aussi de faire le point sur les prochaines échéances et de structurer les actions à venir.\\n\\nSamedi 26 septembre à 9h30\\n\\n📍 Permanence Nouvelle Énergie\\, 22 Rue des Suisses\r\nLOCATION:CANNES\\, ALPES-MARITIMES\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-346@unenouvelleenergie.fr\r\nDTSTAMP:20260917T152811Z\r\nDTSTART:20260926T073000Z\r\nDTEND:20260926T093000Z\r\nSUMMARY:CAFÉ POLITIQUE CANNES\r\nDESCRIPTION:L'équipe Nouvelle Énergie Cannes organise un café politique !\\n\\nL’occasion d’échanger autour de l’actualité politique et de David Lisnard\\, mais aussi de faire le point sur les prochaines échéances et de structurer les actions à venir.\\n\\nSamedi 26 septembre à 9h30\\n\\n📍 Permanence Nouvelle Énergie\\, 22 Rue des Suisses\r\nLOCATION:CANNES\\, ALPES-MARITIMES\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "9892f9067253",
@@ -1367,7 +1367,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-354@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142005Z\r\nDTSTART:20260926T080000Z\r\nDTEND:20260926T100000Z\r\nSUMMARY:RÉUNION NOUVELLE ÉNERGIE TARN\r\nDESCRIPTION:Jean-François Millet\\, relais Nouvelle Énergie Tarn\\, organise une réunion de rentrée pour Nouvelle Énergie. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nSamedi 26 Septembre à 10h à Castres.\\n\\nHôte-Restaurant le Causséa\\, 38 Avenue de la Montagne Noire\\n\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-354@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155117Z\r\nDTSTART:20260926T080000Z\r\nDTEND:20260926T100000Z\r\nSUMMARY:RÉUNION NOUVELLE ÉNERGIE TARN\r\nDESCRIPTION:Jean-François Millet\\, relais Nouvelle Énergie Tarn\\, organise une réunion de rentrée pour Nouvelle Énergie. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nSamedi 26 Septembre à 10h à Castres.\\n\\nHôte-Restaurant le Causséa\\, 38 Avenue de la Montagne Noire\\n\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "5713c92442ba",
@@ -1387,7 +1387,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-339@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142005Z\r\nDTSTART:20260928T163000Z\r\nDTEND:20260928T183000Z\r\nSUMMARY:RÉUNION PUBLIQUE NOUVELLE ÉNERGIE CÔTES-D'ARMOR\r\nDESCRIPTION:Patrick Rivard\\, relais Nouvelle Énergie Côtes-d'Armor\\, organise une réunion de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nLundi 28 Septembre à 18h30 à Pordic\\n\\nPlace du Général de Gaulle - Face à l'église\\n\r\nLOCATION:Pordic\\, Côtes-d'Armor\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-339@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155117Z\r\nDTSTART:20260928T163000Z\r\nDTEND:20260928T183000Z\r\nSUMMARY:RÉUNION PUBLIQUE NOUVELLE ÉNERGIE CÔTES-D'ARMOR\r\nDESCRIPTION:Patrick Rivard\\, relais Nouvelle Énergie Côtes-d'Armor\\, organise une réunion de rentrée. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\nLundi 28 Septembre à 18h30 à Pordic\\n\\nPlace du Général de Gaulle - Face à l'église\\n\r\nLOCATION:Pordic\\, Côtes-d'Armor\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "c5e38437b4c7",
@@ -1407,7 +1407,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-351@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142005Z\r\nDTSTART:20260928T163000Z\r\nDTEND:20260928T183000Z\r\nSUMMARY:RENTRÉE POLITIQUE NOUVELLE ÉNERGIE GIRONDE\r\nDESCRIPTION:Retrouvez Yves d'Amécourt\\, élu local\\, viticulteur\\, responsable du projet agricole de Nouvelle Énergie et Virginie Calvet\\, relais Nouvelle Énergie Gironde pour la rentrée politique Nouvelle Énergie Gironde.\\n\\nLundi 28 Septembre à  18h30\\n\\nChez Pompom\\, 17 Quai Louis XVIII\\n(participation de 5€ demandée pour les consommations sur place)\\n\\nInfos : gironde@unenouvelleenergie.fr\r\nLOCATION:BORDEAUX\\, NOUVELLE-AQUITAINE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-351@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155117Z\r\nDTSTART:20260928T163000Z\r\nDTEND:20260928T183000Z\r\nSUMMARY:RENTRÉE POLITIQUE NOUVELLE ÉNERGIE GIRONDE\r\nDESCRIPTION:Retrouvez Yves d'Amécourt\\, élu local\\, viticulteur\\, responsable du projet agricole de Nouvelle Énergie et Virginie Calvet\\, relais Nouvelle Énergie Gironde pour la rentrée politique Nouvelle Énergie Gironde.\\n\\nLundi 28 Septembre à  18h30\\n\\nChez Pompom\\, 17 Quai Louis XVIII\\n(participation de 5€ demandée pour les consommations sur place)\\n\\nInfos : gironde@unenouvelleenergie.fr\r\nLOCATION:BORDEAUX\\, NOUVELLE-AQUITAINE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "af0a1401c5dc",
@@ -1425,7 +1425,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-343@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142005Z\r\nDTSTART:20260929T170000Z\r\nDTEND:20260929T190000Z\r\nSUMMARY:RENTRÉE POLITIQUE GARD\r\nDESCRIPTION:Florent Robillard\\, relais Nouvelle Energie Gard\\, organise la rentrée politique du parti dans le département. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\nMardi 29 septembre\\, 19h à Villeneuve-Lès-Avignon\\nHôtel de l'Atelier\\, 5 rue de la Foire\\nInfos et inscriptions : Gard@unenouvelleenergie.fr\r\nLOCATION:Villeneuve-Lès-Avignon\\, Gard\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-343@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155117Z\r\nDTSTART:20260929T170000Z\r\nDTEND:20260929T190000Z\r\nSUMMARY:RENTRÉE POLITIQUE GARD\r\nDESCRIPTION:Florent Robillard\\, relais Nouvelle Energie Gard\\, organise la rentrée politique du parti dans le département. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\nMardi 29 septembre\\, 19h à Villeneuve-Lès-Avignon\\nHôtel de l'Atelier\\, 5 rue de la Foire\\nInfos et inscriptions : Gard@unenouvelleenergie.fr\r\nLOCATION:Villeneuve-Lès-Avignon\\, Gard\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "b5b9931182a0",
@@ -1443,7 +1443,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-309@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142005Z\r\nDTSTART:20260930T170000Z\r\nDTEND:20260930T190000Z\r\nSUMMARY:Conférence sur le libéralisme avec Jean-Philippe Delsol\r\nDESCRIPTION:Jean-Philippe Delsol\\, avocat et essayiste\\, animera une conférence sur le libéralisme à l'invitation de Youssef Chabane\\, relais Jeunes Energies du Rhône.\r\nLOCATION:Lyon\\, Rhône\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-309@unenouvelleenergie.fr\r\nDTSTAMP:20260917T151121Z\r\nDTSTART:20260930T170000Z\r\nDTEND:20260930T190000Z\r\nSUMMARY:Conférence sur le libéralisme avec Jean-Philippe Delsol\r\nDESCRIPTION:Jean-Philippe Delsol\\, avocat et essayiste\\, animera une conférence sur le libéralisme à l'invitation de Youssef Chabane\\, relais Jeunes Energies du Rhône.\r\nLOCATION:Lyon\\, Rhône\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "c6f909cfb0dc",
@@ -1463,7 +1463,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-350@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142005Z\r\nDTSTART:20261001T173000Z\r\nDTEND:20261001T193000Z\r\nSUMMARY:RÉUNION NOUVELLE ÉNERGIE PARIS\r\nDESCRIPTION:Geoffroy Boulard\\, Maire du 17ᵉ arrondissement de Paris et en charge des élus de Nouvelle Énergie\\, et Hervé Novelli\\, coordinateur du projet de Nouvelle Énergie\\, animeront une conférence consacrée au projet de David Lisnard.\\nL’occasion de revenir sur les grandes lignes du projet\\, ses principales propositions et la vision portée pour la France.\\nDate : Jeudi 1er Octobre à 19h30\\nAdresse : Aux Deux Pianos\\, 136 Rue Lourmel\r\nLOCATION:PARIS\\, ILE-DE-FRANCE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-350@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155118Z\r\nDTSTART:20261001T173000Z\r\nDTEND:20261001T193000Z\r\nSUMMARY:RÉUNION NOUVELLE ÉNERGIE PARIS\r\nDESCRIPTION:Geoffroy Boulard\\, Maire du 17ᵉ arrondissement de Paris et en charge des élus de Nouvelle Énergie\\, et Hervé Novelli\\, coordinateur du projet de Nouvelle Énergie\\, animeront une conférence consacrée au projet de David Lisnard.\\nL’occasion de revenir sur les grandes lignes du projet\\, ses principales propositions et la vision portée pour la France.\\nDate : Jeudi 1er Octobre à 19h30\\nAdresse : Aux Deux Pianos\\, 136 Rue Lourmel\r\nLOCATION:PARIS\\, ILE-DE-FRANCE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "b4d187b63b53",
@@ -1483,7 +1483,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-326@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142006Z\r\nDTSTART:20261003T090000Z\r\nDTEND:20261003T110000Z\r\nSUMMARY:RÉUNION PUBLIQUE NOUVELLE ÉNERGIE HAUTE-GARONNE 2EME CIRCONSCRIPTION\r\nDESCRIPTION:Domy MAZEL-SONNET\\, Relais Nouvelle Énergie Haute-Garonne\\, et Ylverick Poulet Relais Jeunes Énergies Haute-Garonne\\, vous invitent à une une réunion publique le Samedi 3 Octobre à 11H à Bessières. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\n\r\nLOCATION:BESSIÈRES\\, HAUTE-GARONNE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-326@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155118Z\r\nDTSTART:20261003T090000Z\r\nDTEND:20261003T110000Z\r\nSUMMARY:RÉUNION PUBLIQUE NOUVELLE ÉNERGIE HAUTE-GARONNE 2EME CIRCONSCRIPTION\r\nDESCRIPTION:Domy MAZEL-SONNET\\, Relais Nouvelle Énergie Haute-Garonne\\, et Ylverick Poulet Relais Jeunes Énergies Haute-Garonne\\, vous invitent à une une réunion publique le Samedi 3 Octobre à 11H à Bessières. L'occasion d'aborder l'actualité politique et celle de David Lisnard\\, mais aussi de structurer les actions à venir.\\n\\n\r\nLOCATION:BESSIÈRES\\, HAUTE-GARONNE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "a568e0b09b86",
@@ -1503,7 +1503,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-327@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142006Z\r\nDTSTART:20261007T173000Z\r\nDTEND:20261007T193000Z\r\nSUMMARY:CONFÉRENCE NARCOTRAFIC ÉTIENNE BLANC\\,  NOUVELLE ÉNERGIE HAUTE-GARONNE\r\nDESCRIPTION:L’équipe Nouvelle Énergie Haute-Garonne est ravie d’accueillir le porte-voix de NE et sénateur du Rhône\\, Étienne Blanc\\, pour une conférence sur le narcotrafic en France.\\nCelui qui fut rapporteur de l’enquête parlementaire de mai 2024 à l’origine de la loi contre le narcotrafic expliquera ses travaux sur le sujet\\, l’impact du narcotrafic en France et les solutions mises en œuvre et préconisées. Il répondra ensuite aux questions du public.\\nÉvénement ouvert à tous\\nMercredi 7 octobre\\, 19h30\\nSalle Marie Laurencin\\, 6 route de Mons\\, Balma\\, 31130\r\nLOCATION:BALMA\\, HAUTE-GARONNE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-327@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155118Z\r\nDTSTART:20261007T173000Z\r\nDTEND:20261007T193000Z\r\nSUMMARY:CONFÉRENCE NARCOTRAFIC ÉTIENNE BLANC\\,  NOUVELLE ÉNERGIE HAUTE-GARONNE\r\nDESCRIPTION:L’équipe Nouvelle Énergie Haute-Garonne est ravie d’accueillir le porte-voix de NE et sénateur du Rhône\\, Étienne Blanc\\, pour une conférence sur le narcotrafic en France.\\nCelui qui fut rapporteur de l’enquête parlementaire de mai 2024 à l’origine de la loi contre le narcotrafic expliquera ses travaux sur le sujet\\, l’impact du narcotrafic en France et les solutions mises en œuvre et préconisées. Il répondra ensuite aux questions du public.\\nÉvénement ouvert à tous\\nMercredi 7 octobre\\, 19h30\\nSalle Marie Laurencin\\, 6 route de Mons\\, Balma\\, 31130\r\nLOCATION:BALMA\\, HAUTE-GARONNE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "58d1909fbcaf",
@@ -1523,7 +1523,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-335@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142006Z\r\nDTSTART:20261012T170000Z\r\nDTEND:20261012T190000Z\r\nSUMMARY:AFTERWORK NOUVELLE ÉNERGIE 31\r\nDESCRIPTION:Domy MAZEL-SONNET\\, Relais Nouvelle Énergie Haute-Garonne\\, et Ylverick Poulet Relais Jeunes Énergies Haute-Garonne\\, vous invitent à un afterwork lundi 12 Octobre à 19h à Toulouse.\\n\\nLa raffinerie des copains\\, 161 Avenue Jean Chaubet.\r\nLOCATION:Toulouse\\, Haute-Garonne\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-335@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155118Z\r\nDTSTART:20261012T170000Z\r\nDTEND:20261012T190000Z\r\nSUMMARY:AFTERWORK NOUVELLE ÉNERGIE 31\r\nDESCRIPTION:Domy MAZEL-SONNET\\, Relais Nouvelle Énergie Haute-Garonne\\, et Ylverick Poulet Relais Jeunes Énergies Haute-Garonne\\, vous invitent à un afterwork lundi 12 Octobre à 19h à Toulouse.\\n\\nLa raffinerie des copains\\, 161 Avenue Jean Chaubet.\r\nLOCATION:Toulouse\\, Haute-Garonne\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "8ed1ccfd8f6d",
@@ -1543,7 +1543,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-330@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142006Z\r\nDTSTART:20261013T163000Z\r\nDTEND:20261013T183000Z\r\nSUMMARY:RÉUNION NOUVELLE ÉNERGIE GIRONDE\r\nDESCRIPTION:Retrouvez Yves d'Amécourt\\, élu local\\, viticulteur\\, responsable du projet agricole de Nouvelle Énergie et Laurent Toussaint\\, relais Nouvelle Énergie Gironde pour une réunion publique autour du projet de Nouvelle Énergie.\\n\\nMardi 13 octobre à 18h30\\n\\nSalle Saint-Exupéry\\, 11 rue Saint-Exupéry\\, Saint-Laurent-Médoc\\, 33424\r\nLOCATION:SAINT-LAURENT-MÉDOC\\, GIRONDE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-330@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155118Z\r\nDTSTART:20261013T163000Z\r\nDTEND:20261013T183000Z\r\nSUMMARY:RÉUNION NOUVELLE ÉNERGIE GIRONDE\r\nDESCRIPTION:Retrouvez Yves d'Amécourt\\, élu local\\, viticulteur\\, responsable du projet agricole de Nouvelle Énergie et Laurent Toussaint\\, relais Nouvelle Énergie Gironde pour une réunion publique autour du projet de Nouvelle Énergie.\\n\\nMardi 13 octobre à 18h30\\n\\nSalle Saint-Exupéry\\, 11 rue Saint-Exupéry\\, Saint-Laurent-Médoc\\, 33424\r\nLOCATION:SAINT-LAURENT-MÉDOC\\, GIRONDE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "2fc62305b74e",
@@ -1563,7 +1563,7 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-331@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142006Z\r\nDTSTART:20261022T163000Z\r\nDTEND:20261022T183000Z\r\nSUMMARY:RÉUNION PUBLIQUE NOUVELLE ÉNERGIE GIRONDE\r\nDESCRIPTION:Retrouvez Yves d'Amécourt\\, élu local\\, viticulteur\\, responsable du projet agricole de Nouvelle Énergie et Denis Pernin\\, relais Nouvelle Énergie Gironde pour une réunion publique autour du projet de Nouvelle Énergie.\\n\\nJeudi 22 octobre à 18h30\\n2 Montanier - Campus de stratégies locales 33210 Preignac\\n\r\nLOCATION:PREIGNAC\\, GIRONDE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-331@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155118Z\r\nDTSTART:20261022T163000Z\r\nDTEND:20261022T183000Z\r\nSUMMARY:RÉUNION PUBLIQUE NOUVELLE ÉNERGIE GIRONDE\r\nDESCRIPTION:Retrouvez Yves d'Amécourt\\, élu local\\, viticulteur\\, responsable du projet agricole de Nouvelle Énergie et Denis Pernin\\, relais Nouvelle Énergie Gironde pour une réunion publique autour du projet de Nouvelle Énergie.\\n\\nJeudi 22 octobre à 18h30\\n2 Montanier - Campus de stratégies locales 33210 Preignac\\n\r\nLOCATION:PREIGNAC\\, GIRONDE\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   },
   {
     "id": "d171ab9ff881",
@@ -1583,6 +1583,6 @@
     "tags": [
       "énergie"
     ],
-    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-322@unenouvelleenergie.fr\r\nDTSTAMP:20260917T142006Z\r\nDTSTART:20261022T170000Z\r\nDTEND:20261022T190000Z\r\nSUMMARY:RENCONTRE DÉBAT - AIX-EN-PROVENCE\r\nDESCRIPTION:Retrouvez Hervé Novelli\\, coordinateur des programmes de Nouvelle Énergie\\, et Frédéric Masquelier\\, maire de Saint-Raphaël et président de l’Estérel Côte d’Azur Agglomération\\, pour une rencontre-débat autour du projet de Nouvelle Énergie.\\n\\nJeudi 22 octobre à 19h\\nHôtel Aquabella\\n2 rue des Étuves\\, Aix-en-Provence\r\nLOCATION:Aix-en-Provence\\,  Bouches-du-Rhône\\, Hôtel Aquabella 2 rue des Étuves\\, 13100\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
+    "text": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nouvelle Énergie//Agenda//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:event-322@unenouvelleenergie.fr\r\nDTSTAMP:20260917T155118Z\r\nDTSTART:20261022T170000Z\r\nDTEND:20261022T190000Z\r\nSUMMARY:RENCONTRE DÉBAT - AIX-EN-PROVENCE\r\nDESCRIPTION:Retrouvez Hervé Novelli\\, coordinateur des programmes de Nouvelle Énergie\\, et Frédéric Masquelier\\, maire de Saint-Raphaël et président de l’Estérel Côte d’Azur Agglomération\\, pour une rencontre-débat autour du projet de Nouvelle Énergie.\\n\\nJeudi 22 octobre à 19h\\nHôtel Aquabella\\n2 rue des Étuves\\, Aix-en-Provence\r\nLOCATION:Aix-en-Provence\\,  Bouches-du-Rhône\\, Hôtel Aquabella 2 rue des Étuves\\, 13100\r\nBEGIN:VALARM\r\nTRIGGER:-PT1H\r\nACTION:DISPLAY\r\nDESCRIPTION:Rappel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR"
   }
 ]
