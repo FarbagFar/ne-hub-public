@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+chrome_profile/
+journaux/
+old/
+_site/
+.streamlit/secrets.toml
+*.log
+.DS_Store
