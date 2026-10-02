@@ -1,0 +1,36 @@
+{
+  "last_sync": "02/10/2026 13:04",
+  "changes": {
+    "new_documents": [
+      "AFTERWORK JEUNES ÉNERGIES MARSEILLE",
+      "AFTERWORK NOUVELLE ÉNERGIE SUISSE",
+      "RÉUNION PUBLIQUE NOUVELLE ÉNERGIE HAUTE-SAVOIE",
+      "RENTRÉE POLITIQUE NÎMES",
+      "LES P'TIS DEJ' VAROIS",
+      "AFTERWORK NOUVELLE ÉNERGIE BOURGES",
+      "AFTERWORK JEUNES ÉNERGIES GIRONDE",
+      "RENTRÉE POLITIQUE NOUVELLE ÉNERGIE AIN",
+      "AFTERWORK JEUNES ÉNERGIES GARD",
+      "CONFÉRENCE NOUVELLE ÉNERGIE GRASSE"
+    ],
+    "new_events": [
+      "AFTERWORK JEUNES ÉNERGIES GARD",
+      "AFTERWORK JEUNES ÉNERGIES GIRONDE",
+      "AFTERWORK JEUNES ÉNERGIES MARSEILLE",
+      "AFTERWORK NOUVELLE ÉNERGIE BOURGES",
+      "AFTERWORK NOUVELLE ÉNERGIE SUISSE",
+      "CONFÉRENCE NOUVELLE ÉNERGIE GRASSE",
+      "LES P'TIS DEJ' VAROIS",
+      "RENTRÉE POLITIQUE NÎMES",
+      "RENTRÉE POLITIQUE NOUVELLE ÉNERGIE AIN",
+      "RÉUNION PUBLIQUE NOUVELLE ÉNERGIE HAUTE-SAVOIE"
+    ],
+    "new_relays": []
+  },
+  "documents": 111,
+  "events": 32,
+  "relays": 173,
+  "brand_source": null,
+  "relays_source": "page officielle des relais (donnees structurees)",
+  "events_json_ld": 32
+}
