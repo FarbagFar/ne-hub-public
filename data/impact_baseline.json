@@ -1,0 +1,17 @@
+{
+  "as_of": "2025",
+  "source_date": "29/05/2026",
+  "source_label": "Insee — Le compte des administrations publiques en 2025",
+  "source_url": "https://www.insee.fr/fr/statistiques/8997691",
+  "gdp_billion": 2990.1,
+  "deficit_billion": 152.5,
+  "deficit_pct_gdp": 5.1,
+  "debt_billion": 3460.5,
+  "debt_pct_gdp": 115.7,
+  "spending_billion": 1714.1,
+  "spending_pct_gdp": 57.3,
+  "revenue_billion": 1561.6,
+  "revenue_pct_gdp": 52.2,
+  "mandatory_levies_pct_gdp": 43.6,
+  "notes": "Base 2025. Le simulateur garde le PIB constant dans les calculs mécaniques de V0."
+}
